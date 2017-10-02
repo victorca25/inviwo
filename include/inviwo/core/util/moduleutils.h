@@ -2,7 +2,7 @@
  *
  * Inviwo - Interactive Visualization Workshop
  *
- * Copyright (c) 2015-2017 Inviwo Foundation
+ * Copyright (c) 2017 Inviwo Foundation
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -27,33 +27,54 @@
  *
  *********************************************************************************/
 
-#include "imagebinary.h"
-#include <modules/opengl/shader/shaderutils.h>
+#ifndef IVW_MODULEUTILS_H
+#define IVW_MODULEUTILS_H
+
+#include <inviwo/core/common/inviwocoredefine.h>
+#include <inviwo/core/common/inviwo.h>
+
+#include <inviwo/core/common/inviwomodule.h>
+#include <inviwo/core/common/inviwoapplication.h>
+#include <inviwo/core/util/exception.h>
 
 namespace inviwo {
 
-// The Class Identifier has to be globally unique. Use a reverse DNS naming scheme
-const ProcessorInfo ImageBinary::processorInfo_{
-    "org.inviwo.ImageBinary",  // Class identifier
-    "Image Binary",            // Display name
-    "Image Operation",         // Category
-    CodeState::Stable,         // Code state
-    Tags::GL,                  // Tags
-};
-const ProcessorInfo ImageBinary::getProcessorInfo() const {
-    return processorInfo_;
+namespace module {
+
+/**
+ * \brief return the path for a specific type located within the requested module
+ *
+ * @param identifier   name of the module
+ * @param pathType     type of the requested path
+ * @return subdirectory of the module matching the type
+ */
+IVW_CORE_API std::string getModulePath(const std::string &identifier, ModulePath pathType);
+
+/**
+ * \brief return the path for a specific type located within the requested module of type T
+ *
+ * @param pathType     type of the requested path
+ * @return subdirectory of the module matching the type
+ */
+template <typename T>
+std::string getModulePath(ModulePath pathType);
+
+template <typename T>
+std::string getModulePath(ModulePath pathType) {
+    std::string path;
+    if (auto m = InviwoApplication::getPtr()->getModuleByType<T>()) {
+        path = m->getPath(pathType);
+        if (path.empty() || path == m->getPath()) {
+            throw Exception("Could not locate module path for specified path type");
+        }
+    } else {
+        throw Exception("Could not locate module");
+    }
+    return path;
 }
 
-ImageBinary::ImageBinary()
-    : ImageGLProcessor("img_binary.frag")
-    , threshold_("threshold","Threshold", 0.5)  {
-    addProperty(threshold_);
-}
+}  // namespace module
 
-void ImageBinary::preProcess(TextureUnitContainer &) {
-    utilgl::setUniforms(shader_, threshold_);
-}
+}  // namespace inviwo
 
-} // namespace
-
-
+#endif  // IVW_MODULEUTILS_H

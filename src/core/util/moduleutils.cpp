@@ -2,7 +2,7 @@
  *
  * Inviwo - Interactive Visualization Workshop
  *
- * Copyright (c) 2015-2017 Inviwo Foundation
+ * Copyright (c) 2017 Inviwo Foundation
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -27,33 +27,27 @@
  *
  *********************************************************************************/
 
-#include "imagebinary.h"
-#include <modules/opengl/shader/shaderutils.h>
+#include <inviwo/core/util/moduleutils.h>
 
 namespace inviwo {
 
-// The Class Identifier has to be globally unique. Use a reverse DNS naming scheme
-const ProcessorInfo ImageBinary::processorInfo_{
-    "org.inviwo.ImageBinary",  // Class identifier
-    "Image Binary",            // Display name
-    "Image Operation",         // Category
-    CodeState::Stable,         // Code state
-    Tags::GL,                  // Tags
-};
-const ProcessorInfo ImageBinary::getProcessorInfo() const {
-    return processorInfo_;
+namespace module {
+
+std::string getModulePath(const std::string &identifier, ModulePath pathType) {
+    std::string path;
+    if (auto m = InviwoApplication::getPtr()->getModuleByIdentifier(identifier)) {
+        path = m->getPath(pathType);
+        if (path.empty() || path == m->getPath()) {
+            // if the result of getPath(pathType) is identical with getPath(), 
+            // i.e. the module path, the specific path does not exist.
+            throw Exception("Could not locate module path for specified path type");
+        }
+    } else {
+        throw Exception("Could not locate module");
+    }
+    return path;
 }
 
-ImageBinary::ImageBinary()
-    : ImageGLProcessor("img_binary.frag")
-    , threshold_("threshold","Threshold", 0.5)  {
-    addProperty(threshold_);
-}
+}  // namespace module
 
-void ImageBinary::preProcess(TextureUnitContainer &) {
-    utilgl::setUniforms(shader_, threshold_);
-}
-
-} // namespace
-
-
+}  // namespace inviwo

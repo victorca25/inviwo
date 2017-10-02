@@ -111,17 +111,19 @@ void PropertyWidgetQt::setVisible(bool visible) {
 
 void PropertyWidgetQt::onSetVisible(bool visible) { setVisible(visible); }
 
-void PropertyWidgetQt::onChildVisibilityChange(PropertyWidgetQt* child) {
+void PropertyWidgetQt::onChildVisibilityChange(PropertyWidgetQt* /*child*/) {
     if (property_) {
         setVisible(property_->getVisible());
     }
 }
 
-void PropertyWidgetQt::onSetUsageMode(UsageMode usageMode) { setVisible(property_->getVisible()); }
+void PropertyWidgetQt::onSetUsageMode(UsageMode /*usageMode*/) {
+    setVisible(property_->getVisible());
+}
 
 void PropertyWidgetQt::onSetReadOnly(bool readonly) { setDisabled(readonly); }
 
-void PropertyWidgetQt::onSetSemantics(const PropertySemantics& semantics) {
+void PropertyWidgetQt::onSetSemantics(const PropertySemantics& /*semantics*/) {
     emit updateSemantics(this);
 }
 
@@ -248,15 +250,12 @@ std::unique_ptr<QMenu> PropertyWidgetQt::getContextMenu() {
         menu->addSeparator();
         addPresetMenuActions(menu.get(), app);
         menu->addSeparator();
-    }
-
-    {
+        
         auto resetAction = menu->addAction(tr("&Reset to default"));
         resetAction->setToolTip(tr("&Reset the property back to it's initial state"));
         connect(resetAction, &QAction::triggered, this,
                 [&]() { property_->resetToDefaultState(); });
     }
-
     // Module actions.
     addModuleMenuActions(menu.get(), app);
 
@@ -279,7 +278,7 @@ void PropertyWidgetQt::addModuleMenuActions(QMenu* menu, InviwoApplication* app)
             auto actionName = mAction->getActionName();
             auto action = submenu->addAction(QString::fromStdString(actionName));
             connect(action, &QAction::triggered, this,
-                    [ app, actionName, property = property_ ](bool checked) {
+                    [ app, actionName, property = property_ ](bool /*checked*/) {
                         const auto& mActions = app->getCallbackActions();
                         auto it = std::find_if(mActions.begin(), mActions.end(), [&](auto& item) {
                             return item->getActionName() == actionName;
@@ -458,7 +457,7 @@ void PropertyWidgetQt::setParentPropertyWidget(PropertyWidgetQt* parent, InviwoD
     baseContainer_ = widget;
 }
 
-void PropertyWidgetQt::paintEvent(QPaintEvent* pe) {
+void PropertyWidgetQt::paintEvent(QPaintEvent*) {
     QStyleOption o;
     o.initFrom(this);
     QPainter p(this);

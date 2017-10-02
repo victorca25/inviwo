@@ -45,7 +45,7 @@ RangeSliderQt::RangeSliderQt(Qt::Orientation orientation, QWidget* parent, bool 
     , range_{0,10}
     , value_{0,10}
     , minSeperation_(0)
-    , formatTooltip_{[](int hanlde, int pos) {
+    , formatTooltip_{[](int /*handle*/, int pos) {
         return toString(pos);
     }}{
 
@@ -160,16 +160,28 @@ void RangeSliderQt::setMinSeparation(int sep) {
 }
 
 void RangeSliderQt::setMinRange(int minR) {
-    range_.x = minR;
-    if (minR > value_.x) {
-        setMinValue(minR);
+    if (range_.x != minR) {
+        range_.x = minR;
+        // ensure that the values are within the updated range
+        if (value_.x < range_.x) {
+            // updateSlidersFromState() is called in setMinValue
+            setMinValue(range_.x);
+        } else { 
+            updateSlidersFromState();
+        }
     }
 }
 
 void RangeSliderQt::setMaxRange(int maxR) {
-    range_.y = maxR;
-    if (maxR < value_.y) {
-        setMaxValue(maxR);
+    if (range_.y != maxR) {
+        range_.y = maxR;
+        // ensure that the values are within the updated range
+        if (value_.y > range_.y) {
+            // updateSlidersFromState() is called in setMinValue
+            setMaxValue(range_.y);
+        } else { 
+            updateSlidersFromState();
+        }
     }
 }
 
@@ -207,7 +219,7 @@ void RangeSliderQt::updateSlidersFromState() {
     setSizes(sizes);
 }
 
-void RangeSliderQt::updateSplitterPosition(int pos, int idx) {
+void RangeSliderQt::updateSplitterPosition(int /*pos*/, int /*idx*/) {
     updateStateFromSliders();
 
     //Emit
