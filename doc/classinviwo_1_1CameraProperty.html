@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="inviwo_dark.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Inviwo
-   &#160;<span id="projectnumber">0.9.8</span>
+   &#160;<span id="projectnumber">0.9.9</span>
    </div>
    <div id="projectbrief">Inviwo documentation</div>
   </td>
@@ -228,9 +228,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>invokeEvent</b> (<a c
 <tr class="memitem:aaee7018d43df67d3719bc367084d6d60"><td class="memItemLeft" align="right" valign="top"><a id="aaee7018d43df67d3719bc367084d6d60"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setInport</b> (<a class="el" href="classinviwo_1_1Inport.html">Inport</a> *inport)</td></tr>
 <tr class="separator:aaee7018d43df67d3719bc367084d6d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f11760deda05ab64242d20cab3c08c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1CameraProperty.html#a08f11760deda05ab64242d20cab3c08c">adjustCameraToData</a> (const mat4 &amp;prevDataToWorldMatrix, const mat4 &amp;newDataToWorldMatrix)</td></tr>
-<tr class="memdesc:a08f11760deda05ab64242d20cab3c08c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates and scales camera to match new data and fit new object into view.  <a href="#a08f11760deda05ab64242d20cab3c08c">More...</a><br /></td></tr>
-<tr class="separator:a08f11760deda05ab64242d20cab3c08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cbbd9d8e67413cc341ceac61be9aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1CameraProperty.html#a83cbbd9d8e67413cc341ceac61be9aa9">adjustCameraToData</a> (const mat4 &amp;newDataToWorldMatrix)</td></tr>
+<tr class="memdesc:a83cbbd9d8e67413cc341ceac61be9aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates and scales camera to match new data and fit new object into view.  <a href="#a83cbbd9d8e67413cc341ceac61be9aa9">More...</a><br /></td></tr>
+<tr class="separator:a83cbbd9d8e67413cc341ceac61be9aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dba7f4e315985279f62f7fde2d8a257"><td class="memItemLeft" align="right" valign="top"><a id="a5dba7f4e315985279f62f7fde2d8a257"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1CameraProperty.html#a5dba7f4e315985279f62f7fde2d8a257">resetAdjustCameraToData</a> ()</td></tr>
 <tr class="memdesc:a5dba7f4e315985279f62f7fde2d8a257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the camera adjustment matrix to currently set inport data. <br /></td></tr>
@@ -453,6 +453,10 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a6963626fa2733321b7101545c149b0bd inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setMetaData</b> (const std::string &amp;key, U value)</td></tr>
 <tr class="separator:a6963626fa2733321b7101545c149b0bd inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classinviwo_1_1MetaDataOwner.html#a17d098c44425614820745a0455635fc8">unsetMetaData</a> (const std::string &amp;key)</td></tr>
+<tr class="memdesc:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="mdescLeft">&#160;</td><td class="mdescRight">unset, i.e. remove the metadata entry matching the given key and type  <a href="classinviwo_1_1MetaDataOwner.html#a17d098c44425614820745a0455635fc8">More...</a><br /></td></tr>
+<tr class="separator:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fcf54b2c85be2e4bb4f43e73d7bd42 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplParams" colspan="2"><a id="a98fcf54b2c85be2e4bb4f43e73d7bd42"></a>
 template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a98fcf54b2c85be2e4bb4f43e73d7bd42 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplItemLeft" align="right" valign="top">U&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getMetaData</b> (const std::string &amp;key, U val) const</td></tr>
@@ -707,8 +711,8 @@ std::vector&lt; <a class="el" href="classinviwo_1_1CompositeProperty.html">Compo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A property wrapping the <a class="el" href="classinviwo_1_1Camera.html" title="Base class for cameras. Override this class to set your own projection matrix. ">Camera</a> data structure </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classinviwo_1_1Camera.html" title="Base class for cameras. Override this class to set your own projection matrix. ">Camera</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a08f11760deda05ab64242d20cab3c08c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08f11760deda05ab64242d20cab3c08c">&#9670;&nbsp;</a></span>adjustCameraToData()</h2>
+<a id="a83cbbd9d8e67413cc341ceac61be9aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cbbd9d8e67413cc341ceac61be9aa9">&#9670;&nbsp;</a></span>adjustCameraToData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,27 +721,15 @@ std::vector&lt; <a class="el" href="classinviwo_1_1CompositeProperty.html">Compo
           <td class="memname">void inviwo::CameraProperty::adjustCameraToData </td>
           <td>(</td>
           <td class="paramtype">const mat4 &amp;&#160;</td>
-          <td class="paramname"><em>prevDataToWorldMatrix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>newDataToWorldMatrix</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const mat4 &amp;&#160;</td>
-          <td class="paramname"><em>newDataToWorldMatrix</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Translates and scales camera to match new data and fit new object into view. </p>
-<dl class="section note"><dt>Note</dt><dd>requires that adjustCameraOnDataChange_ is true and that an inport has been supplied during construction. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">prevDataToWorldMatrix</td><td>Matrix of previous object </td></tr>
     <tr><td class="paramname">newDataToWorldMatrix</td><td>Matrix of new object </td></tr>
   </table>
   </dd>

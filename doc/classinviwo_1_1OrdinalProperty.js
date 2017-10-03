@@ -16,8 +16,10 @@ var classinviwo_1_1OrdinalProperty =
     [ "serialize", "classinviwo_1_1OrdinalProperty.html#a473d304d944c2f2d7eca68c202e1abc6", null ],
     [ "set", "classinviwo_1_1OrdinalProperty.html#aadd8c8fe62f39df0af943fcd92283dba", null ],
     [ "set", "classinviwo_1_1OrdinalProperty.html#afac040e9cd842f323281480536295ed2", null ],
+    [ "set", "classinviwo_1_1OrdinalProperty.html#a197d2df94777e52ff9340558df1cf6dc", null ],
     [ "setCurrentStateAsDefault", "classinviwo_1_1OrdinalProperty.html#af4fbd0908b054a41666dc8e8843325e7", null ],
     [ "setIncrement", "classinviwo_1_1OrdinalProperty.html#a9982d6241752072c524d489fc07fe8bb", null ],
     [ "setMaxValue", "classinviwo_1_1OrdinalProperty.html#a227b64e2e53c5a46ba50d301c4baab1a", null ],
-    [ "setMinValue", "classinviwo_1_1OrdinalProperty.html#ac94583ad792594c8ca438127e2114e76", null ]
+    [ "setMinValue", "classinviwo_1_1OrdinalProperty.html#ac94583ad792594c8ca438127e2114e76", null ],
+    [ "validateValues", "classinviwo_1_1OrdinalProperty.html#ad5818703383be5fa9af3c366906df8c7", null ]
 ];

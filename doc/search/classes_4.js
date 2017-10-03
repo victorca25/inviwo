@@ -2,6 +2,7 @@ var searchData=
 [
   ['easing',['Easing',['../classinviwo_1_1animation_1_1Easing.html',1,'inviwo::animation']]],
   ['edge',['Edge',['../classinviwo_1_1Edge.html',1,'inviwo']]],
+  ['edgedarken',['edgedarken',['../classglsl_1_1edgedarken.html',1,'glsl']]],
   ['edgedataformat',['EdgeDataFormat',['../classinviwo_1_1EdgeDataFormat.html',1,'inviwo']]],
   ['editablelabelqt',['EditableLabelQt',['../classinviwo_1_1EditableLabelQt.html',1,'inviwo']]],
   ['editorgraphicsitem',['EditorGraphicsItem',['../classinviwo_1_1EditorGraphicsItem.html',1,'inviwo']]],
@@ -15,7 +16,6 @@ var searchData=
   ['enable',['Enable',['../structinviwo_1_1utilgl_1_1Enable.html',1,'inviwo::utilgl']]],
   ['enable_3c_20inviwo_3a_3ameshgl_20_3e',['Enable&lt; inviwo::MeshGL &gt;',['../structinviwo_1_1utilgl_1_1Enable.html',1,'inviwo::utilgl']]],
   ['entryexitpoints',['EntryExitPoints',['../classinviwo_1_1EntryExitPoints.html',1,'inviwo']]],
-  ['entryexitpointsclprocessor',['EntryExitPointsCLProcessor',['../classinviwo_1_1EntryExitPointsCLProcessor.html',1,'inviwo']]],
   ['entryexitpointshelper',['EntryExitPointsHelper',['../classinviwo_1_1algorithm_1_1EntryExitPointsHelper.html',1,'inviwo::algorithm']]],
   ['equalptr',['equalPtr',['../structinviwo_1_1equalPtr.html',1,'inviwo']]],
   ['event',['Event',['../classinviwo_1_1Event.html',1,'inviwo']]],

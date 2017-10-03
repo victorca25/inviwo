@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extension_5f',['extension_',['../classinviwo_1_1FileExtension.html#a3efef694f9b7e49d003f0f1e86bcd5db',1,'inviwo::FileExtension']]]
+  ['farplanedist_5f',['farPlaneDist_',['../classinviwo_1_1Camera.html#a4823d919759dcfcbd2b6566dd295675e',1,'inviwo::Camera']]]
 ];

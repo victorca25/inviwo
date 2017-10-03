@@ -16,5 +16,6 @@ var classinviwo_1_1MetaDataOwner =
     [ "operator=", "classinviwo_1_1MetaDataOwner.html#a275915ca1e9216d7d6baefb355049b13", null ],
     [ "serialize", "classinviwo_1_1MetaDataOwner.html#a48334a3ef25f428f388e675cc9cdca2d", null ],
     [ "setMetaData", "classinviwo_1_1MetaDataOwner.html#a6963626fa2733321b7101545c149b0bd", null ],
+    [ "unsetMetaData", "classinviwo_1_1MetaDataOwner.html#a17d098c44425614820745a0455635fc8", null ],
     [ "metaData_", "classinviwo_1_1MetaDataOwner.html#a7b331cee0264fea40c3649b9a4ba1815", null ]
 ];

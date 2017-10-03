@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['m',['m',['../structinviwo_1_1statsutil_1_1RegresionResult.html#af75e71a460e914d99aba73d6941c1896',1,'inviwo::statsutil::RegresionResult']]],
-  ['maxzoomindistance_5f',['maxZoomInDistance_',['../classinviwo_1_1Trackball.html#af3e3be741834f4de76f01667c53674a6',1,'inviwo::Trackball']]]
+  ['nearplanedist_5f',['nearPlaneDist_',['../classinviwo_1_1Camera.html#a08c6dcd7d5cf3941c9c1c3dde828c683',1,'inviwo::Camera']]],
+  ['noiseshader_5f',['noiseShader_',['../classinviwo_1_1CanvasGL.html#a43b258bd6442a6d35fa83b4475bcd1e2',1,'inviwo::CanvasGL']]]
 ];

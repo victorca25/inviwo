@@ -4,10 +4,8 @@ var classinviwo_1_1CurveGraphicsItem =
     [ "CurveGraphicsItem", "classinviwo_1_1CurveGraphicsItem.html#acf35657c95cc738a0984d87f953900c7", null ],
     [ "~CurveGraphicsItem", "classinviwo_1_1CurveGraphicsItem.html#abbfb6fcb16c661988b50dcdc9be8d9fd", null ],
     [ "boundingRect", "classinviwo_1_1CurveGraphicsItem.html#a7156611f101fb0fdd33e3b4032953fb2", null ],
-    [ "clearMidPoint", "classinviwo_1_1CurveGraphicsItem.html#abeb70ea3e27fd4341b831120624fb9e6", null ],
     [ "getColor", "classinviwo_1_1CurveGraphicsItem.html#ac86a53f042c78c43a3216f93912ae886", null ],
     [ "getEndPoint", "classinviwo_1_1CurveGraphicsItem.html#a0813428b25c896dd67262fc3bd75de07", null ],
-    [ "getMidPoint", "classinviwo_1_1CurveGraphicsItem.html#a8b22f6d2965103678ac501634af5c5b3", null ],
     [ "getStartPoint", "classinviwo_1_1CurveGraphicsItem.html#af034e6c62979b021496623548ff7852f", null ],
     [ "obtainCurvePath", "classinviwo_1_1CurveGraphicsItem.html#a9b59eaeeaf0975406299d3b8f5f3c0e9", null ],
     [ "obtainCurvePath", "classinviwo_1_1CurveGraphicsItem.html#a4890cfc44b2476a3df9c69242e6bd31c", null ],
@@ -16,7 +14,6 @@ var classinviwo_1_1CurveGraphicsItem =
     [ "setBorderColor", "classinviwo_1_1CurveGraphicsItem.html#adf2a8b94e76bea6d14432d13a6fa6b6d", null ],
     [ "setColor", "classinviwo_1_1CurveGraphicsItem.html#a32cb59da6fea315d7469440d0d89c8b4", null ],
     [ "setEndPoint", "classinviwo_1_1CurveGraphicsItem.html#a601ded3d61be08a18c3f1530bcebe226", null ],
-    [ "setMidPoint", "classinviwo_1_1CurveGraphicsItem.html#a2c550fe5d8c3b10ef12f133541283f4d", null ],
     [ "setSelectedBorderColor", "classinviwo_1_1CurveGraphicsItem.html#a1fe96ca065983995006bfa13b9c389df", null ],
     [ "setStartPoint", "classinviwo_1_1CurveGraphicsItem.html#ab0ceabbbbe2f798fbb510572ddee49e2", null ],
     [ "shape", "classinviwo_1_1CurveGraphicsItem.html#a6ba1d280d4bb6f0e91dc6fef42f8061a", null ],
@@ -25,10 +22,8 @@ var classinviwo_1_1CurveGraphicsItem =
     [ "borderColor_", "classinviwo_1_1CurveGraphicsItem.html#a84c363c3732ea074a176e623cac1b227", null ],
     [ "color_", "classinviwo_1_1CurveGraphicsItem.html#ae49d79153afa2a4627f2cc1ad2282fb1", null ],
     [ "endPoint_", "classinviwo_1_1CurveGraphicsItem.html#a6f2df97b1e0295a8f49f04ca48b8f3a9", null ],
-    [ "midPoint_", "classinviwo_1_1CurveGraphicsItem.html#af78d47bc2fd9c399734c8b74f996e176", null ],
     [ "path_", "classinviwo_1_1CurveGraphicsItem.html#a8cf4d4d636c10fba9c66a175f9141394", null ],
     [ "rect_", "classinviwo_1_1CurveGraphicsItem.html#aa4fa5d2276ad73d1c7eaf2d75c0c8bc5", null ],
     [ "selectedBorderColor_", "classinviwo_1_1CurveGraphicsItem.html#a01fc3eb5232d2bfacde0adf327be223a", null ],
-    [ "startPoint_", "classinviwo_1_1CurveGraphicsItem.html#a3abb726d04f5f74af5e211bac7caf538", null ],
-    [ "useMidPoint_", "classinviwo_1_1CurveGraphicsItem.html#ad6eaaeb71769e829ddff955f09d40b98", null ]
+    [ "startPoint_", "classinviwo_1_1CurveGraphicsItem.html#a3abb726d04f5f74af5e211bac7caf538", null ]
 ];

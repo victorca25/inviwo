@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="inviwo_dark.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Inviwo
-   &#160;<span id="projectnumber">0.9.8</span>
+   &#160;<span id="projectnumber">0.9.9</span>
    </div>
    <div id="projectbrief">Inviwo documentation</div>
   </td>
@@ -109,13 +109,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6975bec010a635b65710dd28d77a12c2"><td class="memItemLeft" align="right" valign="top"><a id="a6975bec010a635b65710dd28d77a12c2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VolumeDoubleSampler</b> (std::shared_ptr&lt; const <a class="el" href="classinviwo_1_1Volume.html">Volume</a> &gt; vol, CoordinateSpace space=CoordinateSpace::Data)</td></tr>
 <tr class="separator:a6975bec010a635b65710dd28d77a12c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e02e9ea7a5d61fed991521bb656c0a"><td class="memItemLeft" align="right" valign="top"><a id="a45e02e9ea7a5d61fed991521bb656c0a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VolumeDoubleSampler</b> (const <a class="el" href="classinviwo_1_1Volume.html">Volume</a> &amp;vol, CoordinateSpace space=CoordinateSpace::Data)</td></tr>
+<tr class="separator:a45e02e9ea7a5d61fed991521bb656c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eba95b264bad85a179a8a1ddb54fc71"><td class="memItemLeft" align="right" valign="top"><a id="a9eba95b264bad85a179a8a1ddb54fc71"></a>
+<a class="el" href="classinviwo_1_1VolumeDoubleSampler.html">VolumeDoubleSampler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classinviwo_1_1VolumeDoubleSampler.html">VolumeDoubleSampler</a> &amp;)=default</td></tr>
+<tr class="separator:a9eba95b264bad85a179a8a1ddb54fc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cc2cfe31d5e34173fe0ee3dcf39a0d"><td class="memItemLeft" align="right" valign="top"><a id="a90cc2cfe31d5e34173fe0ee3dcf39a0d"></a>
 virtual Vector&lt; DataDims, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sampleDataSpace</b> (const dvec3 &amp;pos) const override</td></tr>
 <tr class="separator:a90cc2cfe31d5e34173fe0ee3dcf39a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d75af06dee6eaccf8238ea1547c643"><td class="memItemLeft" align="right" valign="top"><a id="a43d75af06dee6eaccf8238ea1547c643"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>withinBoundsDataSpace</b> (const dvec3 &amp;pos) const override</td></tr>
+<tr class="separator:a43d75af06dee6eaccf8238ea1547c643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classinviwo_1_1SpatialSampler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classinviwo_1_1SpatialSampler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classinviwo_1_1SpatialSampler.html">inviwo::SpatialSampler&lt; 3, DataDims, double &gt;</a></td></tr>
-<tr class="memitem:a9d56335130703f22a22533528086b22e inherit pub_methods_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="a9d56335130703f22a22533528086b22e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SpatialSampler</b> (std::shared_ptr&lt; const <a class="el" href="classinviwo_1_1SpatialEntity.html">SpatialEntity</a>&lt; SpatialDims &gt;&gt; spatialEntity, Space space=Space::Data)</td></tr>
-<tr class="separator:a9d56335130703f22a22533528086b22e inherit pub_methods_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3af1799278abb8dc06fe05f41e5612 inherit pub_methods_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="a9a3af1799278abb8dc06fe05f41e5612"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SpatialSampler</b> (const <a class="el" href="classinviwo_1_1SpatialEntity.html">SpatialEntity</a>&lt; SpatialDims &gt; &amp;spatialEntity, Space space=Space::Data)</td></tr>
+<tr class="separator:a9a3af1799278abb8dc06fe05f41e5612 inherit pub_methods_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8481787817d336c1f5827aadc130924a inherit pub_methods_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="a8481787817d336c1f5827aadc130924a"></a>
 virtual Vector&lt; DataDims, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sample</b> (const Vector&lt; SpatialDims, double &gt; &amp;pos) const</td></tr>
 <tr class="separator:a8481787817d336c1f5827aadc130924a inherit pub_methods_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,9 +170,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a15bc57047717f33c62c58b11fdde42fb"><td class="memItemLeft" align="right" valign="top"><a id="a15bc57047717f33c62c58b11fdde42fb"></a>
 Vector&lt; DataDims, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getVoxel</b> (const size3_t &amp;pos) const</td></tr>
 <tr class="separator:a15bc57047717f33c62c58b11fdde42fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d75af06dee6eaccf8238ea1547c643"><td class="memItemLeft" align="right" valign="top"><a id="a43d75af06dee6eaccf8238ea1547c643"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>withinBoundsDataSpace</b> (const dvec3 &amp;pos) const override</td></tr>
-<tr class="separator:a43d75af06dee6eaccf8238ea1547c643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19275a33e88e429ff06989904760ebeb"><td class="memTemplParams" colspan="2"><a id="a19275a33e88e429ff06989904760ebeb"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a19275a33e88e429ff06989904760ebeb"><td class="memTemplItemLeft" align="right" valign="top">IVW_CORE_API Vector&lt; 1, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getVoxel</b> (const size3_t &amp;pos) const</td></tr>
@@ -219,9 +225,9 @@ size3_t&#160;</td><td class="memItemRight" valign="bottom"><b>dims_</b></td></tr
 <tr class="memitem:ad07c8ddbc9a44b7b69bf52937f7b12b1 inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="ad07c8ddbc9a44b7b69bf52937f7b12b1"></a>
 Space&#160;</td><td class="memItemRight" valign="bottom"><b>space_</b></td></tr>
 <tr class="separator:ad07c8ddbc9a44b7b69bf52937f7b12b1 inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7af5028a81bf1d13740b3a2102cc29b0 inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="a7af5028a81bf1d13740b3a2102cc29b0"></a>
-std::shared_ptr&lt; const <a class="el" href="classinviwo_1_1SpatialEntity.html">SpatialEntity</a>&lt; SpatialDims &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>spatialEntity_</b></td></tr>
-<tr class="separator:a7af5028a81bf1d13740b3a2102cc29b0 inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee24ad6a65cbbd7a42e18538ca3fe75c inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="aee24ad6a65cbbd7a42e18538ca3fe75c"></a>
+const <a class="el" href="classinviwo_1_1SpatialEntity.html">SpatialEntity</a>&lt; SpatialDims &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>spatialEntity_</b></td></tr>
+<tr class="separator:aee24ad6a65cbbd7a42e18538ca3fe75c inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20a610155414443a84e2621903247b51 inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memItemLeft" align="right" valign="top"><a id="a20a610155414443a84e2621903247b51"></a>
 Matrix&lt; SpatialDims+1, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>transform_</b></td></tr>
 <tr class="separator:a20a610155414443a84e2621903247b51 inherit pro_attribs_classinviwo_1_1SpatialSampler"><td class="memSeparator" colspan="2">&#160;</td></tr>

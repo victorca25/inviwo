@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="inviwo_dark.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Inviwo
-   &#160;<span id="projectnumber">0.9.8</span>
+   &#160;<span id="projectnumber">0.9.9</span>
    </div>
    <div id="projectbrief">Inviwo documentation</div>
   </td>
@@ -393,6 +393,10 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a6963626fa2733321b7101545c149b0bd inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setMetaData</b> (const std::string &amp;key, U value)</td></tr>
 <tr class="separator:a6963626fa2733321b7101545c149b0bd inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classinviwo_1_1MetaDataOwner.html#a17d098c44425614820745a0455635fc8">unsetMetaData</a> (const std::string &amp;key)</td></tr>
+<tr class="memdesc:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="mdescLeft">&#160;</td><td class="mdescRight">unset, i.e. remove the metadata entry matching the given key and type  <a href="classinviwo_1_1MetaDataOwner.html#a17d098c44425614820745a0455635fc8">More...</a><br /></td></tr>
+<tr class="separator:a17d098c44425614820745a0455635fc8 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fcf54b2c85be2e4bb4f43e73d7bd42 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplParams" colspan="2"><a id="a98fcf54b2c85be2e4bb4f43e73d7bd42"></a>
 template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a98fcf54b2c85be2e4bb4f43e73d7bd42 inherit pub_methods_classinviwo_1_1MetaDataOwner"><td class="memTemplItemLeft" align="right" valign="top">U&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getMetaData</b> (const std::string &amp;key, U val) const</td></tr>
@@ -446,18 +450,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a332997ae2e6dd3565efb9ccddf99f7c3"><td class="memItemLeft" align="right" valign="top"><a id="a332997ae2e6dd3565efb9ccddf99f7c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>markInvalid</b> ()</td></tr>
 <tr class="separator:a332997ae2e6dd3565efb9ccddf99f7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9050af730db1484aa1d44228e97a8c78"><td class="memItemLeft" align="right" valign="top"><a id="a9050af730db1484aa1d44228e97a8c78"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1VolumeGLProcessor.html#a9050af730db1484aa1d44228e97a8c78">preProcess</a> (<a class="el" href="classinviwo_1_1TextureUnitContainer.html">TextureUnitContainer</a> &amp;cont)</td></tr>
-<tr class="memdesc:a9050af730db1484aa1d44228e97a8c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function gets called right before the actual processing but after the shader has been activated. Overwrite this function in the derived class to perform things like custom shader setup <br /></td></tr>
-<tr class="separator:a9050af730db1484aa1d44228e97a8c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfab80071ec4f01565edf2e8f93a0709"><td class="memItemLeft" align="right" valign="top"><a id="abfab80071ec4f01565edf2e8f93a0709"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1VolumeGLProcessor.html#abfab80071ec4f01565edf2e8f93a0709">postProcess</a> ()</td></tr>
-<tr class="memdesc:abfab80071ec4f01565edf2e8f93a0709"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function gets called at the end of the process function Overwrite this function in the derived class to perform post-processing <br /></td></tr>
-<tr class="separator:abfab80071ec4f01565edf2e8f93a0709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a8d1d4e9d8e3745938352795695faff"><td class="memItemLeft" align="right" valign="top"><a id="a8a8d1d4e9d8e3745938352795695faff"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1VolumeGLProcessor.html#a8a8d1d4e9d8e3745938352795695faff">afterInportChanged</a> ()</td></tr>
-<tr class="memdesc:a8a8d1d4e9d8e3745938352795695faff"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function gets called whenever the inport changes Overwrite this function in the derived class to be notified of inport onChange events <br /></td></tr>
-<tr class="separator:a8a8d1d4e9d8e3745938352795695faff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f72392c4c48742f3ca6eac7598a31bc"><td class="memItemLeft" align="right" valign="top"><a id="a1f72392c4c48742f3ca6eac7598a31bc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1VolumeGLProcessor.html#a1f72392c4c48742f3ca6eac7598a31bc">preProcess</a> (<a class="el" href="classinviwo_1_1TextureUnitContainer.html">TextureUnitContainer</a> &amp;cont)</td></tr>
+<tr class="memdesc:a1f72392c4c48742f3ca6eac7598a31bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function gets called right before the actual processing but after the shader has been activated. Overwrite this function in the derived class to perform things like custom shader setup <br /></td></tr>
+<tr class="separator:a1f72392c4c48742f3ca6eac7598a31bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a5b600a734275972f4991f966217fa"><td class="memItemLeft" align="right" valign="top"><a id="a43a5b600a734275972f4991f966217fa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1VolumeGLProcessor.html#a43a5b600a734275972f4991f966217fa">postProcess</a> ()</td></tr>
+<tr class="memdesc:a43a5b600a734275972f4991f966217fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function gets called at the end of the process function Overwrite this function in the derived class to perform post-processing <br /></td></tr>
+<tr class="separator:a43a5b600a734275972f4991f966217fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7ed629a5a449696cc32b97bf191c6a"><td class="memItemLeft" align="right" valign="top"><a id="ada7ed629a5a449696cc32b97bf191c6a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinviwo_1_1VolumeGLProcessor.html#ada7ed629a5a449696cc32b97bf191c6a">afterInportChanged</a> ()</td></tr>
+<tr class="memdesc:ada7ed629a5a449696cc32b97bf191c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function gets called whenever the inport changes Overwrite this function in the derived class to be notified of inport onChange events <br /></td></tr>
+<tr class="separator:ada7ed629a5a449696cc32b97bf191c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classinviwo_1_1Processor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classinviwo_1_1Processor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classinviwo_1_1Processor.html">inviwo::Processor</a></td></tr>
 <tr class="memitem:a8789ed504b9d8e5b5ae0adea0683b214 inherit pro_methods_classinviwo_1_1Processor"><td class="memItemLeft" align="right" valign="top"><a id="a8789ed504b9d8e5b5ae0adea0683b214"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addPort</b> (<a class="el" href="classinviwo_1_1Inport.html">Inport</a> &amp;port, const std::string &amp;portGroup=&quot;default&quot;)</td></tr>
@@ -598,7 +602,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>g
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for volume processing on the GPU using OpenGL. </p>
-<p>The <a class="el" href="classinviwo_1_1VolumeGLProcessor.html" title="Base class for volume processing on the GPU using OpenGL. ">VolumeGLProcessor</a> provides the basic structure for volume processing on the GPU. Derived shaders have to provide a custom fragment shader which is used during rendering. Optionally, derived classes can overwrite <a class="el" href="classinviwo_1_1VolumeGLProcessor.html#abfab80071ec4f01565edf2e8f93a0709" title="this function gets called at the end of the process function Overwrite this function in the derived c...">VolumeGLProcessor::postProcess()</a> to perform post-processing of the output data stored in the outport. Furthermore, it is possible to be notified of inport changes by overwriting <a class="el" href="classinviwo_1_1VolumeGLProcessor.html#a8a8d1d4e9d8e3745938352795695faff" title="this function gets called whenever the inport changes Overwrite this function in the derived class to...">VolumeGLProcessor::afterInportChanged()</a>.</p>
+<p>The <a class="el" href="classinviwo_1_1VolumeGLProcessor.html" title="Base class for volume processing on the GPU using OpenGL. ">VolumeGLProcessor</a> provides the basic structure for volume processing on the GPU. Derived shaders have to provide a custom fragment shader which is used during rendering. Optionally, derived classes can overwrite <a class="el" href="classinviwo_1_1VolumeGLProcessor.html#a43a5b600a734275972f4991f966217fa" title="this function gets called at the end of the process function Overwrite this function in the derived c...">VolumeGLProcessor::postProcess()</a> to perform post-processing of the output data stored in the outport. Furthermore, it is possible to be notified of inport changes by overwriting <a class="el" href="classinviwo_1_1VolumeGLProcessor.html#ada7ed629a5a449696cc32b97bf191c6a" title="this function gets called whenever the inport changes Overwrite this function in the derived class to...">VolumeGLProcessor::afterInportChanged()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classinviwo_1_1ImageGLProcessor.html" title="Base class for image processing on the GPU using OpenGL. ">ImageGLProcessor</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5507063875807fde0d19b43ccc20364f"></a>

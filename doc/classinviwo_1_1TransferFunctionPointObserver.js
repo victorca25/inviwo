@@ -1,4 +1,4 @@
 var classinviwo_1_1TransferFunctionPointObserver =
 [
-    [ "onTransferFunctionPointChange", "classinviwo_1_1TransferFunctionPointObserver.html#afe51d131a04ebe13aa8bc91c0f096493", null ]
+    [ "onTransferFunctionPointChange", "classinviwo_1_1TransferFunctionPointObserver.html#a08252878b75c605b8142e88e1a0c1311", null ]
 ];

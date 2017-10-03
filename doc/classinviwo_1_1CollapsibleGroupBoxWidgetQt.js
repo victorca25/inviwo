@@ -4,6 +4,7 @@ var classinviwo_1_1CollapsibleGroupBoxWidgetQt =
     [ "CollapsibleGroupBoxWidgetQt", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#aa225d848d64e19679e66fab8591e18ce", null ],
     [ "addProperty", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#ae2189901ee9e3d0bfb7ab2ba6ce533d8", null ],
     [ "generateWidget", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#ab5be41e178bbf0d00167b46a427d3602", null ],
+    [ "getContextMenu", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#aae692d721233e01f43a04b288dc1dbf8", null ],
     [ "getDisplayName", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#ae183de5de1ce06f91430cc11ccd2b1f5", null ],
     [ "getProperties", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#aed473adad8ceace4356d1cedae66e119", null ],
     [ "getPropertyOwner", "classinviwo_1_1CollapsibleGroupBoxWidgetQt.html#a3bc50d0d393b525d8856626bb829b08d", null ],

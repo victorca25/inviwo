@@ -41,6 +41,7 @@ var classinviwo_1_1Shader =
     [ "onReload", "classinviwo_1_1Shader.html#a0bbe796dae30f33d87c09fc19240a560", null ],
     [ "operator=", "classinviwo_1_1Shader.html#a4e78f8ed54b310958a05eec95b85321b", null ],
     [ "operator=", "classinviwo_1_1Shader.html#ad193d10093a6150657f60f810274cc49", null ],
+    [ "operator[]", "classinviwo_1_1Shader.html#af9cf0c2b225fdc0b0c2e78d304afb7f4", null ],
     [ "removeOnReload", "classinviwo_1_1Shader.html#a93065e8b028f135ed863bf623f972a13", null ],
     [ "setUniform", "classinviwo_1_1Shader.html#a8426e41e3a63ff89a30862b82058736e", null ],
     [ "setUniform", "classinviwo_1_1Shader.html#a3a79ebbc594f8b8ea55ee74dadf33525", null ],

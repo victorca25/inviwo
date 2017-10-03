@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['packedlightsource',['PackedLightSource',['../structinviwo_1_1PackedLightSource.html',1,'inviwo']]],
   ['parallelcoordinates',['ParallelCoordinates',['../classinviwo_1_1plot_1_1ParallelCoordinates.html',1,'inviwo::plot']]],
   ['parsewrapper',['ParseWrapper',['../structinviwo_1_1ParseWrapper.html',1,'inviwo']]],
   ['partialconnection',['PartialConnection',['../structinviwo_1_1util_1_1detail_1_1PartialConnection.html',1,'inviwo::util::detail']]],
@@ -67,6 +66,7 @@ var searchData=
   ['positionmetadata',['PositionMetaData',['../classinviwo_1_1PositionMetaData.html',1,'inviwo']]],
   ['positionproperty',['PositionProperty',['../classinviwo_1_1PositionProperty.html',1,'inviwo']]],
   ['postprocessingmodule',['PostProcessingModule',['../classinviwo_1_1PostProcessingModule.html',1,'inviwo']]],
+  ['presentationprocessor',['PresentationProcessor',['../classinviwo_1_1PresentationProcessor.html',1,'inviwo']]],
   ['processmemoryinfo',['ProcessMemoryInfo',['../structinviwo_1_1SystemCapabilities_1_1ProcessMemoryInfo.html',1,'inviwo::SystemCapabilities']]],
   ['processor',['Processor',['../classinviwo_1_1Processor.html',1,'inviwo']]],
   ['processordelete',['processorDelete',['../structinviwo_1_1processorDelete.html',1,'inviwo']]],
@@ -78,7 +78,6 @@ var searchData=
   ['processorgraphicsitem',['ProcessorGraphicsItem',['../classinviwo_1_1ProcessorGraphicsItem.html',1,'inviwo']]],
   ['processorinfo',['ProcessorInfo',['../structinviwo_1_1ProcessorInfo.html',1,'inviwo']]],
   ['processorinportgraphicsitem',['ProcessorInportGraphicsItem',['../classinviwo_1_1ProcessorInportGraphicsItem.html',1,'inviwo']]],
-  ['processorkernelowner',['ProcessorKernelOwner',['../classinviwo_1_1ProcessorKernelOwner.html',1,'inviwo']]],
   ['processorlinkgraphicsitem',['ProcessorLinkGraphicsItem',['../classinviwo_1_1ProcessorLinkGraphicsItem.html',1,'inviwo']]],
   ['processormetadata',['ProcessorMetaData',['../classinviwo_1_1ProcessorMetaData.html',1,'inviwo']]],
   ['processormetadataobserver',['ProcessorMetaDataObserver',['../classinviwo_1_1ProcessorMetaDataObserver.html',1,'inviwo']]],
@@ -115,7 +114,6 @@ var searchData=
   ['processorwidgetobservable',['ProcessorWidgetObservable',['../classinviwo_1_1ProcessorWidgetObservable.html',1,'inviwo']]],
   ['processorwidgetobserver',['ProcessorWidgetObserver',['../classinviwo_1_1ProcessorWidgetObserver.html',1,'inviwo']]],
   ['processorwidgetqt',['ProcessorWidgetQt',['../classinviwo_1_1ProcessorWidgetQt.html',1,'inviwo']]],
-  ['programidentifier',['ProgramIdentifier',['../structinviwo_1_1KernelManager_1_1ProgramIdentifier.html',1,'inviwo::KernelManager']]],
   ['progressbar',['ProgressBar',['../classinviwo_1_1ProgressBar.html',1,'inviwo']]],
   ['progressbarobservable',['ProgressBarObservable',['../classinviwo_1_1ProgressBarObservable.html',1,'inviwo']]],
   ['progressbarobserver',['ProgressBarObserver',['../classinviwo_1_1ProgressBarObserver.html',1,'inviwo']]],

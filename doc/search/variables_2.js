@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['datarange',['dataRange',['../classinviwo_1_1DataMapper.html#ace2bd755e9c66a1075c0215966cc4bd0',1,'inviwo::DataMapper']]]
+  ['extension_5f',['extension_',['../classinviwo_1_1FileExtension.html#a3efef694f9b7e49d003f0f1e86bcd5db',1,'inviwo::FileExtension']]]
 ];

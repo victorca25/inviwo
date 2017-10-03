@@ -1,6 +1,6 @@
 var classinviwo_1_1TransferFunctionObserver =
 [
-    [ "onControlPointAdded", "classinviwo_1_1TransferFunctionObserver.html#a7f72e1c7e95aa336248eb729a139396d", null ],
-    [ "onControlPointChanged", "classinviwo_1_1TransferFunctionObserver.html#abe270f1288304c51aef33b598e94b420", null ],
-    [ "onControlPointRemoved", "classinviwo_1_1TransferFunctionObserver.html#a2b1504db4a5bb58dc94b9c9a66d13c04", null ]
+    [ "onControlPointAdded", "classinviwo_1_1TransferFunctionObserver.html#a9a4a6c379370986253044faa7b13e5cf", null ],
+    [ "onControlPointChanged", "classinviwo_1_1TransferFunctionObserver.html#af717729328c7710d8a78d3d1aaed8471", null ],
+    [ "onControlPointRemoved", "classinviwo_1_1TransferFunctionObserver.html#acf978943ae6b949e13e087aa4a629b8a", null ]
 ];

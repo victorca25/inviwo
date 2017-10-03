@@ -604,42 +604,6 @@ var group__processors =
       [ "transferFunction_", "classinviwo_1_1VolumeRaycaster.html#ab25d2f2cc9a66ec6a524e3cebcb66ca6", null ],
       [ "volumePort_", "classinviwo_1_1VolumeRaycaster.html#ab60ccd71e8016bb232f86ed2fd4380dc", null ]
     ] ],
-    [ "EntryExitPointsCLProcessor", "classinviwo_1_1EntryExitPointsCLProcessor.html", [
-      [ "EntryExitPointsCLProcessor", "classinviwo_1_1EntryExitPointsCLProcessor.html#a6d078338eca86daac0422f2e1ed9145a", null ],
-      [ "~EntryExitPointsCLProcessor", "classinviwo_1_1EntryExitPointsCLProcessor.html#afef84ed983ec48487a09ec24cc03c003", null ],
-      [ "getProcessorInfo", "classinviwo_1_1EntryExitPointsCLProcessor.html#add5f0bb0f5cd02b483fb520963287aca", null ],
-      [ "onKernelCompiled", "classinviwo_1_1EntryExitPointsCLProcessor.html#aa52c90dbc706407a19fabdf7b67961dd", null ],
-      [ "process", "classinviwo_1_1EntryExitPointsCLProcessor.html#a5463f0f49f65580a98777a61bfbe035d", null ]
-    ] ],
-    [ "GrayscaleCLProcessor", "classinviwo_1_1GrayscaleCLProcessor.html", [
-      [ "GrayscaleCLProcessor", "classinviwo_1_1GrayscaleCLProcessor.html#ac067c199b9623ad7a25f0a7d5890b038", null ],
-      [ "~GrayscaleCLProcessor", "classinviwo_1_1GrayscaleCLProcessor.html#a612e1c9af4d016632a59512fb6e8091b", null ],
-      [ "getProcessorInfo", "classinviwo_1_1GrayscaleCLProcessor.html#a306cdd54ed26d607533ccc6dab378eff", null ],
-      [ "process", "classinviwo_1_1GrayscaleCLProcessor.html#a5f6d1ea02675f63a7c65e229b758d1a0", null ]
-    ] ],
-    [ "VolumeFirstHitCLProcessor", "classinviwo_1_1VolumeFirstHitCLProcessor.html", [
-      [ "VolumeFirstHitCLProcessor", "classinviwo_1_1VolumeFirstHitCLProcessor.html#aff34a2674d59f7881f9e81a3405a2e2a", null ],
-      [ "~VolumeFirstHitCLProcessor", "classinviwo_1_1VolumeFirstHitCLProcessor.html#a867d57168c6f6c351caf3b51407ea8f8", null ],
-      [ "firstHit", "classinviwo_1_1VolumeFirstHitCLProcessor.html#a987728cfbc7282b276f228e72987e958", null ],
-      [ "getProcessorInfo", "classinviwo_1_1VolumeFirstHitCLProcessor.html#ab5d72f441ea256c88dfdb3788e2a0292", null ],
-      [ "process", "classinviwo_1_1VolumeFirstHitCLProcessor.html#a550da21f7bd3d8023ce9674e5e82fe36", null ]
-    ] ],
-    [ "VolumeMaxCLProcessor", "classinviwo_1_1VolumeMaxCLProcessor.html", [
-      [ "VolumeMaxCLProcessor", "classinviwo_1_1VolumeMaxCLProcessor.html#ad196282b8c35bbbe9694f42472a7d2c8", null ],
-      [ "~VolumeMaxCLProcessor", "classinviwo_1_1VolumeMaxCLProcessor.html#ab559a3f3f08bbebd16d6998b87d342b6", null ],
-      [ "buildKernel", "classinviwo_1_1VolumeMaxCLProcessor.html#ab717b3cb9950ccbc4026b19f72453b23", null ],
-      [ "executeVolumeOperation", "classinviwo_1_1VolumeMaxCLProcessor.html#a1a507cb0708dafd190df53bc9bdfd0d1", null ],
-      [ "getProcessorInfo", "classinviwo_1_1VolumeMaxCLProcessor.html#a1d1017a1b467e1f37db988536062125b", null ],
-      [ "process", "classinviwo_1_1VolumeMaxCLProcessor.html#ae140ea096242d37a9dc86acd7f548871", null ]
-    ] ],
-    [ "VolumeRaycasterCLProcessor", "classinviwo_1_1VolumeRaycasterCLProcessor.html", [
-      [ "VolumeRaycasterCLProcessor", "classinviwo_1_1VolumeRaycasterCLProcessor.html#a2e192dc86b7d5b32526d6d1c5d465784", null ],
-      [ "~VolumeRaycasterCLProcessor", "classinviwo_1_1VolumeRaycasterCLProcessor.html#adb72a4184b5703b7e1193f08dff329d9", null ],
-      [ "getProcessorInfo", "classinviwo_1_1VolumeRaycasterCLProcessor.html#accdae23173e9aa3f5075a5cc34a3855a", null ],
-      [ "isReady", "classinviwo_1_1VolumeRaycasterCLProcessor.html#aacfef97e1e173946692161315392a83f", null ],
-      [ "onKernelCompiled", "classinviwo_1_1VolumeRaycasterCLProcessor.html#a12ad5335476f33686745da80d0bbeb00", null ],
-      [ "process", "classinviwo_1_1VolumeRaycasterCLProcessor.html#ac7782b4815c14908f6f8d18311129db0", null ]
-    ] ],
     [ "BrushingAndLinkingProcessor", "classinviwo_1_1BrushingAndLinkingProcessor.html", [
       [ "BrushingAndLinkingProcessor", "classinviwo_1_1BrushingAndLinkingProcessor.html#a54a6d179dd24fb14dc84b490f4c7fd29", null ],
       [ "~BrushingAndLinkingProcessor", "classinviwo_1_1BrushingAndLinkingProcessor.html#aab3b62712dfc95be66df41896e9019a2", null ],
@@ -711,6 +675,19 @@ var group__processors =
       [ "~NumPyMeshCreateTest", "classinviwo_1_1NumPyMeshCreateTest.html#a916c138ba775b72f00bd365a53fd034b", null ],
       [ "getProcessorInfo", "classinviwo_1_1NumPyMeshCreateTest.html#ad510a3c8e2a5f703d0c099513b29e19d", null ],
       [ "process", "classinviwo_1_1NumPyMeshCreateTest.html#a953927096a62e744166fbccab2d9898a", null ]
+    ] ],
+    [ "CropWidget", "classinviwo_1_1CropWidget.html", [
+      [ "InteractionElement", "classinviwo_1_1CropWidget.html#a4ba4503dd88fc95c7fc6ff41ac1e1b8b", [
+        [ "LowerBound", "classinviwo_1_1CropWidget.html#a4ba4503dd88fc95c7fc6ff41ac1e1b8ba93673fa92b8c57d1e6739d14f422304d", null ],
+        [ "UpperBound", "classinviwo_1_1CropWidget.html#a4ba4503dd88fc95c7fc6ff41ac1e1b8baa4e5074903e0dfd2f527af80e2c64294", null ],
+        [ "Middle", "classinviwo_1_1CropWidget.html#a4ba4503dd88fc95c7fc6ff41ac1e1b8bab1ca34f82e83c52b010f86955f264e05", null ],
+        [ "None", "classinviwo_1_1CropWidget.html#a4ba4503dd88fc95c7fc6ff41ac1e1b8ba6adf97f83acf6453d4a6a4b1070f3754", null ]
+      ] ],
+      [ "CropWidget", "classinviwo_1_1CropWidget.html#a988af2623c9fb52ce59786ca7733409b", null ],
+      [ "~CropWidget", "classinviwo_1_1CropWidget.html#a0d2b554f9b9f08c569ffb2b8f23cc5ab", null ],
+      [ "getProcessorInfo", "classinviwo_1_1CropWidget.html#a6e61a05a58ce369633c26dacdbda7eab", null ],
+      [ "initializeResources", "classinviwo_1_1CropWidget.html#a3dd832cd1a96c154f791cc9515275395", null ],
+      [ "process", "classinviwo_1_1CropWidget.html#aad307482dc405acb0f85c7efe01c69d9", null ]
     ] ],
     [ "PathLines", "classinviwo_1_1PathLines.html", [
       [ "ColoringMethod", "classinviwo_1_1PathLines.html#aa7316c0878eb98bfd1736151d181b315", [
@@ -1139,11 +1116,23 @@ var group__processors =
       [ "tex", "classinviwo_1_1FXAA.html#a2d11f342ef6dcb4aae1a8479cedb4c76", null ],
       [ "width", "classinviwo_1_1FXAA.html#a2dcefd1b13cc01caed63e445355f2a6c", null ]
     ] ],
+    [ "HdrBloom", "classinviwo_1_1HdrBloom.html", [
+      [ "HdrBloom", "classinviwo_1_1HdrBloom.html#a04c0a7c214b0f51eb31ad40aaff75ec4", null ],
+      [ "~HdrBloom", "classinviwo_1_1HdrBloom.html#a7ffbee4a6d8e82475f543c424b3b0f5e", null ],
+      [ "getProcessorInfo", "classinviwo_1_1HdrBloom.html#a1ae16dff1ee9c2e2cc009fd7a5c7d15c", null ],
+      [ "process", "classinviwo_1_1HdrBloom.html#a5e88246d57a49e22afa945b4f0d35144", null ]
+    ] ],
     [ "ImageBrightnessContrast", "classinviwo_1_1ImageBrightnessContrast.html", [
       [ "ImageBrightnessContrast", "classinviwo_1_1ImageBrightnessContrast.html#a584a3ed06c3e97eb17218bd8e2cbf010", null ],
       [ "~ImageBrightnessContrast", "classinviwo_1_1ImageBrightnessContrast.html#a88574b441f51f7fbe87e98fac1b47f2d", null ],
       [ "getProcessorInfo", "classinviwo_1_1ImageBrightnessContrast.html#af457986c025178605d30b4f51505249b", null ],
       [ "preProcess", "classinviwo_1_1ImageBrightnessContrast.html#af0eeb38e50e63dd2cb685da01cc264a8", null ]
+    ] ],
+    [ "ImageEdgeDarken", "classinviwo_1_1ImageEdgeDarken.html", [
+      [ "ImageEdgeDarken", "classinviwo_1_1ImageEdgeDarken.html#a975d6c4649103c8b822d789f543b0059", null ],
+      [ "~ImageEdgeDarken", "classinviwo_1_1ImageEdgeDarken.html#a73d49ae60fb42248659ab25a79d8848f", null ],
+      [ "getProcessorInfo", "classinviwo_1_1ImageEdgeDarken.html#a497e9f613792f12693108af5ac8e83a2", null ],
+      [ "preProcess", "classinviwo_1_1ImageEdgeDarken.html#acf83a6f1b809cb742fa11dea98001f0e", null ]
     ] ],
     [ "ImageHueSaturationLuminance", "classinviwo_1_1ImageHueSaturationLuminance.html", [
       [ "ImageHueSaturationLuminance", "classinviwo_1_1ImageHueSaturationLuminance.html#a5c9a9153716d763e86d1bf1a8a4893c5", null ],
@@ -1196,6 +1185,28 @@ var group__processors =
       [ "~NumPyVolume", "classinviwo_1_1NumPyVolume.html#a7e3d8da16bc94d1f930f9ac6250ef95d", null ],
       [ "getProcessorInfo", "classinviwo_1_1NumPyVolume.html#a2c7ccb3bec37a8d1f4d2b98894fa77bf", null ],
       [ "process", "classinviwo_1_1NumPyVolume.html#a233e4e8ccbc6560e2c0ab68ef09685c4", null ]
+    ] ],
+    [ "CameraWidget", "classinviwo_1_1CameraWidget.html", [
+      [ "Interaction", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4", [
+        [ "HorizontalRotation", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4a05bbf25c2d4b4881068ee9a19f6d681b", null ],
+        [ "VerticalRotation", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4a4bf64c622d96fb58767ee0625e85975f", null ],
+        [ "FreeRotation", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4afc8e565c14d8c784cdb886ae1e6474f0", null ],
+        [ "Roll", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4a25b5eb3bbef15385b5f5ff3abe46f342", null ],
+        [ "Zoom", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4a4252b72e6ebcd4d4b4c2e46a786f03d2", null ],
+        [ "None", "classinviwo_1_1CameraWidget.html#a96e769fbc932997f50af0f67d50d39c4a6adf97f83acf6453d4a6a4b1070f3754", null ]
+      ] ],
+      [ "CameraWidget", "classinviwo_1_1CameraWidget.html#a6d5340180972f7f37ef9e6c3db2f4ab8", null ],
+      [ "~CameraWidget", "classinviwo_1_1CameraWidget.html#a1f9689aa919aca6d6d9049ecba4e0a61", null ],
+      [ "getProcessorInfo", "classinviwo_1_1CameraWidget.html#a9b0990766631828402ad135cbb930460", null ],
+      [ "initializeResources", "classinviwo_1_1CameraWidget.html#a4eaccf606a1948b2a177787688bce119", null ],
+      [ "process", "classinviwo_1_1CameraWidget.html#a03bf64a2d25c21a62bc30808e361ffa6", null ]
+    ] ],
+    [ "PresentationProcessor", "classinviwo_1_1PresentationProcessor.html", [
+      [ "PresentationProcessor", "classinviwo_1_1PresentationProcessor.html#a899aef53edab53582406495526ff1969", null ],
+      [ "~PresentationProcessor", "classinviwo_1_1PresentationProcessor.html#a60263a469f44cf1cbd996569b04d260f", null ],
+      [ "getProcessorInfo", "classinviwo_1_1PresentationProcessor.html#a423ac03a2d78f5a53fe107004b4a4ee8", null ],
+      [ "isReady", "classinviwo_1_1PresentationProcessor.html#a8cd831de241c715fa3dca50b2d42744f", null ],
+      [ "process", "classinviwo_1_1PresentationProcessor.html#ac3d0e4d74204c30c84be9e6c6ce96c3a", null ]
     ] ],
     [ "DiscardShortLines", "classinviwo_1_1DiscardShortLines.html", [
       [ "DiscardShortLines", "classinviwo_1_1DiscardShortLines.html#a648a52a984756b755076b9b09c2eda1d", null ],

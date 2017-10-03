@@ -59,7 +59,7 @@ var group__properties =
       [ "CameraProperty", "classinviwo_1_1CameraProperty.html#adc44a0adb72b146e6167072a81ab43f9", null ],
       [ "CameraProperty", "classinviwo_1_1CameraProperty.html#a811a9098d818e21e7f709f3d6d62a3a5", null ],
       [ "~CameraProperty", "classinviwo_1_1CameraProperty.html#ad82ca8a91f2c2f46874599d7c9cffe4d", null ],
-      [ "adjustCameraToData", "classinviwo_1_1CameraProperty.html#a08f11760deda05ab64242d20cab3c08c", null ],
+      [ "adjustCameraToData", "classinviwo_1_1CameraProperty.html#a83cbbd9d8e67413cc341ceac61be9aa9", null ],
       [ "clone", "classinviwo_1_1CameraProperty.html#af0f50e58d75e3e887e1046538e4e70b6", null ],
       [ "get", "classinviwo_1_1CameraProperty.html#a988a566b883ee481a334ff91fe3b591c", null ],
       [ "get", "classinviwo_1_1CameraProperty.html#ad5f561c1170cb95bcbcc830d655fbe65", null ],
@@ -216,6 +216,8 @@ var group__properties =
       [ "serialize", "classinviwo_1_1MinMaxProperty.html#a03e88a983bd76c4e6d7dc83317f1cf86", null ],
       [ "set", "classinviwo_1_1MinMaxProperty.html#a67f6ac45808a1bbf20c75912bc00219b", null ],
       [ "set", "classinviwo_1_1MinMaxProperty.html#a8f74e8aea95dd93cdbb5789f3a70e932", null ],
+      [ "set", "classinviwo_1_1MinMaxProperty.html#a41446559491ec841f9e0481b845a9005", null ],
+      [ "set", "classinviwo_1_1MinMaxProperty.html#a1aad4db91814cbbf1cb74b5d188596a7", null ],
       [ "setCurrentStateAsDefault", "classinviwo_1_1MinMaxProperty.html#a90e719f5733813bbfb849e8326ab8d64", null ],
       [ "setEnd", "classinviwo_1_1MinMaxProperty.html#a9bfdce73ba843e45f9644c09ac14660c", null ],
       [ "setIncrement", "classinviwo_1_1MinMaxProperty.html#a8b6f431360faad60e71ec4d86b02b343", null ],
@@ -225,7 +227,7 @@ var group__properties =
       [ "setRangeMin", "classinviwo_1_1MinMaxProperty.html#aaa05c878a194694831e20332799ea3cb", null ],
       [ "setRangeNormalized", "classinviwo_1_1MinMaxProperty.html#a64c81f15b7e6cab67f7b30f1171ccefb", null ],
       [ "setStart", "classinviwo_1_1MinMaxProperty.html#a3e52c335a2f15632ebaf4bfebb44cd8e", null ],
-      [ "validateValues", "classinviwo_1_1MinMaxProperty.html#ac6c35458556450cff796a061f22de9d8", null ]
+      [ "validateValues", "classinviwo_1_1MinMaxProperty.html#a7ac5ea414feebb54a161b49dec659891", null ]
     ] ],
     [ "MultiFileProperty", "classinviwo_1_1MultiFileProperty.html", [
       [ "MultiFileProperty", "classinviwo_1_1MultiFileProperty.html#a3cb481a24919497b77efd24dc3b4ce43", null ],
@@ -271,10 +273,12 @@ var group__properties =
       [ "serialize", "classinviwo_1_1OrdinalProperty.html#a473d304d944c2f2d7eca68c202e1abc6", null ],
       [ "set", "classinviwo_1_1OrdinalProperty.html#aadd8c8fe62f39df0af943fcd92283dba", null ],
       [ "set", "classinviwo_1_1OrdinalProperty.html#afac040e9cd842f323281480536295ed2", null ],
+      [ "set", "classinviwo_1_1OrdinalProperty.html#a197d2df94777e52ff9340558df1cf6dc", null ],
       [ "setCurrentStateAsDefault", "classinviwo_1_1OrdinalProperty.html#af4fbd0908b054a41666dc8e8843325e7", null ],
       [ "setIncrement", "classinviwo_1_1OrdinalProperty.html#a9982d6241752072c524d489fc07fe8bb", null ],
       [ "setMaxValue", "classinviwo_1_1OrdinalProperty.html#a227b64e2e53c5a46ba50d301c4baab1a", null ],
-      [ "setMinValue", "classinviwo_1_1OrdinalProperty.html#ac94583ad792594c8ca438127e2114e76", null ]
+      [ "setMinValue", "classinviwo_1_1OrdinalProperty.html#ac94583ad792594c8ca438127e2114e76", null ],
+      [ "validateValues", "classinviwo_1_1OrdinalProperty.html#ad5818703383be5fa9af3c366906df8c7", null ]
     ] ],
     [ "PlaneProperty", "classinviwo_1_1PlaneProperty.html", [
       [ "PlaneProperty", "classinviwo_1_1PlaneProperty.html#a32d6eaaa60a230615342613cc9a26911", null ],

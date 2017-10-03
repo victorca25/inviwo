@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="inviwo_dark.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Inviwo
-   &#160;<span id="projectnumber">0.9.8</span>
+   &#160;<span id="projectnumber">0.9.9</span>
    </div>
    <div id="projectbrief">Inviwo documentation</div>
   </td>
@@ -120,6 +120,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>homogeneousClip</b> (
 <tr class="memitem:addb7bdc353d310085473b5a0c0388932"><td class="memItemLeft" align="right" valign="top"><a id="addb7bdc353d310085473b5a0c0388932"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (void)</td></tr>
 <tr class="separator:addb7bdc353d310085473b5a0c0388932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cae267d18f5f9f7627fa2a247d3a81e"><td class="memItemLeft" align="right" valign="top"><a id="a9cae267d18f5f9f7627fa2a247d3a81e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>layout</b> (location=4) in uint in_PickId</td></tr>
+<tr class="separator:a9cae267d18f5f9f7627fa2a247d3a81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a509fce62b85a37e15bc3dfde4e90f2"><td class="memItemLeft" align="right" valign="top"><a id="a4a509fce62b85a37e15bc3dfde4e90f2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:a4a509fce62b85a37e15bc3dfde4e90f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +158,9 @@ in vec2&#160;</td><td class="memItemRight" valign="bottom"><b>texCoord_</b></td>
 <tr class="memitem:a0a4cc1e45bb8910a83971ded9f8f894d"><td class="memItemLeft" align="right" valign="top"><a id="a0a4cc1e45bb8910a83971ded9f8f894d"></a>
 in vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b></td></tr>
 <tr class="separator:a0a4cc1e45bb8910a83971ded9f8f894d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c00663557e016bdc92668182051e04"><td class="memItemLeft" align="right" valign="top"><a id="ae6c00663557e016bdc92668182051e04"></a>
+flat in vec4&#160;</td><td class="memItemRight" valign="bottom"><b>pickColor_</b></td></tr>
+<tr class="separator:ae6c00663557e016bdc92668182051e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b922570ecad4e344c1f542f49c2bfe"><td class="memItemLeft" align="right" valign="top"><a id="a08b922570ecad4e344c1f542f49c2bfe"></a>
 uniform float&#160;</td><td class="memItemRight" valign="bottom"><b>miterLimit</b> = 0.8</td></tr>
 <tr class="separator:a08b922570ecad4e344c1f542f49c2bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +173,9 @@ in vec4&#160;</td><td class="memItemRight" valign="bottom"><b>vertexColor_</b> [
 <tr class="memitem:a05e069a7565e7116c759f4bca10fa6d3"><td class="memItemLeft" align="right" valign="top"><a id="a05e069a7565e7116c759f4bca10fa6d3"></a>
 in vec4&#160;</td><td class="memItemRight" valign="bottom"><b>worldPosition_</b> []</td></tr>
 <tr class="separator:a05e069a7565e7116c759f4bca10fa6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6bf18972ce1139fcdeec0edbb426e6"><td class="memItemLeft" align="right" valign="top"><a id="aac6bf18972ce1139fcdeec0edbb426e6"></a>
+in vec4&#160;</td><td class="memItemRight" valign="bottom"><b>pickColors_</b> []</td></tr>
+<tr class="separator:aac6bf18972ce1139fcdeec0edbb426e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60bec176e5f5c6e51532687993e9ad0"><td class="memItemLeft" align="right" valign="top"><a id="ad60bec176e5f5c6e51532687993e9ad0"></a>
 out float&#160;</td><td class="memItemRight" valign="bottom"><b>segmentLength_</b></td></tr>
 <tr class="separator:ad60bec176e5f5c6e51532687993e9ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +191,15 @@ out vec2&#160;</td><td class="memItemRight" valign="bottom"><b>texCoord_</b></td
 <tr class="memitem:acd3174cf3fb31de6f3502b5482f95f2a"><td class="memItemLeft" align="right" valign="top"><a id="acd3174cf3fb31de6f3502b5482f95f2a"></a>
 out vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b></td></tr>
 <tr class="separator:acd3174cf3fb31de6f3502b5482f95f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2534dec0e3fe2ac5aea0c916af3f25ec"><td class="memItemLeft" align="right" valign="top"><a id="a2534dec0e3fe2ac5aea0c916af3f25ec"></a>
+flat out vec4&#160;</td><td class="memItemRight" valign="bottom"><b>pickColor_</b></td></tr>
+<tr class="separator:a2534dec0e3fe2ac5aea0c916af3f25ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7677fa4626437fdae27af4ae9f21dad9"><td class="memItemLeft" align="right" valign="top"><a id="a7677fa4626437fdae27af4ae9f21dad9"></a>
 uniform GeometryParameters&#160;</td><td class="memItemRight" valign="bottom"><b>geometry</b></td></tr>
 <tr class="separator:a7677fa4626437fdae27af4ae9f21dad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25a14a24d6c73317b57b96871053f79"><td class="memItemLeft" align="right" valign="top"><a id="ae25a14a24d6c73317b57b96871053f79"></a>
+uniform bool&#160;</td><td class="memItemRight" valign="bottom"><b>pickingEnabled</b> = false</td></tr>
+<tr class="separator:ae25a14a24d6c73317b57b96871053f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db20689801f086771634b52a77a6707"><td class="memItemLeft" align="right" valign="top"><a id="a2db20689801f086771634b52a77a6707"></a>
 out vec4&#160;</td><td class="memItemRight" valign="bottom"><b>worldPosition_</b></td></tr>
 <tr class="separator:a2db20689801f086771634b52a77a6707"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +215,9 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><b>vertexColor_</b><
 <tr class="memitem:a57994ec50e49023b046af0587a902fbb"><td class="memItemLeft" align="right" valign="top"><a id="a57994ec50e49023b046af0587a902fbb"></a>
 out vec3&#160;</td><td class="memItemRight" valign="bottom"><b>texCoord_</b></td></tr>
 <tr class="separator:a57994ec50e49023b046af0587a902fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0d4f1a244e914b40b7742875d38145"><td class="memItemLeft" align="right" valign="top"><a id="a6f0d4f1a244e914b40b7742875d38145"></a>
+flat out vec4&#160;</td><td class="memItemRight" valign="bottom"><b>pickColors_</b></td></tr>
+<tr class="separator:a6f0d4f1a244e914b40b7742875d38145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section remark"><dt>Remarks</dt><dd><b>Fragment-Shader</b></dd>

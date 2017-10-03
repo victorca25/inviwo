@@ -1,7 +1,7 @@
 var classinviwo_1_1SpatialSampler =
 [
     [ "Space", "classinviwo_1_1SpatialSampler.html#a490c9974273724aba55cfb4104cc002c", null ],
-    [ "SpatialSampler", "classinviwo_1_1SpatialSampler.html#a9d56335130703f22a22533528086b22e", null ],
+    [ "SpatialSampler", "classinviwo_1_1SpatialSampler.html#a9a3af1799278abb8dc06fe05f41e5612", null ],
     [ "~SpatialSampler", "classinviwo_1_1SpatialSampler.html#aa8944587669724b2055d11ae6d3b6851", null ],
     [ "getBasis", "classinviwo_1_1SpatialSampler.html#a93903e58220597dc5010c7094140cbfa", null ],
     [ "getCoordinateTransformer", "classinviwo_1_1SpatialSampler.html#a0a827c71c8415d8b57f2c421410d5259", null ],
@@ -19,6 +19,6 @@ var classinviwo_1_1SpatialSampler =
     [ "withinBounds", "classinviwo_1_1SpatialSampler.html#a256a4ddf4a9eb9d26225e9f3c4d6d2b7", null ],
     [ "withinBoundsDataSpace", "classinviwo_1_1SpatialSampler.html#aa8eef4c0d472eb8af97322cdc825ec5b", null ],
     [ "space_", "classinviwo_1_1SpatialSampler.html#ad07c8ddbc9a44b7b69bf52937f7b12b1", null ],
-    [ "spatialEntity_", "classinviwo_1_1SpatialSampler.html#a7af5028a81bf1d13740b3a2102cc29b0", null ],
+    [ "spatialEntity_", "classinviwo_1_1SpatialSampler.html#aee24ad6a65cbbd7a42e18538ca3fe75c", null ],
     [ "transform_", "classinviwo_1_1SpatialSampler.html#a20a610155414443a84e2621903247b51", null ]
 ];

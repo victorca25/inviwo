@@ -23,6 +23,8 @@ var classinviwo_1_1MinMaxProperty =
     [ "serialize", "classinviwo_1_1MinMaxProperty.html#a03e88a983bd76c4e6d7dc83317f1cf86", null ],
     [ "set", "classinviwo_1_1MinMaxProperty.html#a67f6ac45808a1bbf20c75912bc00219b", null ],
     [ "set", "classinviwo_1_1MinMaxProperty.html#a8f74e8aea95dd93cdbb5789f3a70e932", null ],
+    [ "set", "classinviwo_1_1MinMaxProperty.html#a41446559491ec841f9e0481b845a9005", null ],
+    [ "set", "classinviwo_1_1MinMaxProperty.html#a1aad4db91814cbbf1cb74b5d188596a7", null ],
     [ "setCurrentStateAsDefault", "classinviwo_1_1MinMaxProperty.html#a90e719f5733813bbfb849e8326ab8d64", null ],
     [ "setEnd", "classinviwo_1_1MinMaxProperty.html#a9bfdce73ba843e45f9644c09ac14660c", null ],
     [ "setIncrement", "classinviwo_1_1MinMaxProperty.html#a8b6f431360faad60e71ec4d86b02b343", null ],
@@ -32,5 +34,5 @@ var classinviwo_1_1MinMaxProperty =
     [ "setRangeMin", "classinviwo_1_1MinMaxProperty.html#aaa05c878a194694831e20332799ea3cb", null ],
     [ "setRangeNormalized", "classinviwo_1_1MinMaxProperty.html#a64c81f15b7e6cab67f7b30f1171ccefb", null ],
     [ "setStart", "classinviwo_1_1MinMaxProperty.html#a3e52c335a2f15632ebaf4bfebb44cd8e", null ],
-    [ "validateValues", "classinviwo_1_1MinMaxProperty.html#ac6c35458556450cff796a061f22de9d8", null ]
+    [ "validateValues", "classinviwo_1_1MinMaxProperty.html#a7ac5ea414feebb54a161b49dec659891", null ]
 ];

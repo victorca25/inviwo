@@ -37,84 +37,30 @@ var hierarchy =
         [ "inviwo::RepresentationConverterType< BaseRepr, From, To >", "classinviwo_1_1RepresentationConverterType.html", null ]
       ] ],
       [ "inviwo::RepresentationConverter< BufferRepresentation >", "classinviwo_1_1RepresentationConverter.html", [
-        [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferCL, BufferRAM >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::BufferCL2RAMConverter", "classinviwo_1_1BufferCL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferCLGL, BufferCL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::BufferCLGL2CLConverter", "classinviwo_1_1BufferCLGL2CLConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferCLGL, BufferGL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::BufferCLGL2GLConverter", "classinviwo_1_1BufferCLGL2GLConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferCLGL, BufferRAM >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::BufferCLGL2RAMConverter", "classinviwo_1_1BufferCLGL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferGL, BufferCLGL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::BufferGL2CLGLConverter", "classinviwo_1_1BufferGL2CLGLConverter.html", null ]
-        ] ],
         [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferGL, BufferRAM >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::BufferGL2RAMConverter", "classinviwo_1_1BufferGL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferRAM, BufferCL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::BufferRAM2CLConverter", "classinviwo_1_1BufferRAM2CLConverter.html", null ]
         ] ],
         [ "inviwo::RepresentationConverterType< BufferRepresentation, BufferRAM, BufferGL >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::BufferRAM2GLConverter", "classinviwo_1_1BufferRAM2GLConverter.html", null ]
         ] ]
       ] ],
       [ "inviwo::RepresentationConverter< LayerRepresentation >", "classinviwo_1_1RepresentationConverter.html", [
-        [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerCL, LayerRAM >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::LayerCL2RAMConverter", "classinviwo_1_1LayerCL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerCLGL, LayerCL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::LayerCLGL2CLConverter", "classinviwo_1_1LayerCLGL2CLConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerCLGL, LayerGL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::LayerCLGL2GLConverter", "classinviwo_1_1LayerCLGL2GLConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerCLGL, LayerRAM >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::LayerCLGL2RAMConverter", "classinviwo_1_1LayerCLGL2RAMConverter.html", null ]
-        ] ],
         [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerDisk, LayerRAM >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::LayerDisk2RAMConverter", "classinviwo_1_1LayerDisk2RAMConverter.html", null ]
         ] ],
-        [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerGL, LayerCLGL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::LayerGL2CLGLConverter", "classinviwo_1_1LayerGL2CLGLConverter.html", null ]
-        ] ],
         [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerGL, LayerRAM >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::LayerGL2RAMConverter", "classinviwo_1_1LayerGL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerRAM, LayerCL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::LayerRAM2CLConverter", "classinviwo_1_1LayerRAM2CLConverter.html", null ]
         ] ],
         [ "inviwo::RepresentationConverterType< LayerRepresentation, LayerRAM, LayerGL >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::LayerRAM2GLConverter", "classinviwo_1_1LayerRAM2GLConverter.html", null ]
         ] ]
       ] ],
       [ "inviwo::RepresentationConverter< VolumeRepresentation >", "classinviwo_1_1RepresentationConverter.html", [
-        [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeCL, VolumeRAM >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::VolumeCL2RAMConverter", "classinviwo_1_1VolumeCL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeCLGL, VolumeCL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::VolumeCLGL2CLConverter", "classinviwo_1_1VolumeCLGL2CLConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeCLGL, VolumeGL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::VolumeCLGL2GLConverter", "classinviwo_1_1VolumeCLGL2GLConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeCLGL, VolumeRAM >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::VolumeCLGL2RAMConverter", "classinviwo_1_1VolumeCLGL2RAMConverter.html", null ]
-        ] ],
         [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeDisk, VolumeRAM >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::VolumeDisk2RAMConverter", "classinviwo_1_1VolumeDisk2RAMConverter.html", null ]
         ] ],
-        [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeGL, VolumeCLGL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::VolumeGL2CLGLConverter", "classinviwo_1_1VolumeGL2CLGLConverter.html", null ]
-        ] ],
         [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeGL, VolumeRAM >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::VolumeGL2RAMConverter", "classinviwo_1_1VolumeGL2RAMConverter.html", null ]
-        ] ],
-        [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeRAM, VolumeCL >", "classinviwo_1_1RepresentationConverterType.html", [
-          [ "inviwo::VolumeRAM2CLConverter", "classinviwo_1_1VolumeRAM2CLConverter.html", null ]
         ] ],
         [ "inviwo::RepresentationConverterType< VolumeRepresentation, VolumeRAM, VolumeGL >", "classinviwo_1_1RepresentationConverterType.html", [
           [ "inviwo::VolumeRAM2GLConverter", "classinviwo_1_1VolumeRAM2GLConverter.html", null ]
@@ -125,12 +71,11 @@ var hierarchy =
       [ "inviwo::RepresentationConverterFactory< BaseRepr >", "classinviwo_1_1RepresentationConverterFactory.html", null ]
     ] ],
     [ "glsl::bilateralblur", "classglsl_1_1bilateralblur.html", null ],
+    [ "glsl::bloomblur", "classglsl_1_1bloomblur.html", null ],
+    [ "glsl::bloomcompose", "classglsl_1_1bloomcompose.html", null ],
+    [ "glsl::bloomhighpass", "classglsl_1_1bloomhighpass.html", null ],
     [ "glsl::brightnesscontrast", "classglsl_1_1brightnesscontrast.html", null ],
     [ "inviwo::BrushingAndLinkingManager", "classinviwo_1_1BrushingAndLinkingManager.html", null ],
-    [ "inviwo::BufferCLBase", "classinviwo_1_1BufferCLBase.html", [
-      [ "inviwo::BufferCL", "classinviwo_1_1BufferCL.html", null ],
-      [ "inviwo::BufferCLGL", "classinviwo_1_1BufferCLGL.html", null ]
-    ] ],
     [ "inviwo::util::BufferDispatcher", "structinviwo_1_1util_1_1BufferDispatcher.html", null ],
     [ "inviwo::BufferGLObjectId", "classinviwo_1_1BufferGLObjectId.html", null ],
     [ "inviwo::Mesh::BufferInfo", "structinviwo_1_1Mesh_1_1BufferInfo.html", null ],
@@ -150,6 +95,9 @@ var hierarchy =
     [ "inviwo::util::cameratype< N >", "structinviwo_1_1util_1_1cameratype.html", null ],
     [ "inviwo::util::cameratype< 2 >", "structinviwo_1_1util_1_1cameratype_3_012_01_4.html", null ],
     [ "inviwo::util::cameratype< 3 >", "structinviwo_1_1util_1_1cameratype_3_013_01_4.html", null ],
+    [ "inviwo::detail::CanConnectTo< T, Flat >", "structinviwo_1_1detail_1_1CanConnectTo.html", null ],
+    [ "inviwo::detail::CanConnectTo< T, false >", "structinviwo_1_1detail_1_1CanConnectTo_3_01T_00_01false_01_4.html", null ],
+    [ "inviwo::detail::CanConnectTo< T, true >", "structinviwo_1_1detail_1_1CanConnectTo_3_01T_00_01true_01_4.html", null ],
     [ "inviwo::Canvas", "classinviwo_1_1Canvas.html", [
       [ "inviwo::CanvasGL", "classinviwo_1_1CanvasGL.html", [
         [ "inviwo::CanvasGLFW", "classinviwo_1_1CanvasGLFW.html", null ],
@@ -159,7 +107,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "inviwo::Capabilities", "classinviwo_1_1Capabilities.html", [
-      [ "inviwo::OpenCLCapabilities", "classinviwo_1_1OpenCLCapabilities.html", null ],
       [ "inviwo::OpenGLCapabilities", "classinviwo_1_1OpenGLCapabilities.html", null ],
       [ "inviwo::OpenGLQtCapabilities", "classinviwo_1_1OpenGLQtCapabilities.html", null ],
       [ "inviwo::SystemCapabilities", "classinviwo_1_1SystemCapabilities.html", null ]
@@ -167,8 +114,6 @@ var hierarchy =
     [ "glsl::capnearclipping", "classglsl_1_1capnearclipping.html", null ],
     [ "glsl::classification", "classglsl_1_1classification.html", null ],
     [ "inviwo::utilgl::ClearColor", "structinviwo_1_1utilgl_1_1ClearColor.html", null ],
-    [ "inviwo::CLFormats::CLFormat", "structinviwo_1_1CLFormats_1_1CLFormat.html", null ],
-    [ "inviwo::CLFormats", "classinviwo_1_1CLFormats.html", null ],
     [ "inviwo::Clock", "classinviwo_1_1Clock.html", null ],
     [ "inviwo::ClockGL", "classinviwo_1_1ClockGL.html", null ],
     [ "inviwo::util::cloneable_ptr< T >", "classinviwo_1_1util_1_1cloneable__ptr.html", null ],
@@ -188,8 +133,8 @@ var hierarchy =
       ] ]
     ] ],
     [ "inviwo::CommandLineParser", "classinviwo_1_1CommandLineParser.html", null ],
-    [ "glsl::scatterplot::glsl::common", "classglsl_1_1scatterplot_1_1glsl_1_1common.html", null ],
     [ "glsl::common", "classglsl_1_1common.html", null ],
+    [ "glsl::scatterplot::glsl::common", "classglsl_1_1scatterplot_1_1glsl_1_1common.html", null ],
     [ "glsl::hbao::glsl::common", "classglsl_1_1hbao_1_1glsl_1_1common.html", null ],
     [ "glsl::common", "classglsl_1_1common.html", null ],
     [ "glsl::common", "classglsl_1_1common.html", null ],
@@ -206,7 +151,6 @@ var hierarchy =
     [ "inviwo::Data< Self, Repr >", "classinviwo_1_1Data.html", null ],
     [ "inviwo::Data< BufferBase, BufferRepresentation >", "classinviwo_1_1Data.html", [
       [ "inviwo::BufferBase", "classinviwo_1_1BufferBase.html", [
-        [ "inviwo::Buffer< unsigned char >", "classinviwo_1_1Buffer.html", null ],
         [ "inviwo::Buffer< T, Target >", "classinviwo_1_1Buffer.html", null ]
       ] ]
     ] ],
@@ -233,8 +177,6 @@ var hierarchy =
     [ "inviwo::DataGroupRepresentation< Owner >", "classinviwo_1_1DataGroupRepresentation.html", null ],
     [ "inviwo::DataGroupRepresentation< Image >", "classinviwo_1_1DataGroupRepresentation.html", [
       [ "inviwo::ImageRepresentation", "classinviwo_1_1ImageRepresentation.html", [
-        [ "inviwo::ImageCL", "classinviwo_1_1ImageCL.html", null ],
-        [ "inviwo::ImageCLGL", "classinviwo_1_1ImageCLGL.html", null ],
         [ "inviwo::ImageGL", "classinviwo_1_1ImageGL.html", null ],
         [ "inviwo::ImageRAM", "classinviwo_1_1ImageRAM.html", [
           [ "inviwo::ImageRAMPrecision< T >", "classinviwo_1_1ImageRAMPrecision.html", [
@@ -283,8 +225,6 @@ var hierarchy =
     [ "inviwo::DataRepresentation< Owner >", "classinviwo_1_1DataRepresentation.html", null ],
     [ "inviwo::DataRepresentation< BufferBase >", "classinviwo_1_1DataRepresentation.html", [
       [ "inviwo::BufferRepresentation", "classinviwo_1_1BufferRepresentation.html", [
-        [ "inviwo::BufferCL", "classinviwo_1_1BufferCL.html", null ],
-        [ "inviwo::BufferCLGL", "classinviwo_1_1BufferCLGL.html", null ],
         [ "inviwo::BufferGL", "classinviwo_1_1BufferGL.html", null ],
         [ "inviwo::BufferRAM", "classinviwo_1_1BufferRAM.html", [
           [ "inviwo::BufferRAMPrecision< T, Target >", "classinviwo_1_1BufferRAMPrecision.html", null ]
@@ -293,8 +233,6 @@ var hierarchy =
     ] ],
     [ "inviwo::DataRepresentation< Layer >", "classinviwo_1_1DataRepresentation.html", [
       [ "inviwo::LayerRepresentation", "classinviwo_1_1LayerRepresentation.html", [
-        [ "inviwo::LayerCL", "classinviwo_1_1LayerCL.html", null ],
-        [ "inviwo::LayerCLGL", "classinviwo_1_1LayerCLGL.html", null ],
         [ "inviwo::LayerDisk", "classinviwo_1_1LayerDisk.html", null ],
         [ "inviwo::LayerGL", "classinviwo_1_1LayerGL.html", null ],
         [ "inviwo::LayerRAM", "classinviwo_1_1LayerRAM.html", [
@@ -304,8 +242,6 @@ var hierarchy =
     ] ],
     [ "inviwo::DataRepresentation< Volume >", "classinviwo_1_1DataRepresentation.html", [
       [ "inviwo::VolumeRepresentation", "classinviwo_1_1VolumeRepresentation.html", [
-        [ "inviwo::VolumeCL", "classinviwo_1_1VolumeCL.html", null ],
-        [ "inviwo::VolumeCLGL", "classinviwo_1_1VolumeCLGL.html", null ],
         [ "inviwo::VolumeDisk", "classinviwo_1_1VolumeDisk.html", null ],
         [ "inviwo::VolumeGL", "classinviwo_1_1VolumeGL.html", null ],
         [ "inviwo::VolumeRAM", "classinviwo_1_1VolumeRAM.html", [
@@ -380,6 +316,7 @@ var hierarchy =
     [ "inviwo::Edge< T >", "classinviwo_1_1Edge.html", [
       [ "inviwo::EdgeDataFormat< T >", "classinviwo_1_1EdgeDataFormat.html", null ]
     ] ],
+    [ "glsl::edgedarken", "classglsl_1_1edgedarken.html", null ],
     [ "inviwo::Document::Element", "classinviwo_1_1Document_1_1Element.html", null ],
     [ "inviwo::ElementIdentifier< T >", "structinviwo_1_1ElementIdentifier.html", [
       [ "inviwo::StandardIdentifier< T >", "structinviwo_1_1StandardIdentifier.html", null ]
@@ -480,10 +417,12 @@ var hierarchy =
           [ "inviwo::Background", "classinviwo_1_1Background.html", null ],
           [ "inviwo::BasisTransform< T >", "classinviwo_1_1BasisTransform.html", null ],
           [ "inviwo::BrushingAndLinkingProcessor", "classinviwo_1_1BrushingAndLinkingProcessor.html", null ],
+          [ "inviwo::CameraWidget", "classinviwo_1_1CameraWidget.html", null ],
           [ "inviwo::CanvasProcessor", "classinviwo_1_1CanvasProcessor.html", [
             [ "inviwo::CanvasProcessorGL", "classinviwo_1_1CanvasProcessorGL.html", null ]
           ] ],
           [ "inviwo::ConvexHull2DProcessor", "classinviwo_1_1ConvexHull2DProcessor.html", null ],
+          [ "inviwo::CropWidget", "classinviwo_1_1CropWidget.html", null ],
           [ "inviwo::CubeProxyGeometry", "classinviwo_1_1CubeProxyGeometry.html", null ],
           [ "inviwo::CubeRenderer", "classinviwo_1_1CubeRenderer.html", null ],
           [ "inviwo::DataExport< DataType, PortType >", "classinviwo_1_1DataExport.html", null ],
@@ -499,13 +438,12 @@ var hierarchy =
           [ "inviwo::EigenMix", "classinviwo_1_1EigenMix.html", null ],
           [ "inviwo::EigenNormalize", "classinviwo_1_1EigenNormalize.html", null ],
           [ "inviwo::EntryExitPoints", "classinviwo_1_1EntryExitPoints.html", null ],
-          [ "inviwo::EntryExitPointsCLProcessor", "classinviwo_1_1EntryExitPointsCLProcessor.html", null ],
           [ "inviwo::FirstIvwProcessor", "classinviwo_1_1FirstIvwProcessor.html", null ],
           [ "inviwo::FXAA", "classinviwo_1_1FXAA.html", null ],
-          [ "inviwo::GrayscaleCLProcessor", "classinviwo_1_1GrayscaleCLProcessor.html", null ],
           [ "inviwo::hdf5::HDF5ToVolume", "classinviwo_1_1hdf5_1_1HDF5ToVolume.html", null ],
           [ "inviwo::hdf5::PathSelection", "classinviwo_1_1hdf5_1_1PathSelection.html", null ],
           [ "inviwo::hdf5::Source", "classinviwo_1_1hdf5_1_1Source.html", null ],
+          [ "inviwo::HdrBloom", "classinviwo_1_1HdrBloom.html", null ],
           [ "inviwo::HedgeHog2D", "classinviwo_1_1HedgeHog2D.html", null ],
           [ "inviwo::HeightFieldMapper", "classinviwo_1_1HeightFieldMapper.html", null ],
           [ "inviwo::HeightFieldProcessor", "classinviwo_1_1HeightFieldProcessor.html", null ],
@@ -515,6 +453,7 @@ var hierarchy =
             [ "inviwo::FindEdges", "classinviwo_1_1FindEdges.html", null ],
             [ "inviwo::ImageBinary", "classinviwo_1_1ImageBinary.html", null ],
             [ "inviwo::ImageBrightnessContrast", "classinviwo_1_1ImageBrightnessContrast.html", null ],
+            [ "inviwo::ImageEdgeDarken", "classinviwo_1_1ImageEdgeDarken.html", null ],
             [ "inviwo::ImageGamma", "classinviwo_1_1ImageGamma.html", null ],
             [ "inviwo::ImageGradient", "classinviwo_1_1ImageGradient.html", null ],
             [ "inviwo::ImageGrayscale", "classinviwo_1_1ImageGrayscale.html", null ],
@@ -526,7 +465,8 @@ var hierarchy =
             [ "inviwo::ImageOpacity", "classinviwo_1_1ImageOpacity.html", null ],
             [ "inviwo::ImageResample", "classinviwo_1_1ImageResample.html", null ],
             [ "inviwo::ImageSharpen", "classinviwo_1_1ImageSharpen.html", null ],
-            [ "inviwo::Jacobian2D", "classinviwo_1_1Jacobian2D.html", null ]
+            [ "inviwo::Jacobian2D", "classinviwo_1_1Jacobian2D.html", null ],
+            [ "inviwo::Tonemapping", "classinviwo_1_1Tonemapping.html", null ]
           ] ],
           [ "inviwo::ImageLayoutGL", "classinviwo_1_1ImageLayoutGL.html", null ],
           [ "inviwo::ImageLowPass", "classinviwo_1_1ImageLowPass.html", null ],
@@ -571,6 +511,7 @@ var hierarchy =
           [ "inviwo::plot::VolumeAxis", "classinviwo_1_1plot_1_1VolumeAxis.html", null ],
           [ "inviwo::PointLightSourceProcessor", "classinviwo_1_1PointLightSourceProcessor.html", null ],
           [ "inviwo::PointRenderer", "classinviwo_1_1PointRenderer.html", null ],
+          [ "inviwo::PresentationProcessor", "classinviwo_1_1PresentationProcessor.html", null ],
           [ "inviwo::RandomMeshGenerator", "classinviwo_1_1RandomMeshGenerator.html", null ],
           [ "inviwo::RandomSphereGenerator", "classinviwo_1_1RandomSphereGenerator.html", null ],
           [ "inviwo::RBFVectorFieldGenerator2D", "classinviwo_1_1RBFVectorFieldGenerator2D.html", null ],
@@ -602,7 +543,6 @@ var hierarchy =
           [ "inviwo::VolumeCombiner", "classinviwo_1_1VolumeCombiner.html", null ],
           [ "inviwo::VolumeCurlCPUProcessor", "classinviwo_1_1VolumeCurlCPUProcessor.html", null ],
           [ "inviwo::VolumeDivergenceCPUProcessor", "classinviwo_1_1VolumeDivergenceCPUProcessor.html", null ],
-          [ "inviwo::VolumeFirstHitCLProcessor", "classinviwo_1_1VolumeFirstHitCLProcessor.html", null ],
           [ "inviwo::VolumeGLProcessor", "classinviwo_1_1VolumeGLProcessor.html", [
             [ "inviwo::LIC3D", "classinviwo_1_1LIC3D.html", null ],
             [ "inviwo::Vector3DCurl", "classinviwo_1_1Vector3DCurl.html", null ],
@@ -619,9 +559,7 @@ var hierarchy =
           ] ],
           [ "inviwo::VolumeGradientCPUProcessor", "classinviwo_1_1VolumeGradientCPUProcessor.html", null ],
           [ "inviwo::VolumeLaplacianProcessor", "classinviwo_1_1VolumeLaplacianProcessor.html", null ],
-          [ "inviwo::VolumeMaxCLProcessor", "classinviwo_1_1VolumeMaxCLProcessor.html", null ],
           [ "inviwo::VolumeRaycaster", "classinviwo_1_1VolumeRaycaster.html", null ],
-          [ "inviwo::VolumeRaycasterCLProcessor", "classinviwo_1_1VolumeRaycasterCLProcessor.html", null ],
           [ "inviwo::VolumeSequenceSource", "classinviwo_1_1VolumeSequenceSource.html", null ],
           [ "inviwo::VolumeSequenceToSpatial4DSampler", "classinviwo_1_1VolumeSequenceToSpatial4DSampler.html", null ],
           [ "inviwo::VolumeSlice", "classinviwo_1_1VolumeSlice.html", null ],
@@ -643,7 +581,6 @@ var hierarchy =
         ] ],
         [ "inviwo::Settings", "classinviwo_1_1Settings.html", [
           [ "inviwo::LinkSettings", "classinviwo_1_1LinkSettings.html", null ],
-          [ "inviwo::OpenCLSettings", "classinviwo_1_1OpenCLSettings.html", null ],
           [ "inviwo::OpenGLSettings", "classinviwo_1_1OpenGLSettings.html", null ],
           [ "inviwo::SystemSettings", "classinviwo_1_1SystemSettings.html", null ]
         ] ]
@@ -671,8 +608,6 @@ var hierarchy =
           [ "inviwo::OpenGLInitException", "classinviwo_1_1OpenGLInitException.html", null ]
         ] ],
         [ "inviwo::NullPointerException", "classinviwo_1_1NullPointerException.html", null ],
-        [ "inviwo::OpenCLException", "classinviwo_1_1OpenCLException.html", null ],
-        [ "inviwo::OpenCLFormatException", "classinviwo_1_1OpenCLFormatException.html", null ],
         [ "inviwo::OpenGLException", "classinviwo_1_1OpenGLException.html", null ],
         [ "inviwo::plot::DataTypeMismatch", "classinviwo_1_1plot_1_1DataTypeMismatch.html", null ],
         [ "inviwo::plot::InvalidColCount", "classinviwo_1_1plot_1_1InvalidColCount.html", null ],
@@ -770,7 +705,6 @@ var hierarchy =
     ] ],
     [ "inviwo::FileObserver", "classinviwo_1_1FileObserver.html", [
       [ "inviwo::FileShaderResource", "classinviwo_1_1FileShaderResource.html", null ],
-      [ "inviwo::KernelManager", "classinviwo_1_1KernelManager.html", null ],
       [ "inviwo::PythonEditorWidget", "classinviwo_1_1PythonEditorWidget.html", null ],
       [ "inviwo::SingleFileObserver", "classinviwo_1_1SingleFileObserver.html", [
         [ "inviwo::PythonScriptDisk", "classinviwo_1_1PythonScriptDisk.html", null ]
@@ -792,6 +726,7 @@ var hierarchy =
     [ "inviwo::FrameBufferObject", "classinviwo_1_1FrameBufferObject.html", null ],
     [ "glsl::fullscreenquad", "classglsl_1_1fullscreenquad.html", null ],
     [ "glsl::fxaa", "classglsl_1_1fxaa.html", null ],
+    [ "glsl::geometrycustompicking", "classglsl_1_1geometrycustompicking.html", null ],
     [ "glsl::geometryrendering", "classglsl_1_1geometryrendering.html", null ],
     [ "inviwo::util::detailzip::get_iterator< T >", "structinviwo_1_1util_1_1detailzip_1_1get__iterator.html", null ],
     [ "inviwo::kind::GL", "structinviwo_1_1kind_1_1GL.html", null ],
@@ -830,6 +765,8 @@ var hierarchy =
     [ "inviwo::util::has_class_identifier< T >", "classinviwo_1_1util_1_1has__class__identifier.html", null ],
     [ "inviwo::util::has_color_code< T >", "classinviwo_1_1util_1_1has__color__code.html", null ],
     [ "inviwo::util::has_data_info< C >", "classinviwo_1_1util_1_1has__data__info.html", null ],
+    [ "inviwo::detail::HasData< T, N >", "structinviwo_1_1detail_1_1HasData.html", null ],
+    [ "inviwo::detail::HasData< T, 0 >", "structinviwo_1_1detail_1_1HasData_3_01T_00_010_01_4.html", null ],
     [ "std::hash< inviwo::FileExtension >", "structstd_1_1hash_3_01inviwo_1_1FileExtension_01_4.html", null ],
     [ "std::hash< inviwo::PortConnection >", "structstd_1_1hash_3_01inviwo_1_1PortConnection_01_4.html", null ],
     [ "std::hash< inviwo::ProcessorPair >", "structstd_1_1hash_3_01inviwo_1_1ProcessorPair_01_4.html", null ],
@@ -848,6 +785,7 @@ var hierarchy =
     [ "glsl::common::HBAOData", "structglsl_1_1common_1_1HBAOData.html", null ],
     [ "glsl::hbao::glsl::common::HBAOData", "structglsl_1_1hbao_1_1glsl_1_1common_1_1HBAOData.html", null ],
     [ "glsl::heightfield", "classglsl_1_1heightfield.html", null ],
+    [ "inviwo::util::detail::Hideer", "structinviwo_1_1util_1_1detail_1_1Hideer.html", null ],
     [ "inviwo::HistogramContainer", "classinviwo_1_1HistogramContainer.html", null ],
     [ "glsl::huesaturationluminance", "classglsl_1_1huesaturationluminance.html", null ],
     [ "inviwo::util::IdentifiedDeserializer< K, T >", "classinviwo_1_1util_1_1IdentifiedDeserializer.html", null ],
@@ -1015,7 +953,6 @@ var hierarchy =
       [ "inviwo::AnimationModule", "classinviwo_1_1AnimationModule.html", null ],
       [ "inviwo::AnimationQtModule", "classinviwo_1_1AnimationQtModule.html", null ],
       [ "inviwo::AssimpModule", "classinviwo_1_1AssimpModule.html", null ],
-      [ "inviwo::BaseCLModule", "classinviwo_1_1BaseCLModule.html", null ],
       [ "inviwo::BaseGLModule", "classinviwo_1_1BaseGLModule.html", null ],
       [ "inviwo::BaseModule", "classinviwo_1_1BaseModule.html", null ],
       [ "inviwo::BrushingAndLinkingModule", "classinviwo_1_1BrushingAndLinkingModule.html", null ],
@@ -1026,7 +963,6 @@ var hierarchy =
       [ "inviwo::HDF5Module", "classinviwo_1_1HDF5Module.html", null ],
       [ "inviwo::InviwoCore", "classinviwo_1_1InviwoCore.html", null ],
       [ "inviwo::NiftiModule", "classinviwo_1_1NiftiModule.html", null ],
-      [ "inviwo::OpenCLModule", "classinviwo_1_1OpenCLModule.html", null ],
       [ "inviwo::OpenGLModule", "classinviwo_1_1OpenGLModule.html", null ],
       [ "inviwo::OpenGLQtModule", "classinviwo_1_1OpenGLQtModule.html", null ],
       [ "inviwo::PlottingGLModule", "classinviwo_1_1PlottingGLModule.html", null ],
@@ -1036,6 +972,7 @@ var hierarchy =
       [ "inviwo::Python3Module", "classinviwo_1_1Python3Module.html", null ],
       [ "inviwo::Python3QtModule", "classinviwo_1_1Python3QtModule.html", null ],
       [ "inviwo::QtWidgetsModule", "classinviwo_1_1QtWidgetsModule.html", null ],
+      [ "inviwo::UserInterfaceGLModule", "classinviwo_1_1UserInterfaceGLModule.html", null ],
       [ "inviwo::VectorFieldVisualizationGLModule", "classinviwo_1_1VectorFieldVisualizationGLModule.html", null ],
       [ "inviwo::VectorFieldVisualizationModule", "classinviwo_1_1VectorFieldVisualizationModule.html", null ]
     ] ],
@@ -1073,17 +1010,11 @@ var hierarchy =
     [ "inviwo::util::KeepTrueWhileInScope", "classinviwo_1_1util_1_1KeepTrueWhileInScope.html", null ],
     [ "inviwo::animation::KeyframeQtLock", "structinviwo_1_1animation_1_1KeyframeQtLock.html", null ],
     [ "inviwo::xml::Kind", "classinviwo_1_1xml_1_1Kind.html", null ],
-    [ "inviwo::LayerCLBase", "classinviwo_1_1LayerCLBase.html", [
-      [ "inviwo::LayerCL", "classinviwo_1_1LayerCL.html", null ],
-      [ "inviwo::LayerCLGL", "classinviwo_1_1LayerCLGL.html", null ]
-    ] ],
-    [ "inviwo::LayerCLResizer", "classinviwo_1_1LayerCLResizer.html", null ],
     [ "inviwo::detail::LayerRamConstDispatcher", "structinviwo_1_1detail_1_1LayerRamConstDispatcher.html", null ],
     [ "inviwo::detail::LayerRamDispatcher", "structinviwo_1_1detail_1_1LayerRamDispatcher.html", null ],
     [ "glsl::lic2d", "classglsl_1_1lic2d.html", null ],
     [ "glsl::lic3d", "classglsl_1_1lic3d.html", null ],
     [ "glsl::lightingraycasting", "classglsl_1_1lightingraycasting.html", null ],
-    [ "inviwo::utilcl::LightParameters", "structinviwo_1_1utilcl_1_1LightParameters.html", null ],
     [ "glsl::lightpropagation", "classglsl_1_1lightpropagation.html", null ],
     [ "glsl::lightvolumeblend", "classglsl_1_1lightvolumeblend.html", null ],
     [ "glsl::linerenderer", "classglsl_1_1linerenderer.html", null ],
@@ -1220,6 +1151,9 @@ var hierarchy =
         [ "inviwo::TemplateProperty< ivec4 >", "classinviwo_1_1TemplateProperty.html", [
           [ "inviwo::OrdinalProperty< ivec4 >", "classinviwo_1_1OrdinalProperty.html", null ]
         ] ],
+        [ "inviwo::TemplateProperty< mat3 >", "classinviwo_1_1TemplateProperty.html", [
+          [ "inviwo::OrdinalProperty< mat3 >", "classinviwo_1_1OrdinalProperty.html", null ]
+        ] ],
         [ "inviwo::TemplateProperty< mat4 >", "classinviwo_1_1TemplateProperty.html", [
           [ "inviwo::OrdinalProperty< mat4 >", "classinviwo_1_1OrdinalProperty.html", null ]
         ] ],
@@ -1303,20 +1237,6 @@ var hierarchy =
       ] ],
       [ "inviwo::Observable< FactoryObserver< T > >", "classinviwo_1_1Observable.html", [
         [ "inviwo::FactoryObservable< T >", "classinviwo_1_1FactoryObservable.html", null ]
-      ] ],
-      [ "inviwo::Observable< KernelObserver >", "classinviwo_1_1Observable.html", [
-        [ "inviwo::KernelObservable", "classinviwo_1_1KernelObservable.html", [
-          [ "inviwo::KernelOwner", "classinviwo_1_1KernelOwner.html", [
-            [ "inviwo::MeshEntryExitPointsCL", "classinviwo_1_1MeshEntryExitPointsCL.html", null ],
-            [ "inviwo::ProcessorKernelOwner", "classinviwo_1_1ProcessorKernelOwner.html", [
-              [ "inviwo::GrayscaleCLProcessor", "classinviwo_1_1GrayscaleCLProcessor.html", null ],
-              [ "inviwo::VolumeFirstHitCLProcessor", "classinviwo_1_1VolumeFirstHitCLProcessor.html", null ],
-              [ "inviwo::VolumeMaxCLProcessor", "classinviwo_1_1VolumeMaxCLProcessor.html", null ]
-            ] ],
-            [ "inviwo::RunningImageMeanAndStandardDeviationCL", "classinviwo_1_1RunningImageMeanAndStandardDeviationCL.html", null ],
-            [ "inviwo::VolumeRaycasterCL", "classinviwo_1_1VolumeRaycasterCL.html", null ]
-          ] ]
-        ] ]
       ] ],
       [ "inviwo::Observable< KeyframeObserver >", "classinviwo_1_1Observable.html", [
         [ "inviwo::animation::KeyframeObservable", "classinviwo_1_1animation_1_1KeyframeObservable.html", [
@@ -1456,18 +1376,12 @@ var hierarchy =
         [ "inviwo::animation::Animation", "classinviwo_1_1animation_1_1Animation.html", null ],
         [ "inviwo::animation::TrackQt", "classinviwo_1_1animation_1_1TrackQt.html", null ]
       ] ],
-      [ "inviwo::BufferObjectObserver", "classinviwo_1_1BufferObjectObserver.html", [
-        [ "inviwo::BufferCLGL", "classinviwo_1_1BufferCLGL.html", null ]
-      ] ],
+      [ "inviwo::BufferObjectObserver", "classinviwo_1_1BufferObjectObserver.html", null ],
       [ "inviwo::CompositePropertyObserver", "classinviwo_1_1CompositePropertyObserver.html", [
         [ "inviwo::BoolCompositePropertyWidgetQt", "classinviwo_1_1BoolCompositePropertyWidgetQt.html", null ],
         [ "inviwo::CompositePropertyWidgetQt", "classinviwo_1_1CompositePropertyWidgetQt.html", null ]
       ] ],
       [ "inviwo::FactoryObserver< T >", "classinviwo_1_1FactoryObserver.html", null ],
-      [ "inviwo::KernelObserver", "classinviwo_1_1KernelObserver.html", [
-        [ "inviwo::EntryExitPointsCLProcessor", "classinviwo_1_1EntryExitPointsCLProcessor.html", null ],
-        [ "inviwo::VolumeRaycasterCLProcessor", "classinviwo_1_1VolumeRaycasterCLProcessor.html", null ]
-      ] ],
       [ "inviwo::LabelGraphicsItemObserver", "classinviwo_1_1LabelGraphicsItemObserver.html", [
         [ "inviwo::ProcessorGraphicsItem", "classinviwo_1_1ProcessorGraphicsItem.html", null ]
       ] ],
@@ -1547,10 +1461,7 @@ var hierarchy =
       [ "inviwo::ResourceManagerObserver", "classinviwo_1_1ResourceManagerObserver.html", [
         [ "inviwo::ResourceManagerWidget", "classinviwo_1_1ResourceManagerWidget.html", null ]
       ] ],
-      [ "inviwo::TextureObserver", "classinviwo_1_1TextureObserver.html", [
-        [ "inviwo::LayerCLGL", "classinviwo_1_1LayerCLGL.html", null ],
-        [ "inviwo::VolumeCLGL", "classinviwo_1_1VolumeCLGL.html", null ]
-      ] ],
+      [ "inviwo::TextureObserver", "classinviwo_1_1TextureObserver.html", null ],
       [ "inviwo::TransferFunctionObserver", "classinviwo_1_1TransferFunctionObserver.html", [
         [ "inviwo::TransferFunctionProperty", "classinviwo_1_1TransferFunctionProperty.html", null ],
         [ "inviwo::TransferFunctionPropertyDialog", "classinviwo_1_1TransferFunctionPropertyDialog.html", null ]
@@ -1620,7 +1531,6 @@ var hierarchy =
         [ "inviwo::DataOutport< T >", "classinviwo_1_1DataOutport.html", null ]
       ] ]
     ] ],
-    [ "inviwo::PackedLightSource", "structinviwo_1_1PackedLightSource.html", null ],
     [ "pair", null, [
       [ "inviwo::util::iter_range< Iter >", "structinviwo_1_1util_1_1iter__range.html", null ]
     ] ],
@@ -1679,7 +1589,6 @@ var hierarchy =
     [ "inviwo::ProcessorWidgetFactoryObject", "classinviwo_1_1ProcessorWidgetFactoryObject.html", [
       [ "inviwo::ProcessorWidgetFactoryObjectTemplate< T, ProcessorType >", "classinviwo_1_1ProcessorWidgetFactoryObjectTemplate.html", null ]
     ] ],
-    [ "inviwo::KernelManager::ProgramIdentifier", "structinviwo_1_1KernelManager_1_1ProgramIdentifier.html", null ],
     [ "inviwo::ProgressBarOwner", "classinviwo_1_1ProgressBarOwner.html", [
       [ "inviwo::DistanceTransformRAM", "classinviwo_1_1DistanceTransformRAM.html", null ],
       [ "inviwo::LayerDistanceTransformRAM", "classinviwo_1_1LayerDistanceTransformRAM.html", null ],
@@ -1938,7 +1847,6 @@ var hierarchy =
     [ "glsl::sampler3d", "classglsl_1_1sampler3d.html", null ],
     [ "glsl::scatterplot", "classglsl_1_1scatterplot.html", null ],
     [ "inviwo::plot::ScatterPlotGL", "classinviwo_1_1plot_1_1ScatterPlotGL.html", null ],
-    [ "inviwo::ScopedClockCL", "classinviwo_1_1ScopedClockCL.html", null ],
     [ "inviwo::ScopedClockCPU", "classinviwo_1_1ScopedClockCPU.html", null ],
     [ "inviwo::ScopedClockGL", "classinviwo_1_1ScopedClockGL.html", null ],
     [ "inviwo::hdf5::Handle::Selection", "structinviwo_1_1hdf5_1_1Handle_1_1Selection.html", null ],
@@ -2109,6 +2017,7 @@ var hierarchy =
     ] ],
     [ "inviwo::ShaderType", "classinviwo_1_1ShaderType.html", null ],
     [ "glsl::shading", "classglsl_1_1shading.html", null ],
+    [ "inviwo::util::detail::Shower", "structinviwo_1_1util_1_1detail_1_1Shower.html", null ],
     [ "inviwo::SimpleCondition", "classinviwo_1_1SimpleCondition.html", null ],
     [ "inviwo::SimpleMeshCreator", "classinviwo_1_1SimpleMeshCreator.html", null ],
     [ "inviwo::utilgl::SimpleState< T1, T2, Entity,,, Validator >", "structinviwo_1_1utilgl_1_1SimpleState.html", null ],
@@ -2119,14 +2028,8 @@ var hierarchy =
         [ "inviwo::InviwoApplicationQt", "classinviwo_1_1InviwoApplicationQt.html", null ]
       ] ]
     ] ],
-    [ "inviwo::Singleton< KernelManager >", "classinviwo_1_1Singleton.html", [
-      [ "inviwo::KernelManager", "classinviwo_1_1KernelManager.html", null ]
-    ] ],
     [ "inviwo::Singleton< LogCentral >", "classinviwo_1_1Singleton.html", [
       [ "inviwo::LogCentral", "classinviwo_1_1LogCentral.html", null ]
-    ] ],
-    [ "inviwo::Singleton< OpenCL >", "classinviwo_1_1Singleton.html", [
-      [ "inviwo::OpenCL", "classinviwo_1_1OpenCL.html", null ]
     ] ],
     [ "inviwo::Singleton< PickingManager >", "classinviwo_1_1Singleton.html", [
       [ "inviwo::PickingManager", "classinviwo_1_1PickingManager.html", null ]
@@ -2181,6 +2084,7 @@ var hierarchy =
       ] ],
       [ "inviwo::Mesh", "classinviwo_1_1Mesh.html", null ]
     ] ],
+    [ "inviwo::SpatialEntity< SpatialDims >", "classinviwo_1_1SpatialEntity.html", null ],
     [ "inviwo::SpatialSampler< SpatialDims, DataDims, T >", "classinviwo_1_1SpatialSampler.html", null ],
     [ "inviwo::SpatialSampler< 3, DataDims, double >", "classinviwo_1_1SpatialSampler.html", [
       [ "inviwo::VolumeDoubleSampler< DataDims >", "classinviwo_1_1VolumeDoubleSampler.html", null ],
@@ -2195,7 +2099,6 @@ var hierarchy =
     [ "inviwo::StandardExceptionHandler", "structinviwo_1_1StandardExceptionHandler.html", null ],
     [ "inviwo::NormalizedHistogram::Stats", "structinviwo_1_1NormalizedHistogram_1_1Stats.html", null ],
     [ "glsl::streamlinesgl", "classglsl_1_1streamlinesgl.html", null ],
-    [ "inviwo::SyncCLGL", "classinviwo_1_1SyncCLGL.html", null ],
     [ "inviwo::SyntaxFormater", "classinviwo_1_1SyntaxFormater.html", null ],
     [ "T", null, [
       [ "inviwo::CanvasQtBase< T >", "classinviwo_1_1CanvasQtBase.html", null ]
@@ -2226,6 +2129,7 @@ var hierarchy =
     [ "inviwo::shuntingyard::TokenBase", "structinviwo_1_1shuntingyard_1_1TokenBase.html", [
       [ "inviwo::shuntingyard::Token< T >", "classinviwo_1_1shuntingyard_1_1Token.html", null ]
     ] ],
+    [ "glsl::tonemapping", "classglsl_1_1tonemapping.html", null ],
     [ "inviwo::TouchPoint", "classinviwo_1_1TouchPoint.html", null ],
     [ "inviwo::TrackballObject", "classinviwo_1_1TrackballObject.html", [
       [ "inviwo::CameraProperty", "classinviwo_1_1CameraProperty.html", null ],
@@ -2244,6 +2148,57 @@ var hierarchy =
     [ "glsl::tuberendering", "classglsl_1_1tuberendering.html", null ],
     [ "std::tuple_element< N, ::inviwo::util::detailzip::proxy< Ts... > >", "classstd_1_1tuple__element_3_01N_00_01_1_1inviwo_1_1util_1_1detailzip_1_1proxy_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "type_caster_base", null, [
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 2, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01douac551d055531ad855277666d2b0742c3.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 2, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01dou25465f694e3cd3ad9b311b4df7f1153e.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 2, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01doub99b502615b35ff7453a845f7d66ddd1.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 3, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01dou26a7bbcf16398f6d56fdafaa47b08a44.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 3, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01douab6412929fe54fa6645edd1c46cc9fdc.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 3, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01dou70d07611b8be15b9ee4d22db6a987b04.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 4, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01douf525b41f5246cccef57ee924b0daeab7.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 4, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01doudc1421575524a4ea2e8aec5fda269335.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< double, 4, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01douaed688325ac3f883edb1d14e765e87d7.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 2, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flod6b7e051287211a55fa3528d28c97748.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 2, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flo8b51db60c98bd7af548d151f3dd3b53a.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 2, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flo109fd9997053c65938e4b65490ed4633.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 3, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01floe77e3cb43d2bafb6beda724f0fd9e06a.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 3, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flo19674b03c67ec1c601bd0c654f0907dc.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 3, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flod1d2bbc2398b7482290d89d14e47c10a.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 4, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flocd22b6f1021715073da320061eb354e4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 4, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01floc7c5f50687efb1555f0a7e00270b8bf7.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< float, 4, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01flocb5aa19cb8674a1a99f5526f8471c905.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 2, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01int62d2b87ae5c0e0d4e8ec7a7975002855.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 2, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01int84edd164a4ad834a8c34c1a526a91236.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 2, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01inta356b92bf9cb6dc3fb59c4232ae634e0.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 3, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01int107d2e93d0d84aea18103dc85aa78b1c.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 3, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01int6a41f3a8a8cbabf909955c76870a3967.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 3, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01intf858fc691d47ca654d968f904404e518.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 4, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01int4aa687f815ff0cd52265b194b35440f3.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 4, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01int06668de2bd036c57d4373252ab768ba4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< int, 4, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01intf5cd15352e89294074ede9ec30d0f260.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 2, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01unsaf97accf5c5f40688c8ec6987ccb3f7f.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 2, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01uns54f09ec8262e6cdf0a40b71c66137155.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 2, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01uns3cf6e5a0251256eb865a6782e85c70ce.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 3, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01unsb66e56fcdafd7b182462779580559806.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 3, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01uns97b13ba10e8ed79bd2ca2c8bb6fda8d4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 3, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01unse15da45fced636d6d56a8518382f807f.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 4, 2 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01unse61aa3e7806fa1773e9c701d81593ef2.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 4, 3 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01uns2e8f8d6a8fe454d520391b508313b001.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< typename util::glmtype< unsigned int, 4, 4 >::type > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01typename_01util_1_1glmtype_3_01uns7e2caa593361b7a634f8a1a78e272763.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 2, double > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_012_00_01double_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 2, float > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_012_00_01float_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 2, int > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_012_00_01int_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 2, size_t > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_012_00_01size__t_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 2, unsigned int > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_012_00_01unsigned_01int_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 3, double > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_013_00_01double_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 3, float > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_013_00_01float_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 3, int > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_013_00_01int_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 3, size_t > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_013_00_01size__t_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 3, unsigned int > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_013_00_01unsigned_01int_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 4, double > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_014_00_01double_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 4, float > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_014_00_01float_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 4, int > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_014_00_01int_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 4, size_t > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_014_00_01size__t_01_4_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< std::vector< Vector< 4, unsigned int > > >", "classpybind11_1_1detail_1_1type__caster_3_01std_1_1vector_3_01Vector_3_014_00_01unsigned_01int_01_4_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< typename util::glmtype< double, 2, 2 >::type >", "classpybind11_1_1detail_1_1type__caster_3_01typename_01util_1_1glmtype_3_01double_00_012_00_012_01_4_1_1type_01_4.html", null ],
       [ "pybind11::detail::type_caster< typename util::glmtype< double, 2, 3 >::type >", "classpybind11_1_1detail_1_1type__caster_3_01typename_01util_1_1glmtype_3_01double_00_012_00_013_01_4_1_1type_01_4.html", null ],
       [ "pybind11::detail::type_caster< typename util::glmtype< double, 2, 4 >::type >", "classpybind11_1_1detail_1_1type__caster_3_01typename_01util_1_1glmtype_3_01double_00_012_00_014_01_4_1_1type_01_4.html", null ],
@@ -2283,14 +2238,17 @@ var hierarchy =
       [ "pybind11::detail::type_caster< Vector< 2, double > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_012_00_01double_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 2, float > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_012_00_01float_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 2, int > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_012_00_01int_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< Vector< 2, size_t > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_012_00_01size__t_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 2, unsigned int > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_012_00_01unsigned_01int_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 3, double > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_013_00_01double_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 3, float > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_013_00_01float_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 3, int > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_013_00_01int_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< Vector< 3, size_t > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_013_00_01size__t_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 3, unsigned int > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_013_00_01unsigned_01int_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 4, double > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_014_00_01double_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 4, float > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_014_00_01float_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 4, int > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_014_00_01int_01_4_01_4.html", null ],
+      [ "pybind11::detail::type_caster< Vector< 4, size_t > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_014_00_01size__t_01_4_01_4.html", null ],
       [ "pybind11::detail::type_caster< Vector< 4, unsigned int > >", "classpybind11_1_1detail_1_1type__caster_3_01Vector_3_014_00_01unsigned_01int_01_4_01_4.html", null ]
     ] ],
     [ "inviwo::hdf5::TypeMap< T >", "structinviwo_1_1hdf5_1_1TypeMap.html", null ],
@@ -2351,6 +2309,7 @@ var hierarchy =
     [ "inviwo::ValueWrapper< IvwKey >", "structinviwo_1_1ValueWrapper.html", null ],
     [ "inviwo::ValueWrapper< KeyModifiers >", "structinviwo_1_1ValueWrapper.html", null ],
     [ "inviwo::ValueWrapper< KeyStates >", "structinviwo_1_1ValueWrapper.html", null ],
+    [ "inviwo::ValueWrapper< mat3 >", "structinviwo_1_1ValueWrapper.html", null ],
     [ "inviwo::ValueWrapper< mat4 >", "structinviwo_1_1ValueWrapper.html", null ],
     [ "inviwo::ValueWrapper< MouseButtons >", "structinviwo_1_1ValueWrapper.html", null ],
     [ "inviwo::ValueWrapper< MouseStates >", "structinviwo_1_1ValueWrapper.html", null ],
@@ -2395,20 +2354,16 @@ var hierarchy =
     [ "glsl::volume_lowpass", "classglsl_1_1volume__lowpass.html", null ],
     [ "glsl::volume_mapping", "classglsl_1_1volume__mapping.html", null ],
     [ "inviwo::VolumeBorders", "classinviwo_1_1VolumeBorders.html", null ],
-    [ "inviwo::VolumeCLBase", "classinviwo_1_1VolumeCLBase.html", [
-      [ "inviwo::VolumeCL", "classinviwo_1_1VolumeCL.html", null ],
-      [ "inviwo::VolumeCLGL", "classinviwo_1_1VolumeCLGL.html", null ]
-    ] ],
     [ "glsl::volumegradientmagnitude", "classglsl_1_1volumegradientmagnitude.html", null ],
     [ "inviwo::hdf5::VolumeInfo", "structinviwo_1_1hdf5_1_1VolumeInfo.html", null ],
     [ "inviwo::util::detail::VolumeLaplacianDispatcher", "structinviwo_1_1util_1_1detail_1_1VolumeLaplacianDispatcher.html", null ],
     [ "glsl::volumemerger", "classglsl_1_1volumemerger.html", null ],
-    [ "inviwo::VolumeCLBase::VolumeParameters", "structinviwo_1_1VolumeCLBase_1_1VolumeParameters.html", null ],
     [ "inviwo::detail::VolumeRamConstDispatcher", "structinviwo_1_1detail_1_1VolumeRamConstDispatcher.html", null ],
     [ "inviwo::detail::VolumeRamDispatcher", "structinviwo_1_1detail_1_1VolumeRamDispatcher.html", null ],
     [ "inviwo::VolumeRAMSubSet", "classinviwo_1_1VolumeRAMSubSet.html", null ],
     [ "inviwo::detail::VolumeRAMSubSetDispatcher", "structinviwo_1_1detail_1_1VolumeRAMSubSetDispatcher.html", null ],
     [ "glsl::volumeslice", "classglsl_1_1volumeslice.html", null ],
+    [ "glsl::widgetrenderer", "classglsl_1_1widgetrenderer.html", null ],
     [ "inviwo::WorkspaceManager", "classinviwo_1_1WorkspaceManager.html", null ],
     [ "inviwo::utildoc::TableBuilder::Wrapper", "structinviwo_1_1utildoc_1_1TableBuilder_1_1Wrapper.html", [
       [ "inviwo::utildoc::TableBuilder::ArrributeWrapper", "structinviwo_1_1utildoc_1_1TableBuilder_1_1ArrributeWrapper.html", null ],

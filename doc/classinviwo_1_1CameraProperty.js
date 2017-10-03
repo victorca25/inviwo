@@ -3,7 +3,7 @@ var classinviwo_1_1CameraProperty =
     [ "CameraProperty", "classinviwo_1_1CameraProperty.html#adc44a0adb72b146e6167072a81ab43f9", null ],
     [ "CameraProperty", "classinviwo_1_1CameraProperty.html#a811a9098d818e21e7f709f3d6d62a3a5", null ],
     [ "~CameraProperty", "classinviwo_1_1CameraProperty.html#ad82ca8a91f2c2f46874599d7c9cffe4d", null ],
-    [ "adjustCameraToData", "classinviwo_1_1CameraProperty.html#a08f11760deda05ab64242d20cab3c08c", null ],
+    [ "adjustCameraToData", "classinviwo_1_1CameraProperty.html#a83cbbd9d8e67413cc341ceac61be9aa9", null ],
     [ "clone", "classinviwo_1_1CameraProperty.html#af0f50e58d75e3e887e1046538e4e70b6", null ],
     [ "get", "classinviwo_1_1CameraProperty.html#a988a566b883ee481a334ff91fe3b591c", null ],
     [ "get", "classinviwo_1_1CameraProperty.html#ad5f561c1170cb95bcbcc830d655fbe65", null ],

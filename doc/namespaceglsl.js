@@ -5,6 +5,9 @@ var namespaceglsl =
     [ "axisalignedcutplaneslice", "classglsl_1_1axisalignedcutplaneslice.html", "classglsl_1_1axisalignedcutplaneslice" ],
     [ "background", "classglsl_1_1background.html", "classglsl_1_1background" ],
     [ "bilateralblur", "classglsl_1_1bilateralblur.html", "classglsl_1_1bilateralblur" ],
+    [ "bloomblur", "classglsl_1_1bloomblur.html", "classglsl_1_1bloomblur" ],
+    [ "bloomcompose", "classglsl_1_1bloomcompose.html", "classglsl_1_1bloomcompose" ],
+    [ "bloomhighpass", "classglsl_1_1bloomhighpass.html", "classglsl_1_1bloomhighpass" ],
     [ "brightnesscontrast", "classglsl_1_1brightnesscontrast.html", "classglsl_1_1brightnesscontrast" ],
     [ "capnearclipping", "classglsl_1_1capnearclipping.html", "classglsl_1_1capnearclipping" ],
     [ "classification", "classglsl_1_1classification.html", "classglsl_1_1classification" ],
@@ -18,9 +21,11 @@ var namespaceglsl =
     [ "depthdarkening", "classglsl_1_1depthdarkening.html", "classglsl_1_1depthdarkening" ],
     [ "depthlinearize", "classglsl_1_1depthlinearize.html", "classglsl_1_1depthlinearize" ],
     [ "displaytex", "classglsl_1_1displaytex.html", "classglsl_1_1displaytex" ],
+    [ "edgedarken", "classglsl_1_1edgedarken.html", "classglsl_1_1edgedarken" ],
     [ "fontrendering_freetype", "classglsl_1_1fontrendering__freetype.html", "classglsl_1_1fontrendering__freetype" ],
     [ "fullscreenquad", "classglsl_1_1fullscreenquad.html", "classglsl_1_1fullscreenquad" ],
     [ "fxaa", "classglsl_1_1fxaa.html", "classglsl_1_1fxaa" ],
+    [ "geometrycustompicking", "classglsl_1_1geometrycustompicking.html", "classglsl_1_1geometrycustompicking" ],
     [ "geometryrendering", "classglsl_1_1geometryrendering.html", "classglsl_1_1geometryrendering" ],
     [ "gradients", "classglsl_1_1gradients.html", "classglsl_1_1gradients" ],
     [ "hbao", "classglsl_1_1hbao.html", "classglsl_1_1hbao" ],
@@ -82,6 +87,7 @@ var namespaceglsl =
     [ "textrenderer", "classglsl_1_1textrenderer.html", "classglsl_1_1textrenderer" ],
     [ "texturedgeometryrendering", "classglsl_1_1texturedgeometryrendering.html", "classglsl_1_1texturedgeometryrendering" ],
     [ "tmip", "classglsl_1_1tmip.html", "classglsl_1_1tmip" ],
+    [ "tonemapping", "classglsl_1_1tonemapping.html", "classglsl_1_1tonemapping" ],
     [ "tuberendering", "classglsl_1_1tuberendering.html", "classglsl_1_1tuberendering" ],
     [ "vector2dcurl", "classglsl_1_1vector2dcurl.html", "classglsl_1_1vector2dcurl" ],
     [ "vector2ddivergence", "classglsl_1_1vector2ddivergence.html", "classglsl_1_1vector2ddivergence" ],
@@ -102,5 +108,6 @@ var namespaceglsl =
     [ "volume_mapping", "classglsl_1_1volume__mapping.html", "classglsl_1_1volume__mapping" ],
     [ "volumegradientmagnitude", "classglsl_1_1volumegradientmagnitude.html", "classglsl_1_1volumegradientmagnitude" ],
     [ "volumemerger", "classglsl_1_1volumemerger.html", "classglsl_1_1volumemerger" ],
-    [ "volumeslice", "classglsl_1_1volumeslice.html", "classglsl_1_1volumeslice" ]
+    [ "volumeslice", "classglsl_1_1volumeslice.html", "classglsl_1_1volumeslice" ],
+    [ "widgetrenderer", "classglsl_1_1widgetrenderer.html", "classglsl_1_1widgetrenderer" ]
 ];

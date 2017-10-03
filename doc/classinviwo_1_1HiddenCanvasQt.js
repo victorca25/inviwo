@@ -5,6 +5,6 @@ var classinviwo_1_1HiddenCanvasQt =
     [ "initializeGL", "classinviwo_1_1HiddenCanvasQt.html#ad19cb8308c9b7e5ab78affb69f32526b", null ],
     [ "paintEvent", "classinviwo_1_1HiddenCanvasQt.html#a670ea4a62a2c30759098cebb039bd95c", null ],
     [ "paintGL", "classinviwo_1_1HiddenCanvasQt.html#ab2694028078083e969d87a389fabb2e6", null ],
-    [ "resizeEvent", "classinviwo_1_1HiddenCanvasQt.html#a20f8dcb3fd37ee5a9adae920793ec8ac", null ],
-    [ "resizeGL", "classinviwo_1_1HiddenCanvasQt.html#a3acf256724505bd18191054857f8be3f", null ]
+    [ "resizeEvent", "classinviwo_1_1HiddenCanvasQt.html#a9d81450d98be343a26c67985e49f5114", null ],
+    [ "resizeGL", "classinviwo_1_1HiddenCanvasQt.html#afcd9976264ee18cf23d8b212d4377f58", null ]
 ];
