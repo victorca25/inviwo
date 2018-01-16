@@ -167,6 +167,7 @@ set(ivw_default_modules
     "OpenGL"
     "OpenGLQt"
     "QtWidgets"
+    "DH2320Lab1"
     CACHE INTERNAL "Default Inviwo Modules"
 )
 
