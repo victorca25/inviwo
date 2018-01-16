@@ -4,16 +4,16 @@
  #
  # Copyright (c) 2012-2017 Inviwo Foundation
  # All rights reserved.
- # 
+ #
  # Redistribution and use in source and binary forms, with or without
- # modification, are permitted provided that the following conditions are met: 
- # 
+ # modification, are permitted provided that the following conditions are met:
+ #
  # 1. Redistributions of source code must retain the above copyright notice, this
- # list of conditions and the following disclaimer. 
+ # list of conditions and the following disclaimer.
  # 2. Redistributions in binary form must reproduce the above copyright notice,
  # this list of conditions and the following disclaimer in the documentation
- # and/or other materials provided with the distribution. 
- # 
+ # and/or other materials provided with the distribution.
+ #
  # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  # ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  # WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -24,9 +24,9 @@
  # ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- # 
+ #
  #################################################################################
- 
+
 cmake_minimum_required(VERSION 3.2.0)
 cmake_policy(VERSION 3.2.0)
 
@@ -35,7 +35,7 @@ if(POLICY CMP0042)
 endif()
 
 if(POLICY CMP0043)
-    # The OLD behavior for this policy is to consume the content of the 
+    # The OLD behavior for this policy is to consume the content of the
     # suffixed COMPILE_DEFINITIONS_<CONFIG> target property when generating
     # the compilation command.
     cmake_policy(SET CMP0043 OLD)
@@ -68,18 +68,18 @@ option(BUILD_SHARED_LIBS "Build shared libs, else static libs" ON)
 
 
 # Needed for find_package(PythonLibsNew 3), which is an improved version of CMake shipped find_pythonLibs
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/ext/pybind11/tools") 
+#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/ext/pybind11/tools")
 
 
-# Make sure we do look for python 3 here, before it is done in any subdirectory or external library. 
-# If we do not specify version number on our first call to find_package(PythonLibs) it returns the 
-# first python version that is found on the system and then set the PYTHON_FOUND variable, this 
+# Make sure we do look for python 3 here, before it is done in any subdirectory or external library.
+# If we do not specify version number on our first call to find_package(PythonLibs) it returns the
+# first python version that is found on the system and then set the PYTHON_FOUND variable, this
 # version may be 2.x and not 3.x and later when we find_package(PythonLibsNew 3) (or find_package(PythonLibs 3))
 # it will detected that PYTHON_FOUND is set and reuse the paths found before and not look for python
-# again resulting in Python 2.x binaries will be used. 
-set(PythonLibsNew_FIND_VERSION 3)
-set(Python_ADDITIONAL_VERSIONS 3.5 3.6 3.7 3.8 3.9)
-find_package(PythonLibsNew 3)
+# again resulting in Python 2.x binaries will be used.
+#set(PythonLibsNew_FIND_VERSION 3)
+#set(Python_ADDITIONAL_VERSIONS 3.5 3.6 3.7 3.8 3.9)
+#find_package(PythonLibsNew 3)
 
 
 include(cmake/globalconfig.cmake)
@@ -100,7 +100,7 @@ if(NOT "${CMAKE_PREFIX_PATH}" MATCHES "[Qq][Tt]")
     if(QT_QMAKE_EXECUTABLE)
         execute_process(COMMAND ${QT_QMAKE_EXECUTABLE} -query "QT_INSTALL_PREFIX" OUTPUT_VARIABLE QT5_PATH OUTPUT_STRIP_TRAILING_WHITESPACE)
     else()
-        if(APPLE) # On OSX look for the usual brew installation. 
+        if(APPLE) # On OSX look for the usual brew installation.
             foreach(path "/usr/local/Cellar/qt" "/usr/local/Cellar/qt5")
                 if(EXISTS ${path})
                     file(GLOB qtversions RELATIVE "${path}/" "${path}/?.?.*")
@@ -118,14 +118,14 @@ if(NOT "${CMAKE_PREFIX_PATH}" MATCHES "[Qq][Tt]")
     endif()
 
     if(QT5_PATH)
-        ivw_debug_message(STATUS "Found qt at: ${QT5_PATH}") 
-        list(APPEND CMAKE_PREFIX_PATH ${QT5_PATH}) 
+        ivw_debug_message(STATUS "Found qt at: ${QT5_PATH}")
+        list(APPEND CMAKE_PREFIX_PATH ${QT5_PATH})
     endif()
 endif()
 
 #--------------------------------------------------------------------
 # Add external libraries.
-# 
+#
 # Dependencies between libraries are solved using the given order
 add_subdirectory(ext/zlib-1.2.11)
 add_subdirectory(ext/libpng)
@@ -159,31 +159,16 @@ add_subdirectory(src/core)
 #--------------------------------------------------------------------
 # Add default modules
 set(ivw_default_modules
-    "Assimp" 
+    "Assimp"
     "Base"
     "BaseGL"
     "CImg"
-    "FontRendering"
+    "GLFW"
     "OpenGL"
     "OpenGLQt"
-    "PVM"
-    "Nifti"
-    "QtWidgets" 
-    "VectorFieldVisualization"
-    "VectorFieldVisualizationGL"
-    "PostProcessing"
-    "Nifti" 
+    "QtWidgets"
     CACHE INTERNAL "Default Inviwo Modules"
 )
-
-
-if(PYTHONLIBS_FOUND)
-    set(ivw_default_modules
-        ${ivw_default_modules}
-        "Python3"
-        "Python3Qt"
-        )
-endif()
 
 find_package(OpenCL QUIET)
 if(OPENCL_FOUND)
@@ -232,6 +217,6 @@ endif()
 include(cmake/packaging.cmake)
 
 #--------------------------------------------------------------------
-# Generate Doxygen setup. 
+# Generate Doxygen setup.
 include(tools/doxygen/doxygen.cmake)
 make_doxygen_target(all_modules)
