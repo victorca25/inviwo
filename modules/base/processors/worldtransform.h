@@ -157,7 +157,10 @@ WorldTransform<T>::WorldTransform()
     , scale_("scale", "Scale", vec3(1), vec3(0.001f), vec3(10))
     , rotationAxis_("rotationAxis", "Axis", vec3(1, 0, 0), vec3(-1), vec3(1))
     , rotationAngle_("rotationAngle", "Angle", 0, 0, 2.0f * static_cast<float>(M_PI))
-    , matrix_("matrix_", "Transformation", mat4(1))
+    , matrix_("matrix_", "Transformation"
+        , mat4(1)
+        , mat4(-5,-5,-5,-5, -5,-5,-5,-5, -5,-5,-5,-5, -5,-5,-5,-5)
+        , mat4(5,5,5,5, 5,5,5,5, 5,5,5,5, 5,5,5,5))
     , updatingValues_(false) {
 
     addPort(inport_);
@@ -166,7 +169,7 @@ WorldTransform<T>::WorldTransform()
     type_.addOption("translate", "Translate", 0);
     type_.addOption("rotate", "Rotate", 1);
     type_.addOption("scale", "Scale", 2);
-    type_.addOption("user", "User Defined", 10);
+    // type_.addOption("user", "User Defined", 10);
     type_.setCurrentStateAsDefault();
 
     addProperty(type_);
@@ -183,7 +186,7 @@ WorldTransform<T>::WorldTransform()
     scale_.onChange(this, &WorldTransform::updateValues);
     rotationAxis_.onChange(this, &WorldTransform::updateValues);
     rotationAngle_.onChange(this, &WorldTransform::updateValues);
-    matrix_.onChange(this, &WorldTransform::onMatrixChange);
+    //matrix_.onChange(this, &WorldTransform::onMatrixChange);
     changeVisibility();
 }
 
@@ -227,11 +230,11 @@ void WorldTransform<T>::updateValues() {
     updatingValues_ = false;
 }
 
-template <typename T>
-void WorldTransform<T>::onMatrixChange() {
-    if (updatingValues_) return;
-    type_.set(10);
-}
+//template <typename T>
+//void WorldTransform<T>::onMatrixChange() {
+//    if (updatingValues_) return;
+//    type_.set(10);
+//}
 
 }  // namespace
 
