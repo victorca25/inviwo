@@ -22,24 +22,24 @@ namespace inviwo
 /** \docpage{org.inviwo.CubeAnimator, Cube Animator}
     ![](org.inviwo.CubeAnimator.png?classIdentifier=org.inviwo.CubeAnimator)
 
-    Explanation of how to use the processor.
+    Processor that enables a special kind of transformation of a mesh (in our task: a die): 
+    A rotation with a swirley motion on top of the circle, when the properties of the
+    processor are animated with a Property Animator.
     
     ### Inports
-      * __<Inport1>__ <description>.
+      * __meshIn__ Input mesh.
     
     ### Outports
-      * __<Outport1>__ <description>.
+      * __<Outport1>__ Output mesh.
     
     ### Properties
-      * __<Prop1>__ <description>.
-      * __<Prop2>__ <description>
+      * __radius__ Radius of the circle on which the mesh travels.
+      * .... more properties that you will add 
 */
 
 
 /** \class CubeAnimator
-    \brief VERY_BRIEFLY_DESCRIBE_THE_PROCESSOR
-    
-    DESCRIBE_THE_PROCESSOR_FROM_A_DEVELOPER_PERSPECTIVE
+    \brief Special transformation of a mesh
 
     @author Himangshu Saikia
 */
@@ -71,6 +71,7 @@ public:
 //Properties
 public:
     FloatProperty radius_;
+
 
 //Attributes
 private:
