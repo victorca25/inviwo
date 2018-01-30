@@ -702,8 +702,8 @@
                     <Property type="org.inviwo.FileProperty" identifier="filename">
                         <displayName content="Volume file" />
                         <absolutePath content="C:/Users/petst55/Work/Inviwo/Inviwo-dev/data/volumes/Bi2O3.dat" />
-                        <workspaceRelativePath content="../../../Inviwo-dev/data/volumes/Bi2O3.dat" />
-                        <ivwdataRelativePath content="../../Inviwo-dev/data/volumes/Bi2O3.dat" />
+                        <workspaceRelativePath content="../volumes/Bi2O3.dat" />
+                        <ivwdataRelativePath content="volumes/Bi2O3.dat" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />

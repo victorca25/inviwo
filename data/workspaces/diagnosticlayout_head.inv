@@ -759,8 +759,8 @@
                     <Property type="org.inviwo.FileProperty" identifier="filename">
                         <displayName content="Volume file" />
                         <absolutePath content="C:/Users/petst55/Work/Inviwo/Inviwo-dev/data/volumes/MRI-Head.pvm" />
-                        <workspaceRelativePath content="../../../Inviwo-dev/data/volumes/MRI-Head.pvm" />
-                        <ivwdataRelativePath content="../../Inviwo-dev/data/volumes/MRI-Head.pvm" />
+                        <workspaceRelativePath content="../volumes/MRI-Head.pvm" />
+                        <ivwdataRelativePath content="volumes/MRI-Head.pvm" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />

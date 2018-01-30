@@ -369,8 +369,8 @@
                     <Property type="org.inviwo.FileProperty" identifier="filename">
                         <displayName content="Volume file" />
                         <absolutePath content="C:/Users/petst55/Work/Inviwo/Inviwo-dev/data/volumes/Isabel.mpvm" />
-                        <workspaceRelativePath content="../../../Inviwo-dev/data/volumes/Isabel.mpvm" />
-                        <ivwdataRelativePath content="../../Inviwo-dev/data/volumes/Isabel.mpvm" />
+                        <workspaceRelativePath content="../volumes/Isabel.mpvm" />
+                        <ivwdataRelativePath content="volumes/Isabel.mpvm" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />

@@ -474,8 +474,8 @@
                 <Properties>
                     <Property type="org.inviwo.FileProperty" identifier="imageFileName">
                         <absolutePath content="C:/Users/petst55/Work/Inviwo/Inviwo-dev/data/images/canyon7-heightmap.png" />
-                        <workspaceRelativePath content="../../../Inviwo-dev/data/images/canyon7-heightmap.png" />
-                        <ivwdataRelativePath content="../../Inviwo-dev/data/images/canyon7-heightmap.png" />
+                        <workspaceRelativePath content="../images/canyon7-heightmap.png" />
+                        <ivwdataRelativePath content="images/canyon7-heightmap.png" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />

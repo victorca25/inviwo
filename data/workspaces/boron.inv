@@ -467,8 +467,8 @@
                     <Property type="org.inviwo.FileProperty" identifier="filename">
                         <displayName content="Volume file" />
                         <absolutePath content="C:/Users/petst55/Work/Inviwo/Inviwo-dev/data/volumes/boron.dat" />
-                        <workspaceRelativePath content="../../../Inviwo-dev/data/volumes/boron.dat" />
-                        <ivwdataRelativePath content="../../Inviwo-dev/data/volumes/boron.dat" />
+                        <workspaceRelativePath content="../volumes/boron.dat" />
+                        <ivwdataRelativePath content="volumes/boron.dat" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />

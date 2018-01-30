@@ -820,8 +820,8 @@
                     <Property type="org.inviwo.FileProperty" identifier="filename">
                         <displayName content="Volume file" />
                         <absolutePath content="C:/Users/petst55/Work/Inviwo/Inviwo-dev/data/volumes/Subclavia.pvm" />
-                        <workspaceRelativePath content="../../../Inviwo-dev/data/volumes/Subclavia.pvm" />
-                        <ivwdataRelativePath content="../../Inviwo-dev/data/volumes/Subclavia.pvm" />
+                        <workspaceRelativePath content="../volumes/Subclavia.pvm" />
+                        <ivwdataRelativePath content="volumes/Subclavia.pvm" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />
