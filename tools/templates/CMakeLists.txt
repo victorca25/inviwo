@@ -7,14 +7,14 @@ ivw_module(<name>)
 set(HEADER_FILES
     #${CMAKE_CURRENT_SOURCE_DIR}/<lname>processor.h
 )
-ivw_group("Header Files" ${HEADER_FILES})
+#~ ivw_group("Header Files" ${HEADER_FILES})
 
 #--------------------------------------------------------------------
 # Add source files
 set(SOURCE_FILES
     #${CMAKE_CURRENT_SOURCE_DIR}/<lname>processor.cpp
 )
-ivw_group("Source Files" ${SOURCE_FILES})
+ivw_group("Sources" ${SOURCE_FILES} ${HEADER_FILES})
 
 
 #--------------------------------------------------------------------

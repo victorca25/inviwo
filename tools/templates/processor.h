@@ -1,79 +1,90 @@
-/*********************************************************************************
+/*********************************************************************
+ *  Author  : <author>
+ *  Init    : <datetime>
  *
- * Inviwo - Interactive Visualization Workshop
+ *  Project : KTH Inviwo Modules
  *
- * Copyright (c) 2017 Inviwo Foundation
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- * list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- * this list of conditions and the following disclaimer in the documentation
- * and/or other materials provided with the distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- * 
- *********************************************************************************/
+ *  License : Follows the Inviwo BSD license model
+ *********************************************************************
+ */
 
-#ifndef IVW_<uname>_H
-#define IVW_<uname>_H
+#pragma once
 
 #include <define>
 #include <inviwo/core/common/inviwo.h>
 #include <inviwo/core/processors/processor.h>
-#include <inviwo/core/properties/ordinalproperty.h>
-#include <inviwo/core/ports/imageport.h>
+//#include <inviwo/core/ports/volumeport.h>
+//#include <inviwo/core/ports/meshport.h>
+//#include <inviwo/core/properties/boolcompositeproperty.h>
+//#include <inviwo/core/properties/boolproperty.h>
+//#include <inviwo/core/properties/buttonproperty.h>
+//#include <inviwo/core/properties/compositeproperty.h>
+//#include <inviwo/core/properties/fileproperty.h>
+//#include <inviwo/core/properties/minmaxproperty.h>
+//#include <inviwo/core/properties/optionproperty.h>
+//#include <inviwo/core/properties/ordinalproperty.h>
+//#include <inviwo/core/properties/stringproperty.h>
+//#include <inviwo/core/properties/transferfunctionproperty.h>
 
-namespace inviwo {
+namespace inviwo
+{
+namespace kth
+{
 
 /** \docpage{org.inviwo.<name>, <dname>}
- * ![](org.inviwo.<name>.png?classIdentifier=org.inviwo.<name>)
- * Explanation of how to use the processor.
- *
- * ### Inports
- *   * __<Inport1>__ <description>.
- *
- * ### Outports
- *   * __<Outport1>__ <description>.
- * 
- * ### Properties
- *   * __<Prop1>__ <description>.
- *   * __<Prop2>__ <description>
- */
+    ![](org.inviwo.<name>.png?classIdentifier=org.inviwo.<name>)
+
+    Explanation of how to use the processor.
+    
+    ### Inports
+      * __<Inport1>__ <description>.
+    
+    ### Outports
+      * __<Outport1>__ <description>.
+    
+    ### Properties
+      * __<Prop1>__ <description>.
+      * __<Prop2>__ <description>
+*/
 
 
-/**
- * \class <name>
- * \brief VERY_BRIEFLY_DESCRIBE_THE_PROCESSOR
- * DESCRIBE_THE_PROCESSOR_FROM_A_DEVELOPER_PERSPECTIVE
- */
-class <api> <name> : public Processor { 
+/** \class <name>
+    \brief VERY_BRIEFLY_DESCRIBE_THE_PROCESSOR
+    
+    DESCRIBE_THE_PROCESSOR_FROM_A_DEVELOPER_PERSPECTIVE
+
+    @author <author>
+*/
+class <api> <name> : public Processor
+{ 
+//Friends
+//Types
+public:
+
+//Construction / Deconstruction
 public:
     <name>();
     virtual ~<name>() = default;
      
-    virtual void process() override;
-
+//Methods
+public:
     virtual const ProcessorInfo getProcessorInfo() const override;
     static const ProcessorInfo processorInfo_;
+
+protected:
+    ///Our main computation function
+    virtual void process() override;
+
+//Ports
+public:
+
+//Properties
+public:
+
+//Attributes
 private:
-    ImageOutport outport_;
-    FloatVec3Property position_;
+
 };
 
 } // namespace
-
-#endif // IVW_<uname>_H
-
+} // namespace
