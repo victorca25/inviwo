@@ -127,7 +127,7 @@ float ImproveCacheLocalityProcess::ProcessMesh( aiMesh* pMesh, unsigned int mesh
 		return 0.f;
 
 	if (pMesh->mPrimitiveTypes != aiPrimitiveType_TRIANGLE)	{
-		DefaultLogger::get()->error("This algorithm works on triangle meshes only");
+		//DefaultLogger::get()->error("This algorithm works on triangle meshes only");
 		return 0.f;
 	}
 
