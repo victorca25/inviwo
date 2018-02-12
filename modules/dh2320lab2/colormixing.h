@@ -75,7 +75,7 @@ public:
 
 protected:
     ///Our main computation function
-    virtual void Mix(const size2_t& Resolution, glm::u8vec3* pRaw);
+    virtual void Mix(const size2_t& Resolution, glm::u8vec3* pRaw) override;
 
     ///Mixes the two given colors using additive color mixing
     vec3 AdditiveColorMixing(const vec3& Color1, const vec3& Color2);
