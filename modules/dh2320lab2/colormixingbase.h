@@ -14,6 +14,7 @@
 #include <inviwo/core/common/inviwo.h>
 #include <inviwo/core/processors/processor.h>
 #include <inviwo/core/ports/imageport.h>
+#include <inviwo/core/datastructures/image/layerram.h>
 //#include <inviwo/core/ports/meshport.h>
 //#include <inviwo/core/properties/boolcompositeproperty.h>
 //#include <inviwo/core/properties/boolproperty.h>

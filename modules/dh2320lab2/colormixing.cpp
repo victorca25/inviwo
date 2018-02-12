@@ -102,11 +102,11 @@ void ColorMixing::Mix(const size2_t& Resolution, glm::u8vec3* pRaw)
     const vec3 ColorABC = propMixingMode.get() == 0 ? AdditiveColorMixing(ColorAB, ColorC): SubtractiveColorMixing(ColorAB, ColorC);
 
     //Replace colors
-    for(int i(0);i<Resolution.x;i++)
+    for(size_t i(0);i<Resolution.x;i++)
     {
-        for(int j(0);j<Resolution.y;j++)
+        for(size_t j(0);j<Resolution.y;j++)
         {
-            const int Idx = (j * Resolution.x + i);
+            const size_t Idx = (j * Resolution.x + i);
             if (pRaw[Idx].g == 0 && pRaw[Idx].b == 0)
             {
                 switch (pRaw[Idx].r)

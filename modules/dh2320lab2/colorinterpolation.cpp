@@ -199,9 +199,9 @@ void ColorInterpolation::Mix(const size2_t& Resolution, glm::u8vec3* pRaw)
     if (portInImage.isChanged())
     {
         ColorTemplateBBoxes.clear();
-        for(int j(0),Idx(0);j<Resolution.y;j++)
+        for(size_t j(0),Idx(0);j<Resolution.y;j++)
         {
-            for(int i(0);i<Resolution.x;i++,Idx++)
+            for(size_t i(0);i<Resolution.x;i++,Idx++)
             {
                 if (pRaw[Idx].r > 110 && pRaw[Idx].g == 0 && pRaw[Idx].b == 0)
                 {
@@ -237,9 +237,9 @@ void ColorInterpolation::Mix(const size2_t& Resolution, glm::u8vec3* pRaw)
     //Some helper colors
     ColorSpace::Hsv Black(0, 0, 0), White(0, 0, 1);
 
-    for(int j(0),Idx(0);j<Resolution.y;j++)
+    for(size_t j(0),Idx(0);j<Resolution.y;j++)
     {
-        for(int i(0);i<Resolution.x;i++,Idx++)
+        for(size_t i(0);i<Resolution.x;i++,Idx++)
         {
             if (pRaw[Idx].r > 110 && pRaw[Idx].g == 0 && pRaw[Idx].b == 0)
             {
