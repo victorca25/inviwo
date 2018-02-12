@@ -13,17 +13,7 @@ namespace ColorSpace {
 		virtual void ToRgb(Rgb *color) = 0;
 		virtual void Copy(IColorSpace *color) = 0;
 		template <typename TColorSpace>
-		void To(TColorSpace *color) {
-			Rgb rgb;
-
-			if (typeid(*this) == typeid(*color)) {
-				this->Copy(color);
-			}
-			else {
-				this->ToRgb(&rgb);
-				IConverter<TColorSpace>::ToColorSpace(&rgb, color);
-			}
-		}
+                void To(TColorSpace *color);
 	};
 
 
@@ -37,6 +27,22 @@ namespace ColorSpace {
 		virtual void ToRgb(Rgb *color);
 		virtual void Copy(IColorSpace *color);
 	};
+
+        template <typename TColorSpace>
+        void IColorSpace::To(TColorSpace *color)
+        {
+            Rgb rgb;
+
+            if (typeid(*this) == typeid(*color))
+            {
+                this->Copy(color);
+            }
+            else
+            {
+                this->ToRgb(&rgb);
+                IConverter<TColorSpace>::ToColorSpace(&rgb, color);
+            }
+        }
 
 	struct Xyz : public IColorSpace {
 		double x, y, z;

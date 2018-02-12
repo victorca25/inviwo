@@ -75,7 +75,7 @@ public:
 
 protected:
     ///Our main computation function
-    virtual void Mix(const size2_t& Resolution, glm::u8vec3* pRaw);
+    virtual void Mix(const size2_t& Resolution, glm::u8vec3* pRaw) override;
 
 //Ports
 public:
