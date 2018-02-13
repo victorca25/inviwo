@@ -127,7 +127,7 @@ void Chaikin::process()
             LineVertices.reserve(Indices.size());
             for(const auto& idx : Indices)
             {
-                if (LineVertices.back() != AllVertices[idx])
+                if (LineVertices.empty() || LineVertices.back() != AllVertices[idx])
                 {
                     LineVertices.push_back(AllVertices[idx]);
                 }
