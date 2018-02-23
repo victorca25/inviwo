@@ -54,7 +54,7 @@ bool Triangle::closestIntersection(const Ray& ray, double maxLambda,
     //} 
     //
     // Hints :
-    // As explained in Lecture 7 - Raytracing
+    // As explained in Lecture on Raytracing
     // 1. Ray origin p_r : ray.getOrigin()
     //    Ray direction t_r : ray.getDirection()
     // 2. For a triangle we have t1 = v1 - v0, t2 = v2 - v0, n = cross(t1, t2)

@@ -36,7 +36,7 @@ vec4 PhongMaterial::shade(const RayIntersection& intersection, const Light& ligh
     // Hints:
     //
     // 1. This function should return the sum of diffuse and specular parts as
-    //    mentioned in slide 59 of Lecture 6. 
+    //    mentioned in slide 59 of Lecture 7. 
 
     // 2. The incident radiance from the light source is the light intensity divided by
     //    the quadratic distance of the light source from the point of intersection. (quadratic falloff)

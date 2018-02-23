@@ -31,7 +31,7 @@ bool Sphere::closestIntersection(const Ray& ray, double maxLambda,
     //}
     //
     // Hints :
-    // As explained in Lecture 7 - Raytracing
+    // As explained in Lecture on Raytracing
     // 1. Ray origin p_r : ray.getOrigin()
     //    Ray direction t_r : ray.getDirection()
     // 2. Solving the quadratic equation (ax^2 + bx + c = 0) for an intersection of a ray with a sphere
