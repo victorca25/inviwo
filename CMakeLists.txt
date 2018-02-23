@@ -169,6 +169,7 @@ set(ivw_default_modules
     "QtWidgets"
     "DH2320Lab1"
     "DH2320Lab2"
+    "DH2320Lab3"
     CACHE INTERNAL "Default Inviwo Modules"
 )
 
