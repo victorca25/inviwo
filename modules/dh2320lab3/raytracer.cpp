@@ -15,6 +15,7 @@
 #include <dh2320lab3/plane.h>
 #include <dh2320lab3/constantmaterial.h>
 #include <dh2320lab3/phongmaterial.h>
+#include <inviwo/core/datastructures/image/layerram.h>
 
 namespace inviwo {
 

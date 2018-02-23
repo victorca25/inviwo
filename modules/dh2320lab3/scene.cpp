@@ -79,8 +79,8 @@ void Scene::render(LayerRAM* lr) const {
     size_t count_inter = 0;
     size_t count_light_on = 0;
 
-    for (P.x = 0; P.x < imageSize_[0]; P.x++) {
-        for (P.y = 0; P.y < imageSize_[1]; P.y++) {
+    for (P.x = 0; P.x < size_t(imageSize_[0]); P.x++) {
+        for (P.y = 0; P.y < size_t(imageSize_[1]); P.y++) {
             double maxLambda = 1000.0;
             Ray ray = getRay(P);
 

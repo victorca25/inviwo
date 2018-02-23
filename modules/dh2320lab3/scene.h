@@ -15,6 +15,7 @@
 #include <dh2320lab3/ray.h>
 #include <dh2320lab3/light.h>
 #include <dh2320lab3/renderable.h>
+#include <inviwo/core/datastructures/image/layerram.h>
 
 namespace inviwo {
 

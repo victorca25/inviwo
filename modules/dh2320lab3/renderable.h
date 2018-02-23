@@ -16,6 +16,7 @@
 #include <dh2320lab3/ray.h>
 #include <dh2320lab3/rayintersection.h>
 #include <dh2320lab3/material.h>
+#include <inviwo/core/datastructures/geometry/basicmesh.h>
 
 namespace inviwo {
 class RayIntersection;

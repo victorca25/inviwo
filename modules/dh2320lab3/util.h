@@ -12,6 +12,7 @@
 
 #include <dh2320lab3/dh2320lab3moduledefine.h>
 #include <inviwo/core/common/inviwo.h>
+#include <inviwo/core/datastructures/geometry/basicmesh.h>
 
 namespace inviwo {
 
