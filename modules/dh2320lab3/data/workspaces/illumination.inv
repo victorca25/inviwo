@@ -158,7 +158,7 @@
                     <PortGroup content="default" key="inport" />
                 </PortGroups>
                 <InPorts>
-                    <InPort type="org.inviwo.ImageInport" identifier="inport" id="ref0" />
+                    <InPort type="org.inviwo.ImageInport" identifier="inport" id="ref7" />
                 </InPorts>
                 <Properties>
                     <Property type="org.inviwo.CompositeProperty" identifier="inputSize">
@@ -238,7 +238,7 @@
                     <InPort type="org.inviwo.ImageInport" identifier="inport" />
                 </InPorts>
                 <OutPorts>
-                    <OutPort type="org.inviwo.ImageOutport" identifier="outport" id="ref1" />
+                    <OutPort type="org.inviwo.ImageOutport" identifier="outport" id="ref8" />
                 </OutPorts>
                 <Properties>
                     <Property type="org.inviwo.OptionPropertyEnumInt" identifier="backgroundStyle">
@@ -266,80 +266,6 @@
                     </MetaDataItem>
                 </MetaDataMap>
             </Processor>
-            <Processor type="org.inviwo.Raytracer" identifier="Raytracer 2">
-                <PortGroups>
-                    <PortGroup content="default" key="image" />
-                    <PortGroup content="default" key="sg" />
-                </PortGroups>
-                <OutPorts>
-                    <OutPort type="org.inviwo.ImageOutport" identifier="image" id="ref8" />
-                    <OutPort type="org.inviwo.MeshOutport" identifier="sg" id="ref7" />
-                </OutPorts>
-                <Properties>
-                    <Property type="org.inviwo.OptionPropertyInt" identifier="task">
-                        <options>
-                            <option>
-                                <id content="task1" />
-                                <name content="Task 1" />
-                                <value content="0" />
-                            </option>
-                            <option>
-                                <id content="task2" />
-                                <name content="Task 2" />
-                                <value content="1" />
-                            </option>
-                        </options>
-                        <selectedIdentifier content="task2" />
-                    </Property>
-                    <Property type="org.inviwo.IntVec2Property" identifier="imSize" />
-                    <Property type="org.inviwo.FloatProperty" identifier="li" />
-                    <Property type="org.inviwo.FloatProperty" identifier="kd" />
-                    <Property type="org.inviwo.FloatProperty" identifier="ks" />
-                    <Property type="org.inviwo.CameraProperty" identifier="camera">
-                        <OwnedPropertyIdentifiers>
-                            <PropertyIdentifier content="fov" />
-                        </OwnedPropertyIdentifiers>
-                        <Properties>
-                            <Property type="org.inviwo.OptionPropertyString" identifier="cameraType">
-                                <readonly content="1" />
-                            </Property>
-                            <Property type="org.inviwo.FloatVec3Property" identifier="lookFrom">
-                                <value x="5.9313598" y="0.6095978" z="6.0152855" />
-                            </Property>
-                            <Property type="org.inviwo.FloatVec3Property" identifier="lookTo" />
-                            <Property type="org.inviwo.FloatVec3Property" identifier="lookUp">
-                                <value x="-0.33295712" y="0.17782436" z="0.92602265" />
-                            </Property>
-                            <Property type="org.inviwo.FloatProperty" identifier="aspectRatio">
-                                <readonly content="1" />
-                            </Property>
-                            <Property type="org.inviwo.FloatProperty" identifier="near" />
-                            <Property type="org.inviwo.FloatProperty" identifier="far" />
-                            <Property type="org.inviwo.BoolProperty" identifier="fitToBasis_" />
-                            <Property type="org.inviwo.FloatProperty" identifier="fov">
-                                <displayName content="FOV" />
-                                <semantics semantics="Default" />
-                                <usageMode content="1" />
-                                <visible content="1" />
-                                <readonly content="0" />
-                                <minvalue content="10" />
-                                <maxvalue content="180" />
-                                <increment content="0.1" />
-                                <value content="63.567001" />
-                            </Property>
-                        </Properties>
-                        <collapsed content="0" />
-                    </Property>
-                    <Property type="org.inviwo.ButtonProperty" identifier="render" />
-                </Properties>
-                <MetaDataMap>
-                    <MetaDataItem type="org.inviwo.ProcessorMetaData" key="org.inviwo.ProcessorMetaData">
-                        <position x="325" y="-175" />
-                        <visibility content="1" />
-                        <selection content="1" />
-                    </MetaDataItem>
-                </MetaDataMap>
-            </Processor>
             <Processor type="org.inviwo.LineRenderer" identifier="Line Renderer">
                 <PortGroups>
                     <PortGroup content="default" key="geometry" />
@@ -347,11 +273,11 @@
                     <PortGroup content="default" key="imageInport" />
                 </PortGroups>
                 <InPorts>
-                    <InPort type="org.inviwo.MeshFlatMultiInport" identifier="geometry" id="ref2" />
-                    <InPort type="org.inviwo.ImageInport" identifier="imageInport" id="ref3" />
+                    <InPort type="org.inviwo.MeshFlatMultiInport" identifier="geometry" id="ref0" />
+                    <InPort type="org.inviwo.ImageInport" identifier="imageInport" id="ref1" />
                 </InPorts>
                 <OutPorts>
-                    <OutPort type="org.inviwo.ImageOutport" identifier="image" id="ref4" />
+                    <OutPort type="org.inviwo.ImageOutport" identifier="image" id="ref2" />
                 </OutPorts>
                 <Properties>
                     <Property type="org.inviwo.FloatProperty" identifier="lineWidth">
@@ -365,7 +291,9 @@
                     </Property>
                     <Property type="org.inviwo.BoolProperty" identifier="roundCaps" />
                     <Property type="org.inviwo.BoolProperty" identifier="pseudoLighting" />
-                    <Property type="org.inviwo.BoolProperty" identifier="roundDepthProfile" />
+                    <Property type="org.inviwo.BoolProperty" identifier="roundDepthProfile">
+                        <value content="0" />
+                    </Property>
                     <Property type="org.inviwo.BoolProperty" identifier="writeDepth" />
                     <Property type="org.inviwo.OptionPropertyEnumInt" identifier="drawMode" />
                     <Property type="org.inviwo.BoolProperty" identifier="useAdjacency">
@@ -523,26 +451,100 @@
                     </MetaDataItem>
                 </MetaDataMap>
             </Processor>
+            <Processor type="org.inviwo.Raytracer" identifier="Raytracer">
+                <PortGroups>
+                    <PortGroup content="default" key="image" />
+                    <PortGroup content="default" key="sg" />
+                </PortGroups>
+                <OutPorts>
+                    <OutPort type="org.inviwo.ImageOutport" identifier="image" id="ref4" />
+                    <OutPort type="org.inviwo.MeshOutport" identifier="sg" id="ref3" />
+                </OutPorts>
+                <Properties>
+                    <Property type="org.inviwo.OptionPropertyInt" identifier="task">
+                        <options>
+                            <option>
+                                <id content="task1" />
+                                <name content="Task 1" />
+                                <value content="0" />
+                            </option>
+                            <option>
+                                <id content="task2" />
+                                <name content="Task 2" />
+                                <value content="1" />
+                            </option>
+                        </options>
+                        <selectedIdentifier content="task2" />
+                    </Property>
+                    <Property type="org.inviwo.IntVec2Property" identifier="imSize" />
+                    <Property type="org.inviwo.FloatProperty" identifier="li" />
+                    <Property type="org.inviwo.FloatProperty" identifier="kd" />
+                    <Property type="org.inviwo.FloatProperty" identifier="ks" />
+                    <Property type="org.inviwo.CameraProperty" identifier="camera">
+                        <OwnedPropertyIdentifiers>
+                            <PropertyIdentifier content="fov" />
+                        </OwnedPropertyIdentifiers>
+                        <Properties>
+                            <Property type="org.inviwo.OptionPropertyString" identifier="cameraType">
+                                <readonly content="1" />
+                            </Property>
+                            <Property type="org.inviwo.FloatVec3Property" identifier="lookFrom">
+                                <value x="5.9313598" y="0.6095978" z="6.0152855" />
+                            </Property>
+                            <Property type="org.inviwo.FloatVec3Property" identifier="lookTo" />
+                            <Property type="org.inviwo.FloatVec3Property" identifier="lookUp">
+                                <value x="-0.33295712" y="0.17782436" z="0.92602265" />
+                            </Property>
+                            <Property type="org.inviwo.FloatProperty" identifier="aspectRatio">
+                                <readonly content="1" />
+                            </Property>
+                            <Property type="org.inviwo.FloatProperty" identifier="near" />
+                            <Property type="org.inviwo.FloatProperty" identifier="far" />
+                            <Property type="org.inviwo.BoolProperty" identifier="fitToBasis_" />
+                            <Property type="org.inviwo.FloatProperty" identifier="fov">
+                                <displayName content="FOV" />
+                                <semantics semantics="Default" />
+                                <usageMode content="1" />
+                                <visible content="1" />
+                                <readonly content="0" />
+                                <minvalue content="10" />
+                                <maxvalue content="180" />
+                                <increment content="0.1" />
+                                <value content="63.567001" />
+                            </Property>
+                        </Properties>
+                        <collapsed content="0" />
+                    </Property>
+                    <Property type="org.inviwo.ButtonProperty" identifier="render" />
+                </Properties>
+                <MetaDataMap>
+                    <MetaDataItem type="org.inviwo.ProcessorMetaData" key="org.inviwo.ProcessorMetaData">
+                        <position x="325" y="-175" />
+                        <visibility content="1" />
+                        <selection content="0" />
+                    </MetaDataItem>
+                </MetaDataMap>
+            </Processor>
         </Processors>
         <Connections>
             <Connection>
                 <OutPort type="org.inviwo.ImageOutport" identifier="outport" reference="ref6" />
-                <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref0" />
-            </Connection>
-            <Connection>
-                <OutPort type="org.inviwo.ImageOutport" identifier="image" reference="ref8" />
-                <InPort type="org.inviwo.ImageMultiInport" identifier="multiinport" reference="ref5" />
-            </Connection>
-            <Connection>
-                <OutPort type="org.inviwo.MeshOutport" identifier="sg" reference="ref7" />
-                <InPort type="org.inviwo.MeshFlatMultiInport" identifier="geometry" reference="ref2" />
-            </Connection>
-            <Connection>
-                <OutPort type="org.inviwo.ImageOutport" identifier="outport" reference="ref1" />
-                <InPort type="org.inviwo.ImageInport" identifier="imageInport" reference="ref3" />
+                <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref7" />
             </Connection>
             <Connection>
                 <OutPort type="org.inviwo.ImageOutport" identifier="image" reference="ref4" />
+                <InPort type="org.inviwo.ImageMultiInport" identifier="multiinport" reference="ref5" />
+            </Connection>
+            <Connection>
+                <OutPort type="org.inviwo.MeshOutport" identifier="sg" reference="ref3" />
+                <InPort type="org.inviwo.MeshFlatMultiInport" identifier="geometry" reference="ref0" />
+            </Connection>
+            <Connection>
+                <OutPort type="org.inviwo.ImageOutport" identifier="outport" reference="ref8" />
+                <InPort type="org.inviwo.ImageInport" identifier="imageInport" reference="ref1" />
+            </Connection>
+            <Connection>
+                <OutPort type="org.inviwo.ImageOutport" identifier="image" reference="ref2" />
                 <InPort type="org.inviwo.ImageMultiInport" identifier="multiinport" reference="ref5" />
             </Connection>
         </Connections>
