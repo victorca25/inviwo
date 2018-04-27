@@ -170,6 +170,7 @@ set(ivw_default_modules
     "DH2320Lab1"
     "DH2320Lab2"
     "LabRaytracer"
+    "LabRaycasting"
     CACHE INTERNAL "Default Inviwo Modules"
 )
 
