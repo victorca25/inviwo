@@ -184,7 +184,7 @@ if(OPENCL_FOUND)
         )
 endif()
 
-option(IVW_INTEGRATION_TESTS "Build inviwo integration test" ON)
+option(IVW_INTEGRATION_TESTS "Build inviwo integration test" OFF)
 ivw_add_build_module_dependency(GLFW IVW_INTEGRATION_TESTS)
 ivw_add_build_module_dependency(BASE IVW_INTEGRATION_TESTS)
 

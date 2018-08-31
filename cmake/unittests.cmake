@@ -4,16 +4,16 @@
  #
  # Copyright (c) 2013-2017 Inviwo Foundation
  # All rights reserved.
- # 
+ #
  # Redistribution and use in source and binary forms, with or without
- # modification, are permitted provided that the following conditions are met: 
- # 
+ # modification, are permitted provided that the following conditions are met:
+ #
  # 1. Redistributions of source code must retain the above copyright notice, this
- # list of conditions and the following disclaimer. 
+ # list of conditions and the following disclaimer.
  # 2. Redistributions in binary form must reproduce the above copyright notice,
  # this list of conditions and the following disclaimer in the documentation
- # and/or other materials provided with the distribution. 
- # 
+ # and/or other materials provided with the distribution.
+ #
  # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  # ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  # WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -24,15 +24,15 @@
  # ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- # 
+ #
  #################################################################################
 
  ### Generate unittests for modules. ###
 
 #--------------------------------------------------------------------
 # Options for unittests
-option(IVW_UNITTESTS "Enable unittests" ON)
-option(IVW_UNITTESTS_RUN_ON_BUILD "Enable running unittest when building" ON)
+option(IVW_UNITTESTS "Enable unittests" OFF)
+option(IVW_UNITTESTS_RUN_ON_BUILD "Enable running unittest when building" OFF)
 
 #--------------------------------------------------------------------
 # Add unittests
@@ -76,7 +76,7 @@ function(ivw_make_unittest_target name target)
     #--------------------------------------------------------------------
     # Add run on build command
     if(IVW_UNITTESTS_RUN_ON_BUILD)
-        add_custom_command(TARGET "${test_name}" POST_BUILD COMMAND "${test_name}" 
+        add_custom_command(TARGET "${test_name}" POST_BUILD COMMAND "${test_name}"
                            COMMENT "Running unittest for: ${test_name}" VERBATIM)
     endif()
 
