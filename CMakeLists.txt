@@ -167,10 +167,7 @@ set(ivw_default_modules
     "OpenGL"
     "OpenGLQt"
     "QtWidgets"
-    "DH2320Lab1"
-    "DH2320Lab2"
-    "LabRaytracer"
-    "LabRaycasting"
+    "LabMarchingSquares"
     "DD2257Setup"
     CACHE INTERNAL "Default Inviwo Modules"
 )
