@@ -72,7 +72,8 @@ protected:
     // (TODO: Helper functions can be defined here and then implemented in the .cpp)
 
     // Get the input value from a 2-dimensional scalar field represented by a 3-dimensional volume
-    double getInputValue(const VolumeRAM* data, size3_t dims, size_t x, size_t y);
+    double getInputValue(const VolumeRAM* data, const size3_t dims, 
+        const size_t i, const size_t j);
   
     // Draw a line segment from v1 to v2 with a color
     void drawLineSegment(const vec2& v1, const vec2& v2, const vec4& color,

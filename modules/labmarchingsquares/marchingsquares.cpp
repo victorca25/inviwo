@@ -113,19 +113,6 @@ MarchingSquares::MarchingSquares()
 
 }
 
-double MarchingSquares::getInputValue(const VolumeRAM* data, size3_t dims, size_t x, size_t y)
-{
-    if (x < dims.x && y < dims.y)
-    {
-        return data->getAsDouble(size3_t(x, y, 0));
-    }
-    else
-    {
-        LogProcessorError("Attempting to access data outside the boundaries of the volume, value is set to 0");
-        return 0;
-    }
-}
-
 void MarchingSquares::process()
 {
     if (!inData.hasData()) {
@@ -163,14 +150,25 @@ void MarchingSquares::process()
 
     // Values within the input data are accessed by the function below
     // It's input is the VolumeRAM from above, the dimensions of the volume
-    // and the x- and y- index of the position to be accessed where
-    // x is in [0, dims.x-1] and y is in [0, dims.y-1]
+    // and the indeces i and j of the position to be accessed where
+    // i is in [0, dims.x-1] and j is in [0, dims.y-1]
     float valueat00 = getInputValue(vr, dims, 0, 0);
     LogProcessorInfo("Value at (0,0) is: " << valueat00);
     // You can assume that dims.z = 1 and do not need to consider others cases
 
+    // TODO (Bonus) Gaussian filter
+    // Our input is const, but you need to compute smoothed data and write it somewhere
+    // Create an editable volume like this:
+    // Volume volSmoothed(vol->getDimensions(), vol->getDataFormat());
+    // auto vrSmoothed = volSmoothed.getEditableRepresentation<VolumeRAM>();
+    // Values can be set with
+    // vrSmoothed->setFromDouble(vec3(i,j,0), value);
+    // getting values works with an editable volume as well
+    // getInputValue(vrSmoothed, dims, 0, 0);
+
     // Grid
 
+    // Properties are accessed with propertyName.get() 
     if (propShowGrid.get())
     {
         // TODO: Add grid lines of the given color 
@@ -185,7 +183,7 @@ void MarchingSquares::process()
         // image range from 0 to 1 for both x and y
         vec2 v1 = vec2(0.5, 0.5);
         vec2 v2 = vec2(0.7, 0.7);
-        drawLineSegment(v1, v2, propGridColor, indexBufferGrid, vertices);
+        drawLineSegment(v1, v2, propGridColor.get(), indexBufferGrid, vertices);
     }
 
     // Iso contours
@@ -197,10 +195,8 @@ void MarchingSquares::process()
     }
     else
     {
-        // TODO: Draw a the given number (propNumContours) of isolines between 
+        // TODO: Draw the given number (propNumContours) of isolines between 
         // the minimum and maximum value
-        // Hint: If the number of contours to be drawn is 1, the iso value for
-        // that contour would be half way between maximum and minimum
         
         // TODO (Bonus): Use the transfer function property to assign a color
         // The transfer function normalizes the input data and sampling colors
@@ -222,11 +218,27 @@ void MarchingSquares::process()
     meshOut.setData(mesh);
 }
 
+double MarchingSquares::getInputValue(const VolumeRAM* data, const size3_t dims, 
+    const size_t i, const size_t j) {
+    // Check if the indices are withing the dimensions of the volume
+    if (i < dims.x && j < dims.y) {
+        return data->getAsDouble(size3_t(i, j, 0));
+    } else {
+        LogProcessorError(
+            "Attempting to access data outside the boundaries of the volume, value is set to 0");
+        return 0;
+    }
+}
+
 void MarchingSquares::drawLineSegment(const vec2& v1, const vec2& v2, const vec4& color,
                                       IndexBufferRAM* indexBuffer,
                                       std::vector<BasicMesh::Vertex>& vertices) {
+    // Add first vertex
     indexBuffer->add(static_cast<std::uint32_t>(vertices.size()));
+    // A vertex has a position, a normal, a texture coordinate and a color
+    // we do not use normal or texture coordinate, but still have to specify them
     vertices.push_back({vec3(v1[0], v1[1], 0), vec3(0, 0, 1), vec3(v1[0], v1[1], 0), color});
+    // Add second vertex
     indexBuffer->add(static_cast<std::uint32_t>(vertices.size()));
     vertices.push_back({vec3(v2[0], v2[1], 0), vec3(0, 0, 1), vec3(v2[0], v2[1], 0), color});
 }
