@@ -20,6 +20,7 @@
 #include <inviwo/core/properties/ordinalproperty.h>
 #include <inviwo/core/properties/transferfunctionproperty.h>
 #include <inviwo/core/datastructures/volume/volumeram.h>
+#include <inviwo/core/datastructures/geometry/basicmesh.h>
 
 namespace inviwo
 {
