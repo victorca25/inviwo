@@ -8,7 +8,7 @@
  *********************************************************************
  */
 
-#include <labmarchingsquares/LabMarchingSquaresModule.h>
+#include <labmarchingsquares/labmarchingsquaresmodule.h>
 #include <labmarchingsquares/marchingsquares.h>
 #include <labmarchingsquares/utils/amirameshvolumereader.h>
 
