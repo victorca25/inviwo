@@ -58,8 +58,8 @@ protected:
     Shader shader_;
 
     BoolProperty enableDepthTest_;
-
-    FloatProperty top_,bottom_,left_,right_;
+    FloatProperty top_, bottom_, left_, right_;
+    FloatProperty pointSize_;
 
     using DrawerMap = std::multimap<const Outport*, std::unique_ptr<MeshDrawer>>;
     DrawerMap drawers_;
