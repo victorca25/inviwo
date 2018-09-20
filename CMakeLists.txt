@@ -168,6 +168,7 @@ set(ivw_default_modules
     "OpenGLQt"
     "QtWidgets"
     "LabMarchingSquares"
+    "LabStreamlines"
     "DD2257Setup"
     CACHE INTERNAL "Default Inviwo Modules"
 )
