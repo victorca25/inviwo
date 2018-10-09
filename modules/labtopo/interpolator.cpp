@@ -82,7 +82,14 @@ mat2 Interpolator::sampleJacobian(const Volume* vol, const vec2& position)
 
 double Interpolator::sampleFromGrayscaleImage(const ImageRAM* tr, const vec2& position)
 {
-    vec2 locPix(position[0] - int(position[0]), position[1] - int(position[1]));
+	// Sampled outside the domain!
+	size2_t dims = tr->getDimensions();
+	if (position[0] < 0 || position[0] > dims.x - 2 || position[1] < 0 ||
+		position[1] > dims.y - 2) {
+		return -1.0;
+	}
+	
+	vec2 locPix(position[0] - int(position[0]), position[1] - int(position[1]));
 
     auto f00 = tr->readPixel(size2_t(position[0], position[1]), LayerType::Color)[0];
     auto f10 = tr->readPixel(size2_t(position[0] + 1, position[1]), LayerType::Color)[0];
