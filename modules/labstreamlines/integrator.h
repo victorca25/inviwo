@@ -14,6 +14,9 @@
 #include <inviwo/core/common/inviwo.h>
 #include <inviwo/core/datastructures/geometry/basicmesh.h>
 #include <inviwo/core/datastructures/volume/volumeram.h>
+#include <inviwo/core/datastructures/image/imageram.h>
+#include <inviwo/core/datastructures/volume/volume.h>
+
 
 namespace inviwo
 {
@@ -39,8 +42,8 @@ public:
     // Examples would be the stepsize, inegreation direction, ...
     //static vec2 RK4(const VolumeRAM* vr, size3_t dims, const vec2& position, ...);
     //static vec2 Euler(const VolumeRAM* vr, size3_t dims, const vec2& position, ...);
-	static double Integrator::arclength(const vec2 & position, const vec2 & position2);
-	static vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, boolean directionfield);
+	static double arclength(const vec2 & position, const vec2 & position2);
+	static vec2 RK4(const Volume* vr, const vec2& currentPoint, float stepsize, bool directionfield);
 };
 
 } // namespace

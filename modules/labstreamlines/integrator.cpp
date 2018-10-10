@@ -56,7 +56,7 @@ namespace inviwo {
 		return f;
 	}
 
-	vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, boolean directionfield)
+	vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, bool directionfield)
 	{
 		vec2 nextpoint;
 		vec2 v1 = Integrator::sampleFromField(vr, currentPoint);

@@ -38,7 +38,7 @@ vec2 Integrator::findzeropossibility(const Volume* vol, const vec2& position, fl
     }
 }
 
-vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, boolean directionfield)
+vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, bool directionfield)
 {
 	vec2 nextpoint;
 	vec2 v1 = Interpolator::sampleFromField(vr, currentPoint);
@@ -84,7 +84,7 @@ vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize,
 	return nextpoint;
 }
 
-void Integrator::boxkernalpixel(const Volume* vr, const ImageRAM* tr, const vec2& currentPoint, const vec2& scale, float stepsize, int numberofsteps, float minArcLength, boolean directionfield, int** PixelArray) {
+void Integrator::boxkernalpixel(const Volume* vr, const ImageRAM* tr, const vec2& currentPoint, const vec2& scale, float stepsize, int numberofsteps, float minArcLength, bool directionfield, int** PixelArray) {
 
 	//List of Vec3s that store position and pixel data, begin with the pixel in the current position
 	std::list<vec3> listofPixels;
