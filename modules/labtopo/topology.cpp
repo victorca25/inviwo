@@ -94,12 +94,12 @@ void Topology::process()
             if(point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0 ||point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0||point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0||point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0)
             {}else{
                 float thresold = 0.1;
-                float distance = 1.0;
+                float distance = 0.5;
                 vec2 zeropossiblepoint = point00;
                 while(distance>thresold){
+                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
                     zeropossiblepoint = Integrator::findzeropossibility(vol.get(),zeropossiblepoint,distance);
                     distance = distance/2.0;
-                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
                 }
             }
         }

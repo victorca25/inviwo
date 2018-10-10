@@ -22,8 +22,9 @@ Integrator::Integrator() {}
     vec2 Integrator::findzeropossibility(const Volume* vol, const vec2& position, float distance){
         vec2 current_point = position;
         for(int i=0; i<2; i++){
+            current_point.x = current_point.x+distance*i;
+            current_point.y = position.y;
             for(int j=0; j<2; j++){
-                current_point.x = current_point.x+distance*i;
                 current_point.y = current_point.y+distance*j;
                 vec2 point00 = Interpolator::sampleFromField(vol, vec2(current_point.x,current_point.y));
                 vec2 point10 = Interpolator::sampleFromField(vol, vec2(current_point.x+distance,current_point.y));
