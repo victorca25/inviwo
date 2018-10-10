@@ -83,8 +83,26 @@ void Topology::process()
 
     // Looping through all values in the vector field.
     for (int y = 0; y < dims[1]; ++y)
-        for (int x = 0; x < dims[0]; ++x)
+        for (int x = 0; x < dims[0]; ++x){
             dvec2 vectorValue = vr->getAsDVec2(uvec3(x, y, 0));
+            
+            //Jane: get the vector of vertex
+            vec2 point00 = Interpolator::sampleFromField(vol.get(), vec2(x,y));
+            vec2 point10 = Interpolator::sampleFromField(vol.get(), vec2(x+1,y));
+            vec2 point01 = Interpolator::sampleFromField(vol.get(), vec2(x,y+1));
+            vec2 point11 = Interpolator::sampleFromField(vol.get(), vec2(x+1,y+1));
+            if(point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0 ||point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0||point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0||point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0)
+            {}else{
+                float thresold = 0.1;
+                float distance = 0.5;
+                vec2 zeropossiblepoint = point00;
+                while(distance>thresold){
+                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
+                    zeropossiblepoint = Integrator::findzeropossibility(vol.get(),zeropossiblepoint,distance);
+                    distance = distance/2.0;
+                }
+            }
+        }
 
     mesh->addVertices(vertices);
     outMesh.setData(mesh);
