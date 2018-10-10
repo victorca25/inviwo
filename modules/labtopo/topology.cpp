@@ -103,53 +103,84 @@ void Topology::process()
             {}else{
                 // Divide the square into four parts
                 // Use Change of Sign to find
-                float thresold = 0.01;
-                float distance = 0.5;
-                vec2 zeropossiblepoint = vec2(x,y);
-                while(distance<thresold){
-                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
-                    zeropossiblepoint = Integrator::findzeropossibility(vol.get(),zeropossiblepoint,distance);
-                    distance = distance/2.0;
-                }
-                
-                mat2 Jacobian = Interpolator::sampleJacobian(vol.get(), zeropossiblepoint);
-                //LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << Jacobian<< ".");
-                LogProcessorInfo("x is " << zeropossiblepoint.x <<  ". y is " << zeropossiblepoint.y << ".");
-                float det = Jacobian[0][0]*Jacobian[1][1] - Jacobian[0][1]*Jacobian[1][0];
-                util::EigenResult result;
-                // Jane: get the real part and imaginary part of eigenvalue
-                float R1,R2,I1,I2;
-                if(Jacobian[0][0]*Jacobian[1][1] - Jacobian[0][1]*Jacobian[1][0]!=0)
-                {
-                    result = util::eigenAnalysis(Jacobian);
-                    R1 = result.eigenvaluesRe[0];
-                    R2 = result.eigenvaluesRe[1];
-                    I1 = result.eigenvaluesIm[0];
-                    I2 = result.eigenvaluesIm[1];
-                    if(R1<0 && R2>0 && I1==0 && I2==0){
-                        LogProcessorInfo("saddle point");
-//                        Add Points to Display
-                        vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 0, 0, 1) });
-                        indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
-                        bufferindex++;
-                        LogProcessorInfo("zero is "<< zeropossiblepoint<< "det is " << det<< ".");
-                    }else if(R1>0 && R2>0 && I1==0 && I2==0){
-                        LogProcessorInfo("Repelling node");
-                        //Add Points to Display
-                        vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 255, 0, 1) });
-                        indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
-                        bufferindex++;
-                        LogProcessorInfo("zero is "<< zeropossiblepoint<< "det is " << det<< ".");
-                    }else if(R1<0 && R2<0 && I1==0 && I2==0){
-                        LogProcessorInfo("Attracting node");
-                        //Add Points to Display
-                        vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 0, 255, 1) });
-                        indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
-                        bufferindex++;
-                        LogProcessorInfo("zero is "<< zeropossiblepoint<< "det is " << det<< ".");
-                    }
+                //float thresold = 0.000000001;
+                //float distance = 0.5;
+                //vec2 zeropossiblepoint = vec2(x,y);
+                //while(distance>thresold){
+                      vec2 zeropossiblepoint = Integrator::findzeropossibility(vol.get(), vec2(x, y),0.5);
+                //    distance = distance/2.0;
+                //}
 
-                }
+				LogProcessorInfo("zero point is !!!" << zeropossiblepoint);
+				vec2 zerovector = Interpolator::sampleFromField(vol.get(), zeropossiblepoint);
+
+				if (abs(zerovector.x) < 0.1 && abs(zerovector.y) < 0.1) {
+					mat2 Jacobian = Interpolator::sampleJacobian(vol.get(), zeropossiblepoint);
+					float det = Jacobian[0][0] * Jacobian[1][1] - Jacobian[0][1] * Jacobian[1][0];
+					util::EigenResult result;
+					// Jane: get the real part and imaginary part of eigenvalue
+					float R1, R2, I1, I2;
+					if (Jacobian[0][0] * Jacobian[1][1] - Jacobian[0][1] * Jacobian[1][0] != 0)
+					{
+						result = util::eigenAnalysis(Jacobian);
+						R1 = result.eigenvaluesRe[0];
+						R2 = result.eigenvaluesRe[1];
+						I1 = result.eigenvaluesIm[0];
+						I2 = result.eigenvaluesIm[1];
+						LogProcessorInfo("R1" << R1);
+						LogProcessorInfo("R2" << R2);
+						LogProcessorInfo("I1" << I1);
+						LogProcessorInfo("I2" << I2);
+						if (((R1<0 && R2>0)||(R1>0 && R2<0)) && I1 == 0 && I2 == 0) {
+							LogProcessorInfo("saddle point");
+							//                        Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 0, 0, 1) });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+						else if (R1>0 && R2>0 && I1 == 0 && I2 == 0) {
+							LogProcessorInfo("Repelling node");
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 255, 0, 1) });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+						else if (R1<0 && R2<0 && I1 == 0 && I2 == 0) {
+							LogProcessorInfo("Attracting node");
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 0, 255, 1) });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+						else if (R1>0 && R2>0 && R1 == R2 && I1 == -I2 && I1 != 0) {
+							LogProcessorInfo("Repelling focus");
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 128, 128, 1) });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+						else if (R1 == 0 && R1 == R2 && I1 == -I2 && I1>0 && I2<0) {
+							LogProcessorInfo("Center");
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(128, 128, 0, 1) });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+						else if (R1<0 && R2<0 && R1 == R2 && I1 == -I2 && I1 != 0) {
+							LogProcessorInfo("Attracting focus");
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(128, 0, 128, 1) });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+					}
+				}
             }
         }
 
