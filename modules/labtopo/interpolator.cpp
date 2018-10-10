@@ -25,11 +25,11 @@ vec2 Interpolator::sampleFromField(const Volume* vol, const vec2& position)
     vec2 cellSize(base[0][0] / dims[0], base[1][1] / dims[1]);
 
     // Sampled outside the domain!
-    if (position[0] < 0 || position[0] > dims[0] - 1 || position[1] < 0 ||
-        position[1] > dims[1] - 1)
-    {
-        return vec2(0, 0);
-    }
+//    if (position[0] < 0 || position[0] > dims[0] - 1 || position[1] < 0 ||
+//        position[1] > dims[1] - 1)
+//    {
+//        return vec2(0, 0);
+//    }
     size2_t p((size_t)position[0], (size_t)position[1]);
 
     // Leads to accessing only inside the volume

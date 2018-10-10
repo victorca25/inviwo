@@ -21,7 +21,9 @@ Integrator::Integrator() {}
 // TODO: Implementation of the functions defined in the header file integrator.h
 vec2 Integrator::findzeropossibility(const Volume* vol, const vec2& position, float distance){
     vec2 current_point = position;
-    for(int i=0; i<2; i++){
+	vec2 returnpoint = current_point;
+	float innerloopdistance = distance/2;
+	for(int i=0; i<2; i++){
         current_point.x = current_point.x+distance*i;
         current_point.y = position.y;
         for(int j=0; j<2; j++){
@@ -30,12 +32,20 @@ vec2 Integrator::findzeropossibility(const Volume* vol, const vec2& position, fl
             vec2 point10 = Interpolator::sampleFromField(vol, vec2(current_point.x+distance,current_point.y));
             vec2 point01 = Interpolator::sampleFromField(vol, vec2(current_point.x,current_point.y+distance));
             vec2 point11 = Interpolator::sampleFromField(vol, vec2(current_point.x+distance,current_point.y+distance));
-            if(point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0 ||point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0||point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0||point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0)
+            if((point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0) || (point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0) || (point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0) || (point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0))
             {}else{
-                return current_point;
+				if (innerloopdistance > 0.0000001) {
+					vec2 temppoint = Integrator::findzeropossibility(vol,current_point,innerloopdistance);
+					//if (temppoint.x == current_point.x && temppoint.y == current_point.y) break;
+					vec2 tempvector = Interpolator::sampleFromField(vol, temppoint);
+					if (abs(tempvector.x) < 0.1 && abs(tempvector.y) < 0.1) {
+						returnpoint = temppoint;
+					}
+				}
             }
         }
     }
+	return returnpoint;
 }
 
 vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, bool directionfield)
