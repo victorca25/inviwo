@@ -99,12 +99,14 @@ void Topology::process()
             vec2 point01 = Interpolator::sampleFromField(vol.get(), vec2(x,y+1));
             vec2 point11 = Interpolator::sampleFromField(vol.get(), vec2(x+1,y+1));
             //Find zero possible cell
-            if((point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0) || (point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0) || (point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0) || (point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0))
+            if((point00[0]>0&&point10[0]>0&&point01[0]>0&&point11[0]>0) || (point00[0]<0&&point10[0]<0&&point01[0]<0&&point11[0]<0) || (point00[1]>0&&point10[1]>0&&point01[1]>0&&point11[1]>0) || (point00[1]<0&&point10[1]<0&&point01[1]<0&&point11[1]<0))
             {}else{
+            
                 // Divide the square into four parts
                 // Use Change of Sign to find
-                float thresold = 0.01;
+                float thresold = 0.000001;
                 float distance = 0.5;
+                
                 vec2 zeropossiblepoint = vec2(x,y);
                 while(distance>thresold){
 //                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");

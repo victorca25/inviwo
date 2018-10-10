@@ -21,6 +21,7 @@ Integrator::Integrator() {}
 // TODO: Implementation of the functions defined in the header file integrator.h
 vec2 Integrator::findzeropossibility(const Volume* vol, const vec2& position, float distance){
     vec2 current_point = position;
+    vec2 returnvector = current_point;
     for(int i=0; i<2; i++){
         current_point.x = current_point.x+distance*i;
         current_point.y = position.y;
@@ -30,14 +31,14 @@ vec2 Integrator::findzeropossibility(const Volume* vol, const vec2& position, fl
             vec2 point10 = Interpolator::sampleFromField(vol, vec2(current_point.x+distance,current_point.y));
             vec2 point01 = Interpolator::sampleFromField(vol, vec2(current_point.x,current_point.y+distance));
             vec2 point11 = Interpolator::sampleFromField(vol, vec2(current_point.x+distance,current_point.y+distance));
-            if((point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0) || (point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0) || (point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0) || (point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0))
-            {
-                return position;
-            }else{
-                return current_point;
+            if((point00[0]>0&&point10[0]>0&&point01[0]>0&&point11[0]>0) || (point00[0]<0&&point10[0]<0&&point01[0]<0&&point11[0]<0) || (point00[1]>0&&point10[1]>0&&point01[1]>0&&point11[1]>0) || (point00[1]<0&&point10[1]<0&&point01[1]<0&&point11[1]<0))
+            {}else{
+                returnvector = current_point;
             }
         }
     }
+    
+    return returnvector;
 }
 
 vec2 Integrator::RK4(const Volume* vr, const vec2& currentPoint, float stepsize, bool directionfield)
