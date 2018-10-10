@@ -84,6 +84,15 @@ void Topology::process()
     // Integrate all separatrices.
     // You can use your previous integration code (copy it over or call it from <lablic/integrator.h>).
 
+	//Hara: Variables Needed to Create Seperatices
+	float stepsize = 0.1;
+	int numberofstep = 200;
+	float minArcLength = 0.01;
+	boolean directionfield = true;
+	vec2 priorpoint;
+	vec2 currentpoint;
+	vec2 StopPoint = vec2(0, 0);
+
     
 //    vec2 *saddle=new vec2[dims[1]*dims[0]];
     // Looping through all values in the vector field.
@@ -101,17 +110,7 @@ void Topology::process()
             //Find zero possible cell
             if((point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0) || (point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0) || (point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0) || (point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0))
             {}else{
-                // Divide the square into four parts
-                // Use Change of Sign to find
-                //float thresold = 0.000000001;
-                //float distance = 0.5;
-                //vec2 zeropossiblepoint = vec2(x,y);
-                //while(distance>thresold){
-                      vec2 zeropossiblepoint = Integrator::findzeropossibility(vol.get(), vec2(x, y),0.5);
-                //    distance = distance/2.0;
-                //}
-
-				LogProcessorInfo("zero point is !!!" << zeropossiblepoint);
+                vec2 zeropossiblepoint = Integrator::findzeropossibility(vol.get(), vec2(x, y),0.5);
 				vec2 zerovector = Interpolator::sampleFromField(vol.get(), zeropossiblepoint);
 
 				if (abs(zerovector.x) < 0.1 && abs(zerovector.y) < 0.1) {
@@ -127,22 +126,50 @@ void Topology::process()
 						R2 = result.eigenvaluesRe[1];
 						I1 = result.eigenvaluesIm[0];
 						I2 = result.eigenvaluesIm[1];
-						LogProcessorInfo("R1" << R1);
-						LogProcessorInfo("R2" << R2);
-						LogProcessorInfo("I1" << I1);
-						LogProcessorInfo("I2" << I2);
 						if (((R1<0 && R2>0)||(R1>0 && R2<0)) && I1 == 0 && I2 == 0) {
 							LogProcessorInfo("saddle point");
-							//                        Add Points to Display
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 0, 0, 1) });
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[0] });
 							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
 							bufferindex++;
+
+							//Add Separatices
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+							indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+
+							//Travel In Direction of EigenVector
+							for (int i = 0; i < 3; i++) {
+								vec2 initialdirection = result.eigenvectors[i];
+								LogProcessorInfo("EigenVectors!!!!" << result.eigenvectors[i]);
+								currentpoint = zeropossiblepoint + initialdirection*stepsize;
+								vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+								indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+								bufferindex++;
+								for (int j = 1; j < numberofstep; j++) {
+									priorpoint = currentpoint;
+									currentpoint = Integrator::RK4(vol.get(), currentpoint, stepsize, directionfield);
+									if (Integrator::arclength(priorpoint, currentpoint) < minArcLength) break;//break loop if the velocity is too slow
+									if (currentpoint == StopPoint) {
+										break;
+									}
+									else {
+										vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+										indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+										bufferindex++;
+									}
+								}
+								vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+								indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+								bufferindex++;
+							}
+						
 							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
 						}
 						else if (R1>0 && R2>0 && I1 == 0 && I2 == 0) {
 							LogProcessorInfo("Repelling node");
 							//Add Points to Display
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 255, 0, 1) });
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[2] });
 							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
 							bufferindex++;
 							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
@@ -150,7 +177,15 @@ void Topology::process()
 						else if (R1<0 && R2<0 && I1 == 0 && I2 == 0) {
 							LogProcessorInfo("Attracting node");
 							//Add Points to Display
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 0, 255, 1) });
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[1] });
+							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
+							bufferindex++;
+							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
+						}
+						else if (abs(R1) < 0.01 && R1 == R2 && I1 == -I2 && I1>0 && I2<0) {
+							LogProcessorInfo("Center");
+							//Add Points to Display
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[5] });
 							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
 							bufferindex++;
 							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
@@ -158,15 +193,7 @@ void Topology::process()
 						else if (R1>0 && R2>0 && R1 == R2 && I1 == -I2 && I1 != 0) {
 							LogProcessorInfo("Repelling focus");
 							//Add Points to Display
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(0, 128, 128, 1) });
-							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
-							bufferindex++;
-							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
-						}
-						else if (R1 == 0 && R1 == R2 && I1 == -I2 && I1>0 && I2<0) {
-							LogProcessorInfo("Center");
-							//Add Points to Display
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(128, 128, 0, 1) });
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[4] });
 							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
 							bufferindex++;
 							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
@@ -174,7 +201,7 @@ void Topology::process()
 						else if (R1<0 && R2<0 && R1 == R2 && I1 == -I2 && I1 != 0) {
 							LogProcessorInfo("Attracting focus");
 							//Add Points to Display
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(128, 0, 128, 1) });
+							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[3] });
 							indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
 							bufferindex++;
 							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
