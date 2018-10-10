@@ -94,11 +94,12 @@ void Topology::process()
             if(point00[0]>=0&&point10[0]>=0&&point01[0]>=0&&point11[0]>=0 ||point00[0]<=0&&point10[0]<=0&&point01[0]<=0&&point11[0]<=0||point00[1]>=0&&point10[1]>=0&&point01[1]>=0&&point11[1]>=0||point00[1]<=0&&point10[1]<=0&&point01[1]<=0&&point11[1]<=0)
             {}else{
                 float thresold = 0.1;
-                for(float distance=1.0;distance<thresold;){
-                    point00 = Interpolator::sampleFromField(vol.get(), vec2(x,y));
-                    point10 = Interpolator::sampleFromField(vol.get(), vec2(x+distance,y));
-                    point01 = Interpolator::sampleFromField(vol.get(), vec2(x,y+distance));
-                    point11 = Interpolator::sampleFromField(vol.get(), vec2(x+distance,y+distance));
+                float distance = 1.0;
+                vec2 zeropossiblepoint = point00;
+                while(distance>thresold){
+                    zeropossiblepoint = Integrator::findzeropossibility(vol.get(),zeropossiblepoint,distance);
+                    distance = distance/2.0;
+                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
                 }
             }
         }

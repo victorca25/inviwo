@@ -13,6 +13,7 @@
 #include <labtopo/labtopomoduledefine.h>
 #include <inviwo/core/common/inviwo.h>
 #include <inviwo/core/datastructures/geometry/basicmesh.h>
+#include <inviwo/core/datastructures/volume/volumeram.h>
 #include <functional>
 
 namespace inviwo {
@@ -35,6 +36,8 @@ public:
     // where it is needed.
     // You may want to consider adding a helper function that computes an entire streamline
     // if you have not done so for the last assignments already.
+    
+    static vec2 findzeropossibility(const Volume* vol, const vec2& position, float distance);
 };
 
 }  // namespace inviwo
