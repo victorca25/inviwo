@@ -106,16 +106,11 @@ void Topology::process()
                 float thresold = 0.01;
                 float distance = 0.5;
                 vec2 zeropossiblepoint = vec2(x,y);
-                while(distance>thresold){
-//                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
+                while(distance<thresold){
+                    LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << distance<< ".");
                     zeropossiblepoint = Integrator::findzeropossibility(vol.get(),zeropossiblepoint,distance);
                     distance = distance/2.0;
                 }
-                
-//                //Add Points to Display
-//                vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 0, 0, 1) });
-//                indexBufferPoints->add(static_cast<std::uint32_t>(bufferindex));
-//                bufferindex++;
                 
                 mat2 Jacobian = Interpolator::sampleJacobian(vol.get(), zeropossiblepoint);
                 //LogProcessorInfo("Jacobian(0,0) is " << zeropossiblepoint <<  ". Distance is " << Jacobian<< ".");
