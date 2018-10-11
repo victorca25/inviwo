@@ -85,7 +85,7 @@ void Topology::process()
     // You can use your previous integration code (copy it over or call it from <lablic/integrator.h>).
 
 	//Hara: Variables Needed to Create Seperatices
-	float stepsize = 0.1;
+	float stepsize;
 	int numberofstep = 200;
 	float minArcLength = 0.01;
 	boolean directionfield = true;
@@ -126,7 +126,7 @@ void Topology::process()
 						R2 = result.eigenvaluesRe[1];
 						I1 = result.eigenvaluesIm[0];
 						I2 = result.eigenvaluesIm[1];
-						if (((R1<0 && R2>0)||(R1>0 && R2<0)) && I1 == 0 && I2 == 0) {
+						if (((R1 < 0 && R2>0) || (R1 > 0 && R2 < 0)) && I1 == 0 && I2 == 0) {
 							LogProcessorInfo("saddle point");
 							//Add Points to Display
 							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), ColorsCP[0] });
@@ -134,36 +134,82 @@ void Topology::process()
 							bufferindex++;
 
 							//Add Separatices
-							vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
-							indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
-							bufferindex++;
+							for (int j = 0; j < 2; j++) {
+								for (int i = 0; i < 2; i++) {
+									//StartPoint
+									vertices.push_back({ vec3(zeropossiblepoint.x / (float)(dims.x - 1), zeropossiblepoint.y / (float)(dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+									indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+									bufferindex++;
 
-							//Travel In Direction of EigenVector
-							for (int i = 0; i < 3; i++) {
-								vec2 initialdirection = result.eigenvectors[i];
-								LogProcessorInfo("EigenVectors!!!!" << result.eigenvectors[i]);
-								currentpoint = zeropossiblepoint + initialdirection*stepsize;
-								vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
-								indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
-								bufferindex++;
-								for (int j = 1; j < numberofstep; j++) {
-									priorpoint = currentpoint;
-									currentpoint = Integrator::RK4(vol.get(), currentpoint, stepsize, directionfield);
-									if (Integrator::arclength(priorpoint, currentpoint) < minArcLength) break;//break loop if the velocity is too slow
-									if (currentpoint == StopPoint) {
-										break;
+									//First Point In Direction of EigenVector
+									float initialdirectionx = result.eigenvectors[i][0];
+									float initialdirectiony = result.eigenvectors[i][1];
+									int ispositive = 1;
+									if (j == 0) ispositive = -1;
+									vec2 initialdirection = vec2(initialdirectionx*ispositive, initialdirectiony*ispositive);
+									currentpoint = zeropossiblepoint + initialdirection*stepsize;
+									vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+									indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+									bufferindex++;
+
+									//EigenVector Direction
+									int eigenslope;
+									if (initialdirection.x >= 0 && initialdirection.y >= 0) {
+										eigenslope = 1;
+									}
+									else if (initialdirection.x < 0 && initialdirection.y >= 0) {
+										eigenslope = 2;
+									}
+									else if (initialdirection.x < 0 && initialdirection.y < 0) {
+										eigenslope = 3;
+									}
+									else if (initialdirection.x >= 0 && initialdirection.y < 0) {
+										eigenslope = 4;
+									}
+
+									//PropogatedVector Direction
+									int propogationslope;
+									vec2 slopeatnextpoint = Interpolator::sampleFromField(vol.get(), currentpoint);
+									if (slopeatnextpoint.x >= 0 && slopeatnextpoint.y >= 0) {
+										propogationslope = 1;
+									}
+									else if (slopeatnextpoint.x < 0 && slopeatnextpoint.y >= 0) {
+										propogationslope = 2;
+									}
+									else if (slopeatnextpoint.x < 0 && slopeatnextpoint.y < 0) {
+										propogationslope = 3;
+									}
+									else if (slopeatnextpoint.x >= 0 && slopeatnextpoint.y < 0) {
+										propogationslope = 4;
+									}
+
+									//SOME LOGIC HERE IS WRONG, I Think We Need To Take Propogation Slope into Account
+									if (eigenslope == 1 || eigenslope == 3) {
+										stepsize = 0.1;
 									}
 									else {
-										vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
-										indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
-										bufferindex++;
+										stepsize = -0.1;
 									}
+
+									for (int j = 1; j < numberofstep; j++) {
+										priorpoint = currentpoint;
+										currentpoint = Integrator::RK4(vol.get(), currentpoint, stepsize, directionfield);
+										//if (Integrator::arclength(priorpoint, currentpoint) < minArcLength) break;//break loop if the velocity is too slow
+										if (currentpoint == StopPoint) {
+											break;
+										}
+										else {
+											vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+											indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+											bufferindex++;
+										}
+									}
+									vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
+									indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
+									bufferindex++;
 								}
-								vertices.push_back({ vec3(currentpoint.x / (dims.x - 1), currentpoint.y / (dims.y - 1), 0), vec3(0), vec3(0), vec4(255, 255, 255, 1) });
-								indexBufferSeparatrices->add(static_cast<std::uint32_t>(bufferindex));
-								bufferindex++;
 							}
-						
+
 							LogProcessorInfo("zero is " << zeropossiblepoint << "det is " << det << ".");
 						}
 						else if (R1>0 && R2>0 && I1 == 0 && I2 == 0) {
